@@ -1,0 +1,22 @@
+header {
+    #fond {
+        position: absolute;
+        z-index: -1;
+        ;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-size: 0.5rem;
+            color: white;
+            transform: translateY(-7px);
+
+            img {
+                transform: translateY(7px);
+            }
+        }
+    }
+}
