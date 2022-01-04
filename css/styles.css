@@ -24,6 +24,116 @@ header #nav p img {
           transform: translateY(7px);
 }
 
+header #nav .icon {
+  fill: white;
+  cursor: pointer;
+}
+
+header #nav .navbar input,
+header #nav .nav-menu,
+header #nav .dropdown {
+  display: none;
+}
+
+header #nav [id^=btn]:checked + ul {
+  display: block;
+}
+
+header #nav .nav-menu {
+  background-color: #008080;
+  position: absolute;
+  top: 96px;
+  left: 0;
+  margin: 0;
+  padding: 20px;
+  z-index: 10;
+}
+
+header #nav .nav-item a,
+header #nav .drop-item a,
+header #nav .show {
+  color: white;
+  text-decoration: none;
+  line-height: 55px;
+  font-size: 1.2rem;
+}
+
+header #nav .nav-menu a {
+  font-weight: bold;
+}
+
+header #nav .nav-menu a:hover,
+header #nav .show:hover {
+  color: #ee7d00;
+}
+
+header #nav .burger {
+  width: 33px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+header #nav .burger:hover span::after,
+header #nav .burger:hover span::before {
+  background-color: #ee7d00;
+}
+
+header #nav .burger:hover span {
+  background-color: sienna;
+}
+
+header #nav .burger span {
+  width: 80%;
+  height: 3px;
+  background-color: #ee7d00;
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+header #nav .burger span::before,
+header #nav .burger span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  min-height: 3px;
+  background-color: #ee7d00;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+header #nav .burger span::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+header #nav .burger span::after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+header #nav .burger.active span {
+  background-color: transparent;
+}
+
+header #nav .burger.active span::before {
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+}
+
+header #nav .burger.active span::after {
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
+}
+
 * {
   font-family: "Roboto", sans-serif, serif;
   -webkit-box-sizing: border-box;
