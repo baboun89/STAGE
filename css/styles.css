@@ -12,6 +12,11 @@ header #nav {
           justify-content: space-between;
 }
 
+header #nav li {
+  list-style: none;
+  display: inline-block;
+}
+
 header #nav p {
   font-size: 0.5rem;
   color: white;
@@ -40,12 +45,10 @@ header #nav [id^=btn]:checked + ul {
 }
 
 header #nav .nav-menu {
-  background-color: #008080;
   position: absolute;
-  top: 96px;
   left: 0;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   z-index: 10;
 }
 
@@ -55,7 +58,8 @@ header #nav .show {
   color: white;
   text-decoration: none;
   line-height: 55px;
-  font-size: 1.2rem;
+  font-size: 0.4rem;
+  font-family: Myriad Pro Condensed;
 }
 
 header #nav .nav-menu a {
