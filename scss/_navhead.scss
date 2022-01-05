@@ -1,13 +1,9 @@
 header {
-    #fond {
-        position: absolute;
-        z-index: -1;
-        ;
-    }
-
     #nav {
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        width: 100%;
         li{
             list-style: none;
             display: inline-block;
@@ -122,6 +118,5 @@ header {
         .burger.active span::after {
             transform: translateY(0px) rotate(-45deg);
         }
-        
     }
 }
