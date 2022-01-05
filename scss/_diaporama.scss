@@ -1,0 +1,35 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.diapo {
+    position: relative;
+    overflow: hidden;
+}
+
+.elements {
+    display: flex;
+}
+
+.element {
+    width: 100%;
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img {
+    width: 100%;
+}
+
+#gauche, #droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 10rem;
+}
+#droite{
+    right: 0;
+}
+
