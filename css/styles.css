@@ -58,7 +58,7 @@ header #nav .show {
   color: white;
   text-decoration: none;
   line-height: 55px;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   font-family: Myriad Pro Condensed;
 }
 
@@ -142,6 +142,10 @@ header #nav .burger.active span::after {
   font-family: "Roboto", sans-serif, serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+header {
+  height: 92.58px;
 }
 
 body {
