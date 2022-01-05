@@ -1,15 +1,12 @@
-main {
-    width: 80%;
-    margin: auto;
-}
-
 .diapo {
     position: relative;
     overflow: hidden;
+    margin-top: 1%;
 }
 
 .elements {
     display: flex;
+    text-align: center;
 }
 
 .element {
@@ -28,6 +25,7 @@ main {
     transform: translateY(-50%);
     color: red;
     font-size: 10rem;
+
 }
 #droite{
     right: 0;

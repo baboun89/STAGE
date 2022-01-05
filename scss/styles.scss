@@ -1,6 +1,7 @@
 @import "navhead";
 @import "grid";
 @import "diaporama";
+@import "navfoot";
 
 * {
     font-family: "Roboto", sans-serif, serif;
@@ -10,9 +11,32 @@
 body {
     margin: 0;
     padding: 0;
-
-    h1 {
-        margin: auto;
+    ul{
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
         text-align: center;
+        
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    main {
+        .titre {
+            width: 200px;
+            height: 20px;
+            background-color: black;
+            margin: auto;
+            border-radius: 5px;
+            h1 {
+                margin: auto;
+                text-align: center;
+                font-size: 1rem;
+                color: #ee7d00;
+            }
+
+        }
     }
 }
