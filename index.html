@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scriptsnav.js" defer></script>
-    <script src="js/scriptsdiap.js" defer></script>
+    <script src="js/scriptsnav.js"defer></script>
+    <script src="js/scriptsdiap.js"defer></script>
     <title>stage</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="js/scriptsmap.js"defer></script>
 </head>
 
 <body>
     <header>
+        <div id="scrollUp">
+            <a href="#top"><img class="remonte" src="images/remonte.png" alt="remonter" width="20"></a>
+        </div>
         <div id="nav">
-            <div id="scrollUp">
-                <a href="#top"><img class="remonte" src="images/logomobil.png" alt="logo" width="100"></a>
-            </div>
+            <img src="images/logomobil.png" alt="logo" width="80">
             <div id="tel">
                 <p><img src="images/telmini.png" alt="logotel" width="20">Tel: 06 83 77 62 92</p>
             </div>
@@ -137,14 +146,13 @@
             <div class="titre">
                 <h1>Notre zone d'intervention</h1>
             </div>
-            <article>
-
+            <article id="carte">
             </article>
         </section>
     </main>
     <footer>
         <div id="foothaut">
-            <img src="images/logomobil.png" alt="logo" width="80px">
+            <img src="images/logomobil.png" alt="logo" width="70px">
             <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
                     cookies</a> </p>
         </div>

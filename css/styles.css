@@ -7,6 +7,9 @@ header #nav {
           justify-content: space-between;
   position: absolute;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header #nav p {
@@ -40,7 +43,6 @@ header #nav .nav-menu {
   position: absolute;
   left: 0;
   margin: 0;
-  padding-top: 10px;
   z-index: 10;
 }
 
@@ -107,13 +109,13 @@ header #nav .burger span::after {
 }
 
 header #nav .burger span::before {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 header #nav .burger span::after {
-  -webkit-transform: translateY(7px);
-          transform: translateY(7px);
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
 }
 
 header #nav .burger.active span {
@@ -254,6 +256,14 @@ header #nav .burger.active span::after {
 footer {
   position: relative;
   font-size: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .nav-menu a:hover,
+footer a:hover {
+  color: #ee7d00;
 }
 
 footer #foothaut {
@@ -266,7 +276,11 @@ footer #foothaut img {
   margin-right: 17px;
 }
 
-footer a {
+footer p {
+  margin: 0;
+}
+
+footer p a {
   text-decoration: none;
   color: white;
   margin-left: 10px;
@@ -304,14 +318,28 @@ footer #navfoot {
           box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
+}
+
+body #carte {
+  height: 180px;
+}
+
+body #scrollUp {
+  width: 5px;
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  z-index: 100;
+}
+
+body .remonte {
+  -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
+          filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
 }
 
 body ul {
-  margin: 0;
-  margin-top: 30px;
   padding: 0;
   text-align: center;
 }

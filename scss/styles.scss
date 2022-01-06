@@ -8,13 +8,28 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+    #carte {
+        height: 180px;
+    }
+
+    #scrollUp {
+        width: 5px;
+        position: fixed;
+        bottom: 85px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .remonte {
+        filter: drop-shadow(rgb(255, 255, 255) 0px 0px 5px) drop-shadow(rgb(255, 255, 255) -1px -1px 2px);
+    }
 
     ul {
-        margin: 0;
-        margin-top: 30px;
         padding: 0;
         text-align: center;
 
@@ -48,7 +63,8 @@ body {
             #agrement {
                 text-align: center;
                 margin-top: 10px;
-                p{
+
+                p {
                     font-size: 0.7rem;
                 }
             }
@@ -57,16 +73,19 @@ body {
                 text-align: left;
                 margin-left: 10px;
                 text-align: center;
-                h1{
+
+                h1 {
                     margin: 0;
                     margin-top: 10px;
                     font-size: 1rem;
                 }
-                h2{
+
+                h2 {
                     margin: 0;
                     font-size: 1.1rem;
                 }
-                p{
+
+                p {
                     margin: 0;
                 }
             }

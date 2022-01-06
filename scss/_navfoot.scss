@@ -1,19 +1,27 @@
 footer {
     position: relative;
     font-size: 0.5rem;
+    align-items: center;
+    .nav-menu a:hover,
+    a:hover {
+        color: #ee7d00;
+    }
 
     #foothaut {
         display: flex;
-        img{
+
+        img {
             margin-right: 17px;
         }
     }
-
+p{
+    margin: 0;
     a {
         text-decoration: none;
         color: white;
         margin-left: 10px;
     }
+}
 
     ul {
         margin: 0;
