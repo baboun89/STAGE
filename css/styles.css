@@ -363,8 +363,8 @@ body main #fond1 {
 body main #fond2 {
   width: 300px;
   position: absolute;
-  top: 160%;
-  left: 71%;
+  top: 24%;
+  left: 6%;
   z-index: -1;
   opacity: 7%;
 }
