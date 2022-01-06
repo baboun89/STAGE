@@ -40,7 +40,7 @@ header #nav .nav-menu {
   position: absolute;
   left: 0;
   margin: 0;
-  padding: 10px;
+  padding-top: 10px;
   z-index: 10;
 }
 
@@ -262,6 +262,10 @@ footer #foothaut {
   display: flex;
 }
 
+footer #foothaut img {
+  margin-right: 17px;
+}
+
 footer a {
   text-decoration: none;
   color: white;
@@ -275,8 +279,8 @@ footer ul {
 footer ul li {
   list-style: none;
   display: inline-block;
-  margin-left: 10px;
-  font-size: 0.4rem;
+  margin-left: 5px;
+  font-size: 0.5rem;
   color: black;
   text-decoration: none;
 }
@@ -295,7 +299,7 @@ footer #navfoot {
 }
 
 * {
-  font-family: "Roboto", sans-serif, serif;
+  font-family: Myriad Pro Condensed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -315,7 +319,7 @@ body ul {
 body li {
   list-style: none;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 body main .titre {

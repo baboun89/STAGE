@@ -4,6 +4,9 @@ footer {
 
     #foothaut {
         display: flex;
+        img{
+            margin-right: 17px;
+        }
     }
 
     a {
@@ -18,8 +21,8 @@ footer {
         li {
             list-style: none;
             display: inline-block;
-            margin-left: 10px;
-            font-size: 0.4rem;
+            margin-left: 5px;
+            font-size: 0.5rem;
             color: black;
             text-decoration: none;
 
