@@ -36,7 +36,17 @@ body {
                 font-size: 1rem;
                 color: #ee7d00;
             }
-
+        }
+        #flex{
+            display: flex;
+            #agrement{
+                text-align: center;
+                margin-top: 10px;
+            }
+            #adress{
+                text-align: left;
+                margin-left: 10px;
+            }
         }
     }
 }

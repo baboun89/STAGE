@@ -251,6 +251,49 @@ header #nav .burger.active span::after {
   right: 0;
 }
 
+footer {
+  position: relative;
+  font-size: 0.5rem;
+}
+
+footer #foothaut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.4rem;
+  color: black;
+  text-decoration: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3px;
+}
+
+footer #navfoot {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 100%;
+}
+
 * {
   font-family: "Roboto", sans-serif, serif;
   -webkit-box-sizing: border-box;
@@ -288,5 +331,21 @@ body main .titre h1 {
   text-align: center;
   font-size: 1rem;
   color: #ee7d00;
+}
+
+body main #flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main #flex #agrement {
+  text-align: center;
+  margin-top: 10px;
+}
+
+body main #flex #adress {
+  text-align: left;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
