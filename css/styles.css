@@ -324,6 +324,7 @@ html {
 
 body #carte {
   height: 180px;
+  margin: 10px;
 }
 
 body #scrollUp {
@@ -331,7 +332,7 @@ body #scrollUp {
   position: fixed;
   bottom: 85px;
   right: 20px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 body .remonte {
@@ -350,6 +351,24 @@ body li {
   margin-left: 5px;
 }
 
+body main #fond1 {
+  width: 600px;
+  position: absolute;
+  right: 33%;
+  top: 79%;
+  z-index: -1;
+  opacity: 7%;
+}
+
+body main #fond2 {
+  width: 300px;
+  position: absolute;
+  top: 160%;
+  left: 71%;
+  z-index: -1;
+  opacity: 7%;
+}
+
 body main .titre {
   width: 200px;
   height: 20px;
@@ -361,6 +380,9 @@ body main .titre {
 body main .titre h1 {
   margin: auto;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1rem;
   color: #ee7d00;
 }
