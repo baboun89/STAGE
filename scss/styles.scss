@@ -33,7 +33,6 @@ body {
     ul {
         padding: 0;
         text-align: center;
-
     }
 
     li {
@@ -59,6 +58,18 @@ body {
                 color: #ee7d00;
             }
         }
+#diaporama{
+    background-image: url(/images/logo/engrenage.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right;
+}
+#realisations{
+    background-image: url(/images/logo/engrenage.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: left;
+}
 
         #flex {
             display: flex;

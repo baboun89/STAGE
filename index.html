@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scriptsnav.js"defer></script>
-    <script src="js/scriptsdiap.js"defer></script>
+    <script src="js/scriptsnav.js" defer></script>
+    <script src="js/scriptsdiap.js" defer></script>
     <title>stage</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-    <script src="js/scriptsmap.js"defer></script>
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="js/scriptsmap.js" defer></script>
 </head>
 
 <body>
@@ -27,34 +27,32 @@
         <div id="nav">
             <img src="images/logo/logo.png" alt="logo" width="80">
             <div id="tel">
-                <p><img src="images/logo/tel.png" alt="logotel" width="18" >Tel: 06 83 77 62 92</p>
+                <p><img src="images/logo/tel.png" alt="logotel" width="18">Tel: 06 83 77 62 92</p>
             </div>
-            <nav id="upnav" class="navbar">
-                <div id="menuToggle">
-                    <label for="btn" class="icon">
-                        <div class="burger">
-                            <span></span>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="btn">
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="">Terrassement en tout genre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Remplacement de canalisations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Assainissement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <nav class="navbar">
+                <label for="btn" class="icon">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="btn">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="">Terrassement en tout genre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Remplacement de canalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Assainissement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </div>
-        <img src="images/logo/navbarhaut.png" alt="navbar" width="100%">
+        <img src="images/logo/navbar.png" alt="navbar" width="100%">
     </header>
     <main>
         <section id="diaporama">
@@ -149,26 +147,28 @@
         </section>
     </main>
     <footer>
-        <div id="foothaut">
-            <img src="images/logo/logo.png" alt="logo" width="70px">
-            <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
-                    cookies</a> </p>
+        <div id="nav">
+            <div id="foothaut">
+                <img src="images/logo/logo.png" alt="logo" width="80px">
+                <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
+                        cookies</a> </p>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="">Terrassement en tout genre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Remplacement de canalisations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Assainissement</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="">Terrassement en tout genre</a>
-            </li>
-            <li class="nav-item">
-                <a href="">Remplacement de canalisations</a>
-            </li>
-            <li class="nav-item">
-                <a href="">Assainissement</a>
-            </li>
-            <li class="nav-item">
-                <a href="">Contact</a>
-            </li>
-        </ul>
-        <img src="images/logo/navbarbas.png" alt="navbar footer" width="100%" id="navfoot">
+        <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
     </footer>
 </body>
 

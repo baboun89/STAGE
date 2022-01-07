@@ -2,9 +2,8 @@ header #nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   width: 100%;
   -webkit-box-align: center;
@@ -253,62 +252,56 @@ header #nav .burger.active span::after {
 }
 
 footer {
-  position: relative;
   font-size: 0.5rem;
+}
+
+footer #nav {
+  position: absolute;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-footer .nav-menu a:hover,
-footer a:hover {
+footer #nav .nav-menu a:hover,
+footer #nav a:hover {
   color: #ee7d00;
 }
 
-footer #foothaut {
+footer #nav #foothaut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer #foothaut img {
-  margin-right: 17px;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer p a {
+footer #nav a {
   text-decoration: none;
   color: white;
-  margin-left: 10px;
+  margin-left: 4px;
 }
 
-footer ul {
+footer #nav .nav-menu {
+  position: absolute;
+  top: 170%;
+}
+
+footer #nav ul {
   margin: 0;
 }
 
-footer ul li {
+footer #nav ul li {
   list-style: none;
   display: inline-block;
   margin-left: 5px;
   font-size: 0.5rem;
   color: black;
   text-decoration: none;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: white;
-  margin-left: 3px;
-}
-
-footer #navfoot {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  height: 100%;
 }
 
 * {
@@ -366,6 +359,20 @@ body main .titre h1 {
           align-items: center;
   font-size: 1rem;
   color: #ee7d00;
+}
+
+body main #diaporama {
+  background-image: url(/images/logo/engrenage.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right;
+}
+
+body main #realisations {
+  background-image: url(/images/logo/engrenage.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: left;
 }
 
 body main #flex {
