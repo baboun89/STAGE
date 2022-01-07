@@ -5,15 +5,16 @@ header {
         position: absolute;
         width: 100%;
         align-items: center;
+        vertical-align: top;
+
+        img {
+            vertical-align: middle;
+        }
 
         p {
             font-size: 0.6rem;
             color: white;
-            transform: translateY(-7px);
-
-            img {
-                transform: translateY(7px);
-            }
+            margin: 0;
         }
 
         .icon {

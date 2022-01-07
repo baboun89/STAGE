@@ -10,18 +10,17 @@ header #nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: top;
+}
+
+header #nav img {
+  vertical-align: middle;
 }
 
 header #nav p {
   font-size: 0.6rem;
   color: white;
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-}
-
-header #nav p img {
-  -webkit-transform: translateY(7px);
-          transform: translateY(7px);
+  margin: 0;
 }
 
 header #nav .icon {
@@ -349,24 +348,6 @@ body li {
   list-style: none;
   display: inline-block;
   margin-left: 5px;
-}
-
-body main #fond1 {
-  width: 600px;
-  position: absolute;
-  right: 33%;
-  top: 79%;
-  z-index: -1;
-  opacity: 7%;
-}
-
-body main #fond2 {
-  width: 300px;
-  position: absolute;
-  top: 24%;
-  left: 6%;
-  z-index: -1;
-  opacity: 7%;
 }
 
 body main .titre {
