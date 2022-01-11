@@ -19,14 +19,18 @@ header #nav {
   min-height: 100%;
 }
 
-header #nav img {
-  vertical-align: middle;
+header #nav #tel {
+  margin-top: 5px;
 }
 
 header #nav p {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   color: white;
   margin: 0;
+}
+
+header #nav p img {
+  vertical-align: top;
 }
 
 header #nav .icon {
@@ -47,7 +51,6 @@ header #nav .nav-menu {
   background-color: black;
   position: absolute;
   width: 90%;
-  top: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -61,7 +64,7 @@ header #nav .show {
   color: #ee7d00;
   text-decoration: none;
   line-height: 55px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: Myriad Pro Condensed;
 }
 
@@ -71,7 +74,7 @@ header #nav .nav-menu a {
 
 header #nav .nav-menu a:hover,
 header #nav .show:hover {
-  color: black;
+  color: white;
 }
 
 header #nav .burger {
@@ -79,6 +82,7 @@ header #nav .burger {
   height: 24px;
   cursor: pointer;
   position: relative;
+  margin-top: 5px;
 }
 
 header #nav .burger:hover span::after,
@@ -141,6 +145,25 @@ header #nav .burger.active span::after {
           transform: translateY(0px) rotate(-45deg);
 }
 
+@media screen and (min-width: 1000px) {
+  header #nav .icon {
+    display: none;
+  }
+  header #nav .nav-menu {
+    display: block;
+    bottom: 3%;
+  }
+  header #nav .nav-menu a {
+    font-size: 1.5rem;
+  }
+  header #nav .nav-item {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    z-index: 100;
+  }
+}
+
 #realisations {
   text-align: center;
 }
@@ -175,7 +198,7 @@ header #nav .burger.active span::after {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .grid.grid-3 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -196,28 +219,28 @@ header #nav .burger.active span::after {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .grid.grid-5 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .grid.grid-5 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .grid.grid-5 {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .grid.grid-5 {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
@@ -249,70 +272,54 @@ header #nav .burger.active span::after {
   width: 100%;
 }
 
-#gauche, #droite {
+#gauche {
+  left: 2%;
+}
+
+#gauche,
+#droite {
   position: absolute;
-  top: 50%;
+  top: 65%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: red;
-  font-size: 10rem;
+  -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
+          filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
 }
 
 #droite {
-  right: 0;
-}
-
-footer {
-  font-size: 0.5rem;
+  right: 2%;
 }
 
 footer #nav {
   position: absolute;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-footer #nav .nav-menu a:hover,
-footer #nav a:hover {
+footer #nav p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer #nav p .nav-menu a:hover,
+footer #nav p a:hover {
   color: #ee7d00;
 }
 
 footer #nav #foothaut {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: left;
 }
 
 footer #nav a {
   text-decoration: none;
   color: white;
-  margin-left: 4px;
-}
-
-footer #nav .nav-menu {
-  position: absolute;
-  top: 170%;
-}
-
-footer #nav ul {
-  margin: 0;
-}
-
-footer #nav ul li {
-  list-style: none;
-  display: inline-block;
   margin-left: 5px;
-  font-size: 0.5rem;
-  color: black;
-  text-decoration: none;
+}
+
+:root {
+  font-size: 12px;
 }
 
 * {
@@ -326,12 +333,11 @@ html {
 }
 
 body #carte {
-  height: 180px;
+  height: 250px;
   margin: 10px;
 }
 
 body #scrollUp {
-  width: 5px;
   position: fixed;
   bottom: 85px;
   right: 20px;
@@ -360,15 +366,20 @@ body main .titre {
   background-color: black;
   margin: auto;
   border-radius: 5px;
-}
-
-body main .titre h1 {
-  margin: auto;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .titre h1 {
+  text-align: center;
+  font-size: 1.4rem;
   color: #ee7d00;
 }
 
@@ -390,6 +401,8 @@ body main #flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main #flex #agrement {
@@ -398,7 +411,7 @@ body main #flex #agrement {
 }
 
 body main #flex #agrement p {
-  font-size: 0.7rem;
+  font-size: 1.5rem;
 }
 
 body main #flex #adress {
@@ -410,15 +423,147 @@ body main #flex #adress {
 body main #flex #adress h1 {
   margin: 0;
   margin-top: 10px;
-  font-size: 1rem;
 }
 
-body main #flex #adress h2 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
+body main #flex #adress h2,
 body main #flex #adress p {
   margin: 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    font-size: 13px;
+  }
+  body .remonte {
+    width: 30px;
+  }
+  body main #gauche,
+  body main #droite {
+    width: 30px;
+  }
+  body main #flex img {
+    width: 120px;
+  }
+  body .titre {
+    height: 60px;
+  }
+  body .titre h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body header #nav p {
+    font-size: 2rem;
+  }
+  body header #nav p img {
+    width: 30px;
+  }
+  body #carte {
+    height: 500px;
+  }
+  body main .titre {
+    width: 500px;
+    height: 40px;
+  }
+  body main .titre h1 {
+    font-size: 2rem;
+  }
+  body main #flex #agrement p {
+    font-size: 1.8rem;
+  }
+  body main #flex #agrement img {
+    width: 200px;
+  }
+  body main #flex #adress h1,
+  body main #flex #adress h2,
+  body main #flex #adress p {
+    font-size: 1.8rem;
+  }
+  body footer #nav p {
+    margin-top: 50px;
+  }
+  body footer #nav p a {
+    font-size: 2.3rem;
+    margin-left: 20px;
+  }
+  body footer #nav img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 16px;
+  }
+  body .remonte {
+    width: 40px;
+  }
+  body header #nav #tel p {
+    margin-top: 10px;
+  }
+  body header #nav #tel img {
+    width: 38px;
+  }
+  body main #gauche,
+  body main #droite {
+    width: 40px;
+  }
+  body main #flex #agrement p {
+    font-size: 2rem;
+  }
+  body main #flex #agrement img {
+    width: 200px;
+  }
+  body main #flex #adress h1,
+  body main #flex #adress h2,
+  body main #flex #adress p {
+    font-size: 2rem;
+  }
+  body footer #nav p {
+    margin-top: 100px;
+  }
+  body footer #nav p a {
+    font-size: 2.3rem;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  :root {
+    font-size: 16px;
+  }
+  body footer #nav p {
+    margin-top: 150px;
+  }
+  body footer #nav p a {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    font-size: 18px;
+  }
+  body footer #nav p {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  :root {
+    font-size: 20px;
+  }
+  body footer #nav p {
+    margin-top: 250px;
+  }
+  body footer #nav p a {
+    font-size: 3rem;
+    margin-left: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

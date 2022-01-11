@@ -10,14 +10,17 @@ header {
         align-items: flex-start;
         min-height: 100%;
 
-        img {
-            vertical-align: middle;
+        #tel {
+            margin-top: 5px;
         }
 
         p {
-            font-size: 0.6rem;
+            font-size: 1.2rem;
             color: white;
             margin: 0;
+            img{
+                vertical-align: top;
+            }
         }
 
         .icon {
@@ -38,7 +41,6 @@ header {
             background-color: black;
             position: absolute;
             width: 90%;
-            top: 70px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 10;
@@ -51,7 +53,7 @@ header {
             color: #ee7d00;
             text-decoration: none;
             line-height: 55px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-family: Myriad Pro Condensed;
         }
 
@@ -61,7 +63,7 @@ header {
 
         .nav-menu a:hover,
         .show:hover {
-            color: black;
+            color: white;
         }
 
         .burger {
@@ -69,6 +71,7 @@ header {
             height: 24px;
             cursor: pointer;
             position: relative;
+            margin-top: 5px;
         }
 
         .burger:hover span::after,
@@ -121,6 +124,31 @@ header {
 
         .burger.active span::after {
             transform: translateY(0px) rotate(-45deg);
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        #nav {
+
+            .icon {
+                display: none;
+            }
+
+            .nav-menu {
+                display: block;
+                bottom: 3%;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .nav-item {
+                display: inline-block;
+                margin-left: 20px;
+                position: relative;
+                z-index: 100;
+            }
         }
     }
 }

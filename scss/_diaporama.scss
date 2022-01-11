@@ -15,19 +15,22 @@
     position: relative;
 }
 
-.element > img {
+.element>img {
     width: 100%;
 }
-
-#gauche, #droite{
+#gauche{
+    left: 2%;
+}
+#gauche,
+#droite {
     position: absolute;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
-    color: red;
-    font-size: 10rem;
+    // font-size: 10rem;
+    filter: drop-shadow(rgb(255, 255, 255) 0px 0px 5px) drop-shadow(rgb(255, 255, 255) -1px -1px 2px);
 
 }
-#droite{
-    right: 0;
-}
 
+#droite {
+    right: 2%;
+}
