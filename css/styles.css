@@ -470,7 +470,9 @@ body main .serv {
   text-align: center;
 }
 
-body main #adress h1, body main #adress h2, body main #adress p {
+body main #adress h1,
+body main #adress h2,
+body main #adress p {
   margin: 5px;
 }
 
