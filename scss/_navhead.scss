@@ -29,7 +29,7 @@ header {
         }
 
         .navbar input,
-        .nav-menu {
+        .nav-menu,.dropdown {
             display: none;
         }
 
@@ -53,12 +53,15 @@ header {
             color: #ee7d00;
             text-decoration: none;
             line-height: 55px;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-family: Myriad Pro Condensed;
+        
         }
 
-        .nav-menu a {
+        .nav-menu a,.show  {
             font-weight: bold;
+            font-family: Myriad Pro Condensed;
+
         }
 
         .nav-menu a:hover,

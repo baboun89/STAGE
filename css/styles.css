@@ -39,7 +39,7 @@ header #nav .icon {
 }
 
 header #nav .navbar input,
-header #nav .nav-menu {
+header #nav .nav-menu, header #nav .dropdown {
   display: none;
 }
 
@@ -64,12 +64,13 @@ header #nav .show {
   color: #ee7d00;
   text-decoration: none;
   line-height: 55px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: Myriad Pro Condensed;
 }
 
-header #nav .nav-menu a {
+header #nav .nav-menu a, header #nav .show {
   font-weight: bold;
+  font-family: Myriad Pro Condensed;
 }
 
 header #nav .nav-menu a:hover,
@@ -279,7 +280,7 @@ header #nav .burger.active span::after {
 #gauche,
 #droite {
   position: absolute;
-  top: 65%;
+  top: 62%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
@@ -360,6 +361,39 @@ body li {
   margin-left: 5px;
 }
 
+body main {
+  position: relative;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main #titrepage {
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #titrepage h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #ee7d00;
+}
+
 body main .titre {
   width: 200px;
   height: 20px;
@@ -403,11 +437,12 @@ body main #flex {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 10px;
 }
 
 body main #flex #agrement {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 body main #flex #agrement p {
@@ -422,13 +457,21 @@ body main #flex #adress {
 
 body main #flex #adress h1 {
   margin: 0;
-  margin-top: 10px;
 }
 
 body main #flex #adress h2,
 body main #flex #adress p {
   margin: 0;
   font-size: 1.5rem;
+}
+
+body main .serv {
+  padding: 10px;
+  text-align: center;
+}
+
+body main #adress h1, body main #adress h2, body main #adress p {
+  margin: 5px;
 }
 
 @media screen and (min-width: 400px) {
