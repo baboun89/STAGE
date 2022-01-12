@@ -140,11 +140,15 @@ body {
 
         #adress {
 
-            h1,
+
             h2,
             p {
 
                 margin: 5px;
+            }
+
+            p {
+                font-size: 1.4rem;
             }
         }
     }
@@ -209,12 +213,33 @@ body {
         }
 
         main {
+            #titrepage {
+                width: 600px;
+
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+
             .titre {
                 width: 500px;
                 height: 40px;
 
                 h1 {
                     font-size: 2rem;
+                }
+            }
+
+            #adress {
+
+                h2,
+                p {
+
+                    font-size: 2.5rem;
+                }
+
+                img {
+                    width: 400px;
                 }
             }
 
@@ -271,6 +296,10 @@ body {
 
         header {
             #nav {
+                .nav-menu {
+                    bottom: 5%;
+                }
+
                 #tel {
                     p {
                         margin-top: 10px;
@@ -284,6 +313,9 @@ body {
         }
 
         main {
+            #titrepage {
+                top: 2%;
+            }
 
             #gauche,
             #droite {
@@ -366,14 +398,61 @@ body {
 
 @media screen and (min-width: 1900px) {
     :root {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     body {
+        .remonte{
+            width: 60px;
+        }
+        header {
+            #nav {
+                img {
+                    width: 400px;
+                }
+                .show {
+                    font-size: 2.5rem;
+
+                }
+                .nav-menu,
+                .show {
+                    bottom: 2%;
+                    a {
+                        font-size: 2.5rem;
+                    }
+
+                    .nav-item {
+                        margin: 21px;
+                    }
+                }
+            }
+        }
+
+        main {
+            #gauche,#droite{
+                width: 60px;
+            }
+            #titrepage {
+                height: 80px;
+            }
+
+            .titre {
+                height: 100px;
+            }
+            #adress{
+                img{
+                    width: 800px;
+                }
+            }
+        }
+
         footer {
             #nav {
+                img{
+                    width: 400px;
+                }
                 p {
-                    margin-top: 250px;
+                    margin-top: 150px;
 
                     a {
                         font-size: 3rem;

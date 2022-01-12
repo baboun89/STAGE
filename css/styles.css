@@ -63,7 +63,6 @@ header #nav .drop-item a,
 header #nav .show {
   color: #ee7d00;
   text-decoration: none;
-  line-height: 55px;
   font-size: 1.4rem;
   font-family: Myriad Pro Condensed;
 }
@@ -470,10 +469,13 @@ body main .serv {
   text-align: center;
 }
 
-body main #adress h1,
 body main #adress h2,
 body main #adress p {
   margin: 5px;
+}
+
+body main #adress p {
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -511,12 +513,25 @@ body main #adress p {
   body #carte {
     height: 500px;
   }
+  body main #titrepage {
+    width: 600px;
+  }
+  body main #titrepage h1 {
+    font-size: 2rem;
+  }
   body main .titre {
     width: 500px;
     height: 40px;
   }
   body main .titre h1 {
     font-size: 2rem;
+  }
+  body main #adress h2,
+  body main #adress p {
+    font-size: 2.5rem;
+  }
+  body main #adress img {
+    width: 400px;
   }
   body main #flex #agrement p {
     font-size: 1.8rem;
@@ -548,11 +563,17 @@ body main #adress p {
   body .remonte {
     width: 40px;
   }
+  body header #nav .nav-menu {
+    bottom: 5%;
+  }
   body header #nav #tel p {
     margin-top: 10px;
   }
   body header #nav #tel img {
     width: 38px;
+  }
+  body main #titrepage {
+    top: 2%;
   }
   body main #gauche,
   body main #droite {
@@ -601,10 +622,46 @@ body main #adress p {
 
 @media screen and (min-width: 1900px) {
   :root {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  body .remonte {
+    width: 60px;
+  }
+  body header #nav img {
+    width: 400px;
+  }
+  body header #nav .show {
+    font-size: 2.5rem;
+  }
+  body header #nav .nav-menu,
+  body header #nav .show {
+    bottom: 2%;
+  }
+  body header #nav .nav-menu a,
+  body header #nav .show a {
+    font-size: 2.5rem;
+  }
+  body header #nav .nav-menu .nav-item,
+  body header #nav .show .nav-item {
+    margin: 21px;
+  }
+  body main #gauche, body main #droite {
+    width: 60px;
+  }
+  body main #titrepage {
+    height: 80px;
+  }
+  body main .titre {
+    height: 100px;
+  }
+  body main #adress img {
+    width: 800px;
+  }
+  body footer #nav img {
+    width: 400px;
   }
   body footer #nav p {
-    margin-top: 250px;
+    margin-top: 150px;
   }
   body footer #nav p a {
     font-size: 3rem;
