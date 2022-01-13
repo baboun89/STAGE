@@ -382,7 +382,7 @@ main {
   height: 100%;
 }
 
-:root {
+@im :root {
   font-size: 12px;
 }
 
