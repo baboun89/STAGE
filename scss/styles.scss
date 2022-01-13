@@ -2,6 +2,7 @@
 @import "grid";
 @import "diaporama";
 @import "navfoot";
+@import "visionneuse";
 
 :root {
     font-size: 12px;
@@ -62,6 +63,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 100;
 
             h1 {
                 text-align: center;
@@ -164,6 +166,16 @@ body {
             width: 30px;
         }
 
+        header {
+            #nav {
+                a {
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
         main {
 
             #gauche,
@@ -193,11 +205,31 @@ body {
     }
 }
 
+@media screen and (min-width: 600px) {
+    body {
+        header {
+            #nav {
+                a {
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 @media screen and (min-width: 800px) {
     body {
         header {
             #nav {
+                a {
+                    img {
+                        width: 250px;
+                    }
+                }
+
                 p {
                     font-size: 2rem;
 
@@ -360,6 +392,8 @@ body {
     }
 }
 
+@media screen and (min-width: 1100px) {}
+
 @media screen and (min-width: 1300px) {
     :root {
         font-size: 16px;
@@ -402,21 +436,25 @@ body {
     }
 
     body {
-        .remonte{
+        .remonte {
             width: 60px;
         }
+
         header {
             #nav {
                 img {
                     width: 400px;
                 }
+
                 .show {
                     font-size: 2.5rem;
 
                 }
+
                 .nav-menu,
                 .show {
                     bottom: 2%;
+
                     a {
                         font-size: 2.5rem;
                     }
@@ -429,9 +467,12 @@ body {
         }
 
         main {
-            #gauche,#droite{
+
+            #gauche,
+            #droite {
                 width: 60px;
             }
+
             #titrepage {
                 height: 80px;
             }
@@ -439,8 +480,9 @@ body {
             .titre {
                 height: 100px;
             }
-            #adress{
-                img{
+
+            #adress {
+                img {
                     width: 800px;
                 }
             }
@@ -448,9 +490,10 @@ body {
 
         footer {
             #nav {
-                img{
+                img {
                     width: 400px;
                 }
+
                 p {
                     margin-top: 150px;
 

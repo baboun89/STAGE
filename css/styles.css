@@ -318,6 +318,70 @@ footer #nav a {
   margin-left: 5px;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  padding: 3px;
+  -webkit-box-shadow: 2px 2px 2px lightgrey;
+          box-shadow: 2px 2px 2px lightgrey;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .overlay {
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.card:hover .overlay {
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
 :root {
   font-size: 12px;
 }
@@ -385,6 +449,7 @@ body main #titrepage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 100;
 }
 
 body main #titrepage h1 {
@@ -485,6 +550,9 @@ body main #adress p {
   body .remonte {
     width: 30px;
   }
+  body header #nav a img {
+    width: 120px;
+  }
   body main #gauche,
   body main #droite {
     width: 30px;
@@ -503,7 +571,16 @@ body main #adress p {
   }
 }
 
+@media screen and (min-width: 600px) {
+  body header #nav a img {
+    width: 200px;
+  }
+}
+
 @media screen and (min-width: 800px) {
+  body header #nav a img {
+    width: 250px;
+  }
   body header #nav p {
     font-size: 2rem;
   }
@@ -645,7 +722,8 @@ body main #adress p {
   body header #nav .show .nav-item {
     margin: 21px;
   }
-  body main #gauche, body main #droite {
+  body main #gauche,
+  body main #droite {
     width: 60px;
   }
   body main #titrepage {
