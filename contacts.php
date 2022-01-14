@@ -1,3 +1,56 @@
+<?php
+if (!empty($_POST)) {
+    // Ici $_POST n'est pas vide
+    // On vérifie que tous les champs "obligatoires" sont remplis
+    if (
+        isset( $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['message'])
+        && !empty($_POST['nom'])
+        && !empty($_POST['prenom'])
+        && !empty($_POST['email'])
+        && !empty($_POST['message'])
+    ) {
+        // Tous les champs existent et ne sont pas vides
+        // On vérifie si les critères de remplissage sont respectés
+        // Email -> email
+        // On "nettoie" le contenu des champs texte -> protection contre les failles XSS (Cross Site Scripting)
+        // On retire toute balise HTML ou on encode les caractères <, > en leurs équivalents HTML &lt;, &gt;...
+        $prenom = htmlentities($_POST['prenom']);
+        $nom = htmlspecialchars($_POST['nom']);
+        $message = strip_tags($_POST['message']);
+
+        // On vérifie si l'email est un email
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            die('Email invalide');
+        }
+
+        // Les données sont prêtes à être stockées
+        // On se connecte à la base
+        require_once 'includes/connect.php';
+
+        // On écrit la requête
+        $sql = "INSERT INTO `contacts`( `firstname`, `lastname`, `email`,`message`) VALUES (:nom, :prenom, :email, :message);";
+
+        // On prépare la requête
+        $requete = $db->prepare($sql);
+
+        // On injecte les données
+        $requete->bindValue(':nom', $nom);
+        $requete->bindValue(':prenom', $prenom);
+        $requete->bindValue(':email', $_POST['email']);
+        $requete->bindValue(':message', $message);
+
+        // On exécute la requête
+        $requete->execute();
+        // On redirige vers la page d"acceuil
+        header('location: index.html');
+        exit;
+    } else {
+        // Au moins 1 champ est inexistant ou vide
+        die('Il faut tout remplir');
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -63,20 +116,19 @@
         <img src="images/logo/navbar.png" alt="navbar" width="100%">
     </header>
     <main>
-        <form action="">
-            <label for="nomutilisateur">Nom *</label>
-            <input type="text">
-            
-            <label for="emailutilisateur">Email *</label>
-            <input type="email">
+        <section class="form"></section>
+        <form method="POST">
+            <label for="nom">Nom *</label>
+            <input type="text" name="nom" placeholder="Votre nom ">
 
-            <label for="telutilisateur">Téléphone</label>
-            <input type="text">
+            <label for="nom">Prénom *</label>
+            <input type="text" name="prenom" placeholder="votre prenom">
 
-            <label for="messageutilisateur">Message</label>
-            <textarea name="champstext" id="textchamps" cols="30" rows="10"></textarea>
+            <label for="email">Email *</label>
+            <input type="email" name="email" placeholder="Votre email">
 
-            <input type="file" class="file">
+            <label for="message">Message</label>
+            <textarea name="message" id="textchamps" cols="30" rows="10"></textarea>
 
             <button type="submit" class="bouton_contact">Envoyer</button>
          </form>
