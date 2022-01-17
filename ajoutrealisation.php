@@ -67,11 +67,14 @@ if (!empty($_POST)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/login-session-user.css">
     <title>Ajout d'un projet</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
 </head>
 
 <body>
@@ -107,7 +110,7 @@ if (!empty($_POST)) {
         <?php unset($_SESSION['post']); ?>
     </div>
     <div id="flex">
-    <?php
+        <?php
 
 // On se connecte à la base
 require_once 'includes/connect.php';
@@ -123,13 +126,16 @@ $requete = $db->query($sql);
 
 $contacts = $requete->fetchAll();
 foreach ($contacts as $contact) {
-
+    
     echo "
+    
+    <div>
     <h1>contact</h1>
     <p>nom: {$contact['firstname']}</p>
     <p>prénom: {$contact['lastname']}</p>
     <p>email: {$contact['email']}</p>
-    <p>message: {$contact['message']}</p>";
+    <p>message: {$contact['message']}</p>
+    </div>";
 }  
 
 ?>
