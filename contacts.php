@@ -97,13 +97,13 @@ if (!empty($_POST)) {
                                 <a href="indexservices.html">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#">Remplacement de canalisations</a>
+                                <a href="#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#">Assainissement</a>
+                                <a href="#assainissement">Assainissement</a>
                             </li>
                             <li class="nav-item">
-                                <a href="indexrealisations.html">Nos réalisations</a>
+                                <a href="realisations.php">Nos réalisations</a>
                             </li>
                         </ul>
                     </li>

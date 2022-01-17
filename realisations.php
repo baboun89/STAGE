@@ -41,10 +41,10 @@
                                 <a href="services.html">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#">Remplacement de canalisations</a>
+                                <a href="#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="ajoutrealisation.php">Assainissement</a>
+                                <a href="#assinissement">Assainissement</a>
                             </li>
                             <li class="nav-item">
                                 <a href="realisations.php">Nos réalisations</a>
@@ -84,10 +84,10 @@
 
                     echo "
                     <article class='card'>
-                        <img src='uploads/projets/{$realisation['img']}' alt=''>
-                        <div class='overlay'>
-                            <p>{$realisation['title']}</p>
-                        </div>
+                    <div class='overlay'>
+                    <h2>{$realisation['title']}</h2>
+                    </div>
+                    <img src='uploads/realisations/{$realisation['featureimage']}' alt=''>
                     </article>";
                 }  
 

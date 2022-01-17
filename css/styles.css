@@ -279,7 +279,7 @@ header #nav .burger.active span::after {
 #gauche,
 #droite {
   position: absolute;
-  top: 62%;
+  top: 59%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
@@ -288,6 +288,10 @@ header #nav .burger.active span::after {
 
 #droite {
   right: 2%;
+}
+
+footer img {
+  vertical-align: bottom;
 }
 
 footer #nav {
@@ -319,7 +323,7 @@ footer #nav a {
 }
 
 main {
-  width: 80%;
+  width: 95%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,42 +348,13 @@ main {
 
 .card img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.card .overlay {
-  display: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.card {
   font-weight: bold;
-  -webkit-transition: .3s;
-  transition: .3s;
-  overflow: hidden;
-  font-size: 0;
-}
-
-.card:hover .overlay {
-  font-size: 3rem;
-  width: 100%;
-  height: 100%;
+  margin-top: 30px;
 }
 
 form {
@@ -476,8 +451,10 @@ html {
 }
 
 body #carte {
+  width: 100%;
   height: 250px;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 body #scrollUp {
@@ -528,7 +505,7 @@ body main #titrepage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 100;
+  z-index: 9;
 }
 
 body main #titrepage h1 {
@@ -552,6 +529,8 @@ body main .titre {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 15px;
 }
 
 body main .titre h1 {
@@ -572,38 +551,43 @@ body main #realisations {
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: left;
+  width: 100%;
 }
 
-body main #flex {
+body main #realisations .card .overlay h2 {
+  text-transform: uppercase;
+}
+
+body main #contact #flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 10px;
+  margin-top: 20px;
 }
 
-body main #flex #agrement {
+body main #contact #flex #agrement {
   text-align: center;
   margin-top: 2px;
 }
 
-body main #flex #agrement p {
+body main #contact #flex #agrement p {
   font-size: 1.5rem;
 }
 
-body main #flex #adress {
+body main #contact #flex #adress {
   text-align: left;
   margin-left: 10px;
   text-align: center;
 }
 
-body main #flex #adress h1 {
+body main #contact #flex #adress h1 {
   margin: 0;
 }
 
-body main #flex #adress h2,
-body main #flex #adress p {
+body main #contact #flex #adress h2,
+body main #contact #flex #adress p {
   margin: 0;
   font-size: 1.5rem;
 }
@@ -611,15 +595,6 @@ body main #flex #adress p {
 body main .serv {
   padding: 10px;
   text-align: center;
-}
-
-body main #adress h2,
-body main #adress p {
-  margin: 5px;
-}
-
-body main #adress p {
-  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -645,18 +620,50 @@ body main #adress p {
   body .titre h1 {
     font-size: 1.6rem;
   }
+  body footer img {
+    vertical-align: bottom;
+  }
   p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  body header #nav a img {
-    width: 200px;
+  body header #nav p {
+    font-size: 1.5rem;
+  }
+  body header #nav p img {
+    width: 25px;
+  }
+  body #carte {
+    height: 500px;
+  }
+  body main .titre {
+    width: 300px;
+    height: 30px;
+  }
+  body main .titre h1 {
+    font-size: 2rem;
+  }
+  body main #adress img {
+    width: 400px;
+  }
+  body main #adress h2, body main #adress p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  body footer #nav p {
+    font-size: 2.4rem;
+  }
+  body footer #nav p a {
+    margin-left: 10px;
   }
 }
 
 @media screen and (min-width: 800px) {
+  body p {
+    font-size: 1.5rem;
+  }
   body header #nav a img {
     width: 250px;
   }
@@ -689,16 +696,16 @@ body main #adress p {
   body main #adress img {
     width: 400px;
   }
-  body main #flex #agrement p {
+  body main #contact #flex #agrement p {
     font-size: 1.8rem;
   }
-  body main #flex #agrement img {
+  body main #contact #flex #agrement img {
     width: 200px;
   }
-  body main #flex #adress h1,
-  body main #flex #adress h2,
-  body main #flex #adress p {
-    font-size: 1.8rem;
+  body main #contact #flex #adress h1,
+  body main #contact #flex #adress h2,
+  body main #contact #flex #adress p {
+    font-size: 2rem;
   }
   body footer #nav p {
     margin-top: 50px;
@@ -735,6 +742,36 @@ body main #adress p {
   body main #droite {
     width: 40px;
   }
+  body main .card .overlay {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    -webkit-transition: .3s;
+    transition: .3s;
+    overflow: hidden;
+  }
+  body main .card:hover .overlay {
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+  }
   body main #flex #agrement p {
     font-size: 2rem;
   }
@@ -747,7 +784,7 @@ body main #adress p {
     font-size: 2rem;
   }
   body footer #nav p {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   body footer #nav p a {
     font-size: 2.3rem;

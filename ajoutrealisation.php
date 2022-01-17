@@ -9,18 +9,18 @@ if (!empty($_POST)) {
     // Ici $_POST n'est pas vide
     // On vérifie que tous les champs "obligatoires" sont remplis
     if (
-        isset($_POST['title'],)
+        isset($_POST['title'])
         && !empty($_POST['title'])
-    ) {
+        
         // Tous les champs existent et ne sont pas vides
         // On vérifie si les critères de remplissage sont respectés
+        ) {
         // Pseudo > 5 caractères
         // Email -> email
         // Pass > 12 caractères
         // On "nettoie" le contenu des champs texte -> protection contre les failles XSS (Cross Site Scripting)
         // On retire toute balise HTML ou on encode les caractères <, > en leurs équivalents HTML &lt;, &gt;...
         $title = strip_tags($_POST['title']);
-
         // Gestion du fichier
         // On initialise le nom à null, pour les cas sans fichier
         $nomFichier = NULL;
@@ -68,7 +68,7 @@ if (!empty($_POST)) {
         require_once 'includes/connect.php';
 
         // On écrit la requête
-        $sql = "INSERT INTO `realisations`(`title`,`img`) VALUES (:title,:nomfichier)";
+        $sql = "INSERT INTO `realisations`(`title`,`featureimage`) VALUES (:title,:nomfichier)";
 
         // On prépare la requête
         $requete = $db->prepare($sql);
@@ -99,6 +99,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">

@@ -1,5 +1,5 @@
 main{
-    width: 80%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -16,32 +16,12 @@ main{
 
 .card img{
     width: 100%;
-    height: 100%;
+    // height: 100%;
     object-fit: cover;
 }
 
-.card .overlay{
-    display: none;
-    color: white;
-    background-color: rgba(0, 0, 0, .5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card {
     font-weight: bold;
-    transition: .3s;
-    overflow: hidden;
-    font-size: 0;
-}
-
-.card:hover .overlay{
-    font-size: 3rem;
-    width: 100%;
-    height: 100%;
+    margin-top: 30px;
 }
 

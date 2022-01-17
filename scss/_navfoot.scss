@@ -1,10 +1,17 @@
 footer {
+    img {
+        vertical-align: bottom;
+    }
+
     #nav {
         position: absolute;
         width: 100%;
+
+
         p {
             margin-bottom: 0;
             text-align: center;
+
             .nav-menu a:hover,
             a:hover {
                 color: #ee7d00;
