@@ -26,7 +26,7 @@
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <img src="images/logo/logo.png" alt="logo" width="30%">
+            <a href="ajoutrealisation.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -39,17 +39,17 @@
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <label for="btn2" class="show">Nos services</label>
+                        <label for="btn2" class="show">NOS SERVICES</label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown">
                             <li class="drop-item">
                                 <a href="services.html">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#canalisation">Remplacement de canalisations</a>
+                                <a href="services.html#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#assainissement">Assainissement</a>
+                                <a href="services.html#assainissement">Assainissement</a>
                             </li>
                             <li class="nav-item">
                                 <a href="realisations.php">Nos réalisations</a>
@@ -107,22 +107,33 @@
                 <h1>Nos Réalisations</h1>
             </div>
             <div class="grid grid-5">
-                <article class="grille">
-                    <h1>titre</h1>
-                    <img src="images/images/s2.jpg" alt="réalisation1" width="95%">
-                </article>
-                <article class="grille">
-                    <h1>titre</h1>
-                    <img src="images/images/s2.jpg" alt="réalisation2" width="95%">
-                </article>
-                <article class="grille">
-                    <h1>titre</h1>
-                    <img src="images/images/s2.jpg" alt="réalisation3" width="95%">
-                </article>
-                <article class="grille">
-                    <h1>titre</h1>
-                    <img src="images/images/s2.jpg" alt="réalisation4" width="95%">
-                </article>
+                <?php
+
+                // On se connecte à la base
+                require_once 'includes/connect.php';
+
+                // On écrit la requête
+                // On ne met JAMAIS une donnée extérieure ($id) directement dans la requête
+                $sql = "SELECT * FROM `realisations` ";
+
+                // Une requête contenant des paramètres SQL doit être "préparée"
+
+                $requete = $db->query($sql);
+
+
+                $realisations = $requete->fetchAll();
+                foreach ($realisations as $realisation) {
+
+                    echo "
+                    <article class='card'>
+                    <div class='overlay'>
+                    <h2>{$realisation['title']}</h2>
+                    </div>
+                    <img src='uploads/realisations/{$realisation['featureimage']}' alt=''>
+                    </article>";
+                }  
+
+                ?>
             </div>
         </section>
         <section id="contact">

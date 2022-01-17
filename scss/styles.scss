@@ -49,6 +49,11 @@ body {
         list-style: none;
         margin-left: 5px;
     }
+    #red {
+        p {
+            color: red;
+        }
+    }
 
     main {
         position: relative;
@@ -205,8 +210,9 @@ body {
 
             }
         }
-        footer{
-            img{
+
+        footer {
+            img {
                 vertical-align: bottom;
             }
         }
@@ -221,40 +227,49 @@ body {
     body {
         header {
             #nav {
-                p{
+                p {
                     font-size: 1.5rem;
+
                     img {
                         width: 25px;
                     }
                 }
             }
         }
-        #carte{
+
+        #carte {
             height: 500px;
         }
-        main{
-            .titre{
+
+        main {
+            .titre {
                 width: 300px;
                 height: 30px;
-                h1{
+
+                h1 {
                     font-size: 2rem;
                 }
             }
-            #adress{
-                img{
+
+            #adress {
+                img {
                     width: 400px;
                 }
-                h2,p{
+
+                h2,
+                p {
                     font-size: 2rem;
                     margin: 0;
                 }
             }
         }
-        footer{
-            #nav{
-                p{
+
+        footer {
+            #nav {
+                p {
                     font-size: 2.4rem;
-                    a{
+
+                    a {
                         margin-left: 10px;
                     }
                 }
@@ -266,9 +281,10 @@ body {
 
 @media screen and (min-width: 800px) {
     body {
-        p{
+        p {
             font-size: 1.5rem;
         }
+
         header {
             #nav {
                 a {
@@ -321,29 +337,30 @@ body {
                     width: 400px;
                 }
             }
-#contact{
-    #flex {
-        #agrement {
-            p {
-                font-size: 1.8rem;
+
+            #contact {
+                #flex {
+                    #agrement {
+                        p {
+                            font-size: 1.8rem;
+                        }
+
+                        img {
+                            width: 200px;
+                        }
+                    }
+
+                    #adress {
+
+                        h1,
+                        h2,
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
             }
-
-            img {
-                width: 200px;
-            }
-        }
-
-        #adress {
-
-            h1,
-            h2,
-            p {
-                font-size: 2rem;
-            }
-        }
-    }
-
-}
         }
 
         footer {
@@ -452,7 +469,7 @@ body {
         footer {
             #nav {
                 p {
-                    margin-top: 150px;
+                    margin-top: 100px;
 
                     a {
                         font-size: 2.3rem;

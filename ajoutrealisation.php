@@ -1,92 +1,59 @@
 <?php
 
 session_start();
-
-// On traite le formulaire
-// On vérifie si $_POST n'est pas vide
 if (!empty($_POST)) {
     $_SESSION['post'] = $_POST;
-    // Ici $_POST n'est pas vide
-    // On vérifie que tous les champs "obligatoires" sont remplis
     if (
         isset($_POST['title'])
         && !empty($_POST['title'])
         
-        // Tous les champs existent et ne sont pas vides
-        // On vérifie si les critères de remplissage sont respectés
         ) {
-        // Pseudo > 5 caractères
-        // Email -> email
-        // Pass > 12 caractères
-        // On "nettoie" le contenu des champs texte -> protection contre les failles XSS (Cross Site Scripting)
-        // On retire toute balise HTML ou on encode les caractères <, > en leurs équivalents HTML &lt;, &gt;...
         $title = strip_tags($_POST['title']);
-        // Gestion du fichier
-        // On initialise le nom à null, pour les cas sans fichier
         $nomFichier = NULL;
-
-        // On vérifie si on a un fichier
         if ($_FILES['fichier']['error'] == 0) {
-            // On vérifie le type de fichier (PDF, TXT, JPG, PNG)
             $extensions = ['pdf', 'txt', 'jpg', 'jpeg', 'jfif', 'png'];
             $types = ['application/pdf', 'text/plain', 'image/jpeg', 'image/png'];
-
-            // On récupère l'extension du fichier en minuscules
             $extFichier = strtolower(pathinfo($_FILES['fichier']['name'], PATHINFO_EXTENSION));
 
             if (!in_array($extFichier, $extensions) || !in_array($_FILES['fichier']['type'], $types)) {
                 $_SESSION['message'][] = 'Le type de fichier n\'est pas autorisé (pdf, txt, jpg et png sont acceptés)';
             }
 
-            // On vérifie la taille (max 4Mo)
             if ($_FILES['fichier']['size'] > 4194304) {
                 $_SESSION['message'][] = 'Le fichier dépasse le maximum de 4Mo autorisé';
             }
 
-            // En cas d'erreur, redirection
             if (!empty($_SESSION['message'])) {
                 header('Location: ajoutrealisation.php');
                 exit;
             }
 
-            // On génère le nom du fichier
             $nomFichier = md5(uniqid()) . '.' . $extFichier;
 
-            // On déplace le fichier temporaire dans la destination tout en le renommant
-            // On crée le chemin complet
             $chemin = __DIR__ . '/uploads/realisations/' . $nomFichier;
 
-            // On déplace
             if (!move_uploaded_file($_FILES['fichier']['tmp_name'], $chemin)){
                 $_SESSION['message'][] = 'La copie de la pièce jointe a échoué';
                 header('Location: ajoutrealisation.php');
                 exit;
             }
         }
-        // Les données sont prêtes à être stockées
-        // On se connecte à la base
         require_once 'includes/connect.php';
 
-        // On écrit la requête
         $sql = "INSERT INTO `realisations`(`title`,`featureimage`) VALUES (:title,:nomfichier)";
 
-        // On prépare la requête
         $requete = $db->prepare($sql);
 
-        // On injecte les données
         $requete->bindValue(':title', $title);
         $param = ($nomFichier != NULL) ? PDO::PARAM_STR : PDO::PARAM_NULL;
         $requete->bindValue(':nomfichier', $nomFichier, $param);
 
-        // On exécute la requête
         $requete->execute();
 
 
-        // On redirige vers la page d'accueil
         header('Location: index.html');
         exit;
     } else {
-        // Au moins 1 champ est inexistant ou vide
         $_SESSION['message'][] = 'Il faut tout remplir';
     }
 }
@@ -108,37 +75,66 @@ if (!empty($_POST)) {
 </head>
 
 <body>
-    <?php
-    // require 'includes/msg_session_users.php';
-    ?>
-    <h1>Ajout d'une réalisation</h1>
-    <?php
-    if (isset($_SESSION['message'])) {
-        foreach ($_SESSION['message'] as $message) {
-            echo "<p>$message</p>";
+    <div>
+
+        <h1>Ajout d'une réalisation</h1>
+        <?php
+        if (isset($_SESSION['message'])) {
+            foreach ($_SESSION['message'] as $message) {
+                echo "<p>$message</p>";
+            }
+            unset($_SESSION['message']);
         }
-        unset($_SESSION['message']);
-    }
-    ?>
-    <form method="post" enctype="multipart/form-data">
-        <div>
-            <label for="titre">titre</label>
-            <input type="text" name="title" id="titre" value="<?php
-                                                                // if(isset($_SESSION['post']['pseudo'])){
-                                                                //     echo $_SESSION['post']['pseudo'];
-                                                                // }
-                                                                echo $_SESSION['post']['titre'] ?? "";
-                                                                ?>">
-        </div>
-        <div>
-            <label for="fichier">image</label>
-            <input type="file" name="fichier" id="fichier" value="<?php
-                                                                    echo $_SESSION['post']['fichier'] ?? "";
+        ?>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <label for="titre">titre</label>
+                <input type="text" name="title" id="titre" value="<?php
+                                                                    // if(isset($_SESSION['post']['pseudo'])){
+                                                                    //     echo $_SESSION['post']['pseudo'];
+                                                                    // }
+                                                                    echo $_SESSION['post']['titre'] ?? "";
                                                                     ?>">
-        </div>
-        <button type="submit">M'inscrire</button>
-    </form>
-    <?php unset($_SESSION['post']); ?>
+            </div>
+            <div>
+                <label for="fichier">image</label>
+                <input type="file" name="fichier" id="fichier" value="<?php
+                                                                        echo $_SESSION['post']['fichier'] ?? "";
+                                                                        ?>">
+            </div>
+            <button type="submit">M'inscrire</button>
+        </form>
+        <?php unset($_SESSION['post']); ?>
+    </div>
+    <div id="flex">
+    <?php
+
+// On se connecte à la base
+require_once 'includes/connect.php';
+
+// On écrit la requête
+// On ne met JAMAIS une donnée extérieure ($id) directement dans la requête
+$sql = "SELECT * FROM `contacts` ";
+
+// Une requête contenant des paramètres SQL doit être "préparée"
+
+$requete = $db->query($sql);
+
+
+$contacts = $requete->fetchAll();
+foreach ($contacts as $contact) {
+
+    echo "
+    <h1>contact</h1>
+    <p>nom: {$contact['firstname']}</p>
+    <p>prénom: {$contact['lastname']}</p>
+    <p>email: {$contact['email']}</p>
+    <p>message: {$contact['message']}</p>";
+}  
+
+?>
+
+    </div>
 </body>
 
 </html>

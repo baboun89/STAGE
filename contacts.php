@@ -3,7 +3,7 @@ if (!empty($_POST)) {
     // Ici $_POST n'est pas vide
     // On vérifie que tous les champs "obligatoires" sont remplis
     if (
-        isset( $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['message'])
+        isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['message'])
         && !empty($_POST['nom'])
         && !empty($_POST['prenom'])
         && !empty($_POST['email'])
@@ -53,6 +53,7 @@ if (!empty($_POST)) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,23 +62,20 @@ if (!empty($_POST)) {
     <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="js/scriptsnav.js" defer></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script src="js/scriptsmap.js" defer></script>
 
 </head>
+
 <body>
-<header>
+    <header>
         <div id="scrollUp">
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="index.html" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="index.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -97,10 +95,10 @@ if (!empty($_POST)) {
                                 <a href="indexservices.html">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#canalisation">Remplacement de canalisations</a>
+                                <a href="services.html#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#assainissement">Assainissement</a>
+                                <a href="services.html#assainissement">Assainissement</a>
                             </li>
                             <li class="nav-item">
                                 <a href="realisations.php">Nos réalisations</a>
@@ -131,7 +129,10 @@ if (!empty($_POST)) {
             <textarea name="message" id="textchamps" cols="30" rows="10"></textarea>
 
             <button type="submit" class="bouton_contact">Envoyer</button>
-         </form>
+            <div id="red">
+                <P>* CHAMPS OBLIGATOIRE</P>
+            </div>
+        </form>
 
 
         <section id="adress">
@@ -149,7 +150,7 @@ if (!empty($_POST)) {
             </article>
         </section>
     </main>
-</main>
+    </main>
 
     <footer>
         <div id="nav">
@@ -165,4 +166,5 @@ if (!empty($_POST)) {
     </footer>
 
 </body>
+
 </html>

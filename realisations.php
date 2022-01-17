@@ -21,7 +21,7 @@
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="index.html" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="index.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -41,10 +41,10 @@
                                 <a href="services.html">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#canalisation">Remplacement de canalisations</a>
+                                <a href="services.html#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="#assinissement">Assainissement</a>
+                                <a href="services.html#assinissement">Assainissement</a>
                             </li>
                             <li class="nav-item">
                                 <a href="realisations.php">Nos réalisations</a>
