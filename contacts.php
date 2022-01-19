@@ -116,13 +116,13 @@ if (!empty($_POST)) {
     <main>
         <section class="form"></section>
         <form method="POST">
-            <label for="nom">Nom *</label>
+            <label for="nom">Nom</label>
             <input type="text" name="nom" placeholder="Votre nom ">
 
-            <label for="nom">Prénom *</label>
+            <label for="nom">Prénom</label>
             <input type="text" name="prenom" placeholder="votre prenom">
 
-            <label for="email">Email *</label>
+            <label for="email">Email</label>
             <input type="email" name="email" placeholder="Votre email">
 
             <label for="message">Message</label>
@@ -130,7 +130,7 @@ if (!empty($_POST)) {
 
             <button type="submit" class="bouton_contact">Envoyer</button>
             <div id="red">
-                <P>* CHAMPS OBLIGATOIRE</P>
+                <P>TOUS LES CHAMPS OBLIGATOIRE</P>
             </div>
         </form>
 

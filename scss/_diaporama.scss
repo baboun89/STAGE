@@ -24,7 +24,7 @@
 #gauche,
 #droite {
     position: absolute;
-    top: 59%;
+    top: 50%;
     transform: translateY(-50%);
     filter: drop-shadow(rgb(255, 255, 255) 0px 0px 5px) drop-shadow(rgb(255, 255, 255) -1px -1px 2px);
 
@@ -32,4 +32,11 @@
 
 #droite {
     right: 2%;
+}
+legend {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }

@@ -1,4 +1,6 @@
 footer {
+    position: relative;
+
     img {
         vertical-align: bottom;
     }
@@ -7,10 +9,9 @@ footer {
         position: absolute;
         width: 100%;
 
-
         p {
-            margin-bottom: 0;
             text-align: center;
+            margin: 0;
 
             .nav-menu a:hover,
             a:hover {
@@ -25,10 +26,24 @@ footer {
             text-align: left;
         }
 
+
+    }
+
+    #text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
         a {
             text-decoration: none;
             color: white;
             margin-left: 5px;
+            margin-right: 5px;
         }
 
     }
