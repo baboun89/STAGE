@@ -46,7 +46,8 @@ if (!empty($_POST)) {
         exit;
     } else {
         // Au moins 1 champ est inexistant ou vide
-        die('Il faut tout remplir');
+        header('location: contacts.php#textchamps');
+        exit;
     }
 }
 
