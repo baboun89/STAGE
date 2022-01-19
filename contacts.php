@@ -89,7 +89,7 @@ if (!empty($_POST)) {
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <label for="btn2" class="show">NOS SERVICES</label>
+                        <label for="btn2" class="show">SERVICES</label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown">
                             <li class="drop-item">
@@ -101,13 +101,13 @@ if (!empty($_POST)) {
                             <li class="drop-item">
                                 <a href="services.html#assainissement">Assainissement</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="realisations.php">Nos réalisations</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Contact</a>
+                        <a href="realisations.php">REALISATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.php">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -158,10 +158,10 @@ if (!empty($_POST)) {
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
             </div>
-            <div id="text">
-                <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
-                        cookies</a> </p>
-            </div>
+        </div>
+        <div id="text">
+            <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
+                    cookies</a> </p>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
     </footer>

@@ -66,6 +66,13 @@ body {
         text-align: center;
         font-size: 1.2rem;
 
+        #adress {
+
+            h2,
+            p {
+                margin: 0;
+            }
+        }
 
 
         #titrepage {
@@ -73,14 +80,11 @@ body {
             height: 40px;
             background-color: black;
             border-radius: 5px;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 9;
+            margin: auto;
+            margin-top: 10px;
 
             h1 {
                 text-align: center;
@@ -247,7 +251,7 @@ body {
                 }
 
                 .nav-menu {
-                    top: 91px;
+                    top: 44px;
                     vertical-align: middle;
                 }
             }
@@ -319,7 +323,7 @@ body {
                 }
 
                 .nav-menu {
-                    top: 100px;
+                    top: 54px;
                 }
             }
         }
@@ -424,6 +428,7 @@ body {
                 }
 
                 .nav-menu {
+                    display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 38px;
@@ -433,8 +438,8 @@ body {
                         position: absolute;
                         background-color: black;
                         width: 864px;
-                        left: -137%;
-                        bottom: -32px;
+                        left: -215%;
+                        bottom: -37px;
                         align-items: center;
                         justify-content: center;
                         border-radius: 10px;
@@ -472,6 +477,9 @@ body {
         }
 
         main {
+            .form{
+                margin-top: 20px;
+            }
             #titrepage {
                 top: 2%;
             }
@@ -549,13 +557,14 @@ body {
     }
 
     body {
-        header{
-          #nav{
-              .nav-menu{
-                 top: 206px; 
-              }
-          }  
+        header {
+            #nav {
+                .nav-menu {
+                    top: 206px;
+                }
+            }
         }
+
         footer {
             #nav {
                 p {
@@ -576,17 +585,19 @@ body {
     }
 
     body {
-        header{
-            #nav{
-                .nav-menu{
+        header {
+            #nav {
+                .nav-menu {
                     top: 258px;
-                    .dropdown{
+
+                    .dropdown {
                         width: 1000px;
                         bottom: -36px;
                     }
                 }
             }
         }
+
         footer {
             #nav {
                 p {
@@ -609,15 +620,17 @@ body {
 
         header {
             #nav {
-                .nav-menu{
+                .nav-menu {
                     height: 80px;
                     top: 284px;
-                    .dropdown{
+
+                    .dropdown {
                         width: 1200px;
                         left: 0;
                         bottom: -49px;
                     }
                 }
+
                 img {
                     width: 400px;
                 }

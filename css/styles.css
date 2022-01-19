@@ -65,7 +65,7 @@ header #nav .drop-item a,
 header #nav .show {
   color: #ee7d00;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: Myriad Pro Condensed;
 }
 
@@ -501,16 +501,16 @@ body main {
   font-size: 1.2rem;
 }
 
+body main #adress h2,
+body main #adress p {
+  margin: 0;
+}
+
 body main #titrepage {
   width: 200px;
   height: 40px;
   background-color: black;
   border-radius: 5px;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +520,8 @@ body main #titrepage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 9;
+  margin: auto;
+  margin-top: 10px;
 }
 
 body main #titrepage h1 {
@@ -655,7 +656,7 @@ body main .serv {
     width: 25px;
   }
   body header #nav .nav-menu {
-    top: 91px;
+    top: 44px;
     vertical-align: middle;
   }
   body #carte {
@@ -699,7 +700,7 @@ body main .serv {
     width: 30px;
   }
   body header #nav .nav-menu {
-    top: 100px;
+    top: 54px;
   }
   body #carte {
     height: 500px;
@@ -763,6 +764,9 @@ body main .serv {
     display: none;
   }
   body header #nav .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -776,8 +780,8 @@ body main .serv {
     position: absolute;
     background-color: black;
     width: 864px;
-    left: -137%;
-    bottom: -32px;
+    left: -215%;
+    bottom: -37px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -805,6 +809,9 @@ body main .serv {
   }
   body header #nav #tel img {
     width: 38px;
+  }
+  body main .form {
+    margin-top: 20px;
   }
   body main #titrepage {
     top: 2%;
