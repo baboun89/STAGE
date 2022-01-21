@@ -8,15 +8,10 @@
     <title>stage</title>
     <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles_sombre.css" id="theme-link">
+    <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <script src="js/scriptsmap.js" defer></script>
-    <script src="js/scriptsnav.js" defer></script>
-    <!-- <script src="js/scriptsdarkmod.js" defer></script> -->
-    <script src="js/scriptsdiap2.js" defer></script>
-    <script src="js/scriptsdiap.js" defer></script>
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
