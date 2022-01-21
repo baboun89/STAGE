@@ -21,9 +21,9 @@ footer {
 
 
         #foothaut {
-            justify-content: space-around;
+            display: flex;
+            justify-content: space-between;
             width: 100%;
-            text-align: left;
         }
 
 

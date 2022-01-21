@@ -315,10 +315,13 @@ footer #nav p a:hover {
 }
 
 footer #nav #foothaut {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  text-align: left;
 }
 
 footer #text {

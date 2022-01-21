@@ -224,11 +224,12 @@
         <div id="nav">
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
+                <span id="theme">Thème sombre</span>
             </div>
         </div>
         <div id="text">
             <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
-                    cookies</a><span id="theme">Thème sombre</span></p>
+                    cookies</a></p>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
     </footer>
