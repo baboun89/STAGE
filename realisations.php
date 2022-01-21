@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    <header>
+<header>
         <div id="scrollUp">
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="index.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="ajoutrealisation.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -34,7 +34,22 @@
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <label for="btn2" class="show">SERVICES</label>
+                        <label for="btn2" class="show">FOSSE SEPTIQUE</label>
+                        <input type="checkbox" id="btn2">
+                        <ul class="dropdown">
+                            <li class="drop-item">
+                                <a href="services.html">Vidange</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="services.html#canalisation">Débouchage canalisation</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="services.html#assainissement">Entretien et nettoyage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <label for="btn2" class="show">SERVICES </label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown">
                             <li class="drop-item">
@@ -44,7 +59,7 @@
                                 <a href="services.html#canalisation">Remplacement de canalisations</a>
                             </li>
                             <li class="drop-item">
-                                <a href="services.html#assinissement">Assainissement</a>
+                                <a href="services.html#assainissement">Assainissement</a>
                             </li>
                         </ul>
                     </li>
