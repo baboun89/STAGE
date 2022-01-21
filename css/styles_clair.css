@@ -231,20 +231,23 @@ header #nav .burger.active span::after {
   }
 }
 
-.diapo {
+.diapo,
+.diapo2 {
   position: relative;
   overflow: hidden;
   margin-top: 1%;
 }
 
-.elements {
+.elements,
+.elements2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.element {
+.element,
+.element2 {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -252,15 +255,19 @@ header #nav .burger.active span::after {
   position: relative;
 }
 
-.element > img {
+.element > img,
+.element2 > img {
   width: 100%;
 }
 
-#gauche {
+#gauche,
+#gauche2 {
   left: 2%;
 }
 
 #gauche,
+#gauche2,
+#droite2,
 #droite {
   position: absolute;
   top: 50%;
@@ -270,7 +277,8 @@ header #nav .burger.active span::after {
           filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
 }
 
-#droite {
+#droite,
+#droite2 {
   right: 2%;
 }
 
@@ -627,7 +635,9 @@ body main .serv {
     width: 120px;
   }
   body main #gauche,
-  body main #droite {
+  body main #gauche2,
+  body main #droite,
+  body main #droite2 {
     width: 30px;
   }
   body main #flex img {
@@ -817,7 +827,9 @@ body main .serv {
     top: 2%;
   }
   body main #gauche,
-  body main #droite {
+  body main #gauche2,
+  body main #droite,
+  body main #droite2 {
     width: 40px;
   }
   body main .card .overlay {

@@ -1,27 +1,36 @@
-.diapo {
+.diapo,
+.diapo2 {
     position: relative;
     overflow: hidden;
     margin-top: 1%;
 }
 
-.elements {
+.elements,
+.elements2 {
     display: flex;
     text-align: center;
 }
 
-.element {
+.element,
+.element2 {
     width: 100%;
     flex: 1 0 100%;
     position: relative;
 }
 
-.element>img {
+.element>img,
+.element2>img {
     width: 100%;
 }
-#gauche{
+
+#gauche,
+#gauche2 {
     left: 2%;
 }
+
 #gauche,
+#gauche2,
+#droite2,
 #droite {
     position: absolute;
     top: 50%;
@@ -30,13 +39,15 @@
 
 }
 
-#droite {
+#droite,
+#droite2 {
     right: 2%;
 }
+
 legend {
     color: white;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }

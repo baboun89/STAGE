@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="js/scriptsmap.js" defer></script>
     <script src="js/scriptsnav.js" defer></script>
-    <script src="js/scriptsdiap.js" defer></script>
     <!-- <script src="js/scriptsdarkmod.js" defer></script> -->
+    <script src="js/scriptsdiap2.js" defer></script>
+    <script src="js/scriptsdiap.js" defer></script>
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 </head>
 
@@ -51,8 +53,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <label for="btn2" class="show">SERVICES </label>
-                        <input type="checkbox" id="btn2">
+                        <label for="btn3" class="show">SERVICES </label>
+                        <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">
                                 <a href="services.html">Terrassement en tout genre</a>
@@ -81,6 +83,7 @@
             <div class="titre">
                 <h1>Fosse septique</h1>
             </div>
+            <!-- diapo1 -->
             <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
                     <div class="element">
@@ -107,7 +110,41 @@
                                 Après chaque vidange de fosse septique effectuée par un vidangeur, il convient d’injecter des activateurs pour nettoyer en profondeur les canalisations et stimuler les bactéries utiles. Vous pouvez également verser chaque semaine un sachet d’activateurs biologiques de fosse ou d'activateurs chimiques au fond de vos canalisations pour éviter les mauvaises odeurs et faciliter l’assainissement des boues.</p>
                         </legend>
                     </div>
-                    <div class="element">
+                </div>
+                <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
+                <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
+            </div>
+            <!-- diapo2 -->
+            <div class="titre">
+                <h1>Nos Services</h1>
+            </div>
+            <div class="diapo2" data-speed="5000" data-transition="500">
+                <div class="elements2">
+                    <div class="element2">
+                        <img src="images/images/diap.jpg" alt="photo1">
+                        <legend>
+                            <h1>Terrassement</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        </legend>
+                    </div>
+                    <div class="element2">
+                        <img src="images/images/diap.jpg" alt="photo2">
+                        <legend>
+                            <h1>Terrassement</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        </legend>
+                    </div>
+                    <div class="element2">
+                        <img src="images/images/diap.jpg" alt="photo3">
+                        <legend>
+                            <h1>Terrassement</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        </legend>
+                    </div>
+                    <div class="element2">
                         <img src="images/images/diap.jpg" alt="photo4">
                         <legend>
                             <h1>Terrassement</h1>
@@ -115,7 +152,7 @@
                                 aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                         </legend>
                     </div>
-                    <div class="element">
+                    <div class="element2">
                         <img src="images/images/diap.jpg" alt="photo5">
                         <legend>
                             <h1>Terrassement</h1>
@@ -124,60 +161,9 @@
                         </legend>
                     </div>
                 </div>
-                <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
-                <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
+                <img src="images/logo/navg.png" alt="avant" id="gauche2" width="20">
+                <img src="images/logo/navd.png" alt="apres" id="droite2" width="20">
             </div>
-        </section>
-
-        <div class="titre">
-            <h1>Nos Services</h1>
-        </div>
-        <div class="diapo" data-speed="5000" data-transition="500">
-            <div class="elements">
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo1">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo2">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo3">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo4">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo5">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-            </div>
-            <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
-            <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
-        </div>
         </section>
         <section id="realisations">
             <div class="titre">
