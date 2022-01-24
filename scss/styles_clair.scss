@@ -417,6 +417,7 @@ body {
 
         header {
             #nav {
+
                 [id^="btn"]:checked+ul {
                     display: flex;
                 }
@@ -436,7 +437,7 @@ body {
                         position: absolute;
                         background-color: black;
                         width: 864px;
-                        left: -215%;
+                        left: -332%;
                         bottom: -37px;
                         align-items: center;
                         justify-content: center;
@@ -451,6 +452,28 @@ body {
                             }
                         }
                     }
+
+                    .dropdown2 {
+                        position: absolute;
+                        background-color: black;
+                        width: 864px;
+                        left: -58%;
+                        bottom: 33px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        display: none;
+
+                        li {
+                            margin-left: 20px;
+                            margin-right: 20px;
+
+                            a {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+
                 }
 
                 .nav-item {
@@ -509,7 +532,7 @@ body {
             }
 
             .card:hover .overlay {
-                font-size: 1.4rem;
+                font-size: 1rem;
                 width: 100%;
                 height: 100%;
             }
@@ -593,7 +616,6 @@ body {
 
                     .dropdown {
                         width: 1000px;
-                        bottom: -36px;
                     }
                 }
             }
@@ -627,8 +649,11 @@ body {
 
                     .dropdown {
                         width: 1200px;
-                        left: 0;
-                        bottom: -49px;
+                        bottom: -65px;
+                    }
+                    .dropdown2 {
+                        width: 1200px;
+                        bottom: 60px;
                     }
 
 

@@ -35,7 +35,7 @@
                     <li class="nav-item">
                         <label for="btn2" class="show">FOSSE SEPTIQUE</label>
                         <input type="checkbox" id="btn2">
-                        <ul class="dropdown">
+                        <ul class="dropdown2">
                             <li class="drop-item">
                                 <a href="services.html">Vidange</a>
                             </li>
