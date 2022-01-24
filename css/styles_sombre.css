@@ -324,6 +324,69 @@ footer #nav #foothaut {
   width: 100%;
 }
 
+footer #nav #foothaut label input[type="checkbox"] {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+footer #nav #foothaut label .check {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 15px;
+  background: #092c3e;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  right: 0;
+  margin: 3px;
+}
+
+footer #nav #foothaut label input[type="checkbox"]:checked ~ .check {
+  background: #fff;
+}
+
+footer #nav #foothaut label .check:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #fff;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer #nav #foothaut label input[type="checkbox"]:checked ~ .check:before {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+footer #nav #foothaut label .check:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #092c3e;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+footer #nav #foothaut label input[type="checkbox"]:checked ~ .check:after {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
 footer #text {
   position: absolute;
   bottom: 0;

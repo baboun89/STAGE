@@ -224,7 +224,11 @@
         <div id="nav">
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
-                <span id="theme">Thème sombre</span>
+                <label>
+                    <input type="checkbox" id="case" checked="">
+                    <span id="theme" class="check"></span>
+                </label>
+
             </div>
         </div>
         <div id="text">

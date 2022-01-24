@@ -24,6 +24,67 @@ footer {
             display: flex;
             justify-content: space-between;
             width: 100%;
+
+            label {
+
+                input[type="checkbox"] {
+                    -webkit-appearance: none;
+                    visibility: hidden;
+                    display: none;
+                }
+
+                .check {
+                    position: absolute;
+                    display: block;
+                    width: 30px;
+                    height: 15px;
+                    background: #092c3e;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    transition: ease-in 0.5s;
+                    right: 0;
+                    margin: 3px;
+                }
+
+                input[type="checkbox"]:checked~.check {
+                    background: #fff;
+                }
+
+                .check:before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
+                    background: #fff;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                }
+
+                input[type="checkbox"]:checked~.check:before {
+                    transform: translateX(-50px);
+                }
+
+                .check:after {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    background: #092c3e;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    transform: translateX(50px);
+                }
+
+                input[type="checkbox"]:checked~.check:after {
+                    transform: translateX(0px);
+                }
+
+            }
         }
 
 
