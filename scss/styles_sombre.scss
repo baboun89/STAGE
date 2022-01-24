@@ -69,10 +69,15 @@ body {
         font-size: 1.2rem;
 
         #adress {
-
+            background-color: saddlebrown;
+            border-radius: 5px;
+            margin: 10px;
             h2,
             p {
                 margin: 0;
+                text-align: center;
+                color: white;
+    
             }
         }
 
@@ -150,9 +155,11 @@ body {
                     margin-top: 2px;
                     background-color: saddlebrown;
                     border-radius: 5px;
-        img{
-            margin-top: 20px;
-        }
+
+                    img {
+                        margin-top: 20px;
+                    }
+
                     p {
                         color: white;
                         font-size: 1.5rem;
@@ -165,9 +172,10 @@ body {
                     text-align: center;
                     background-color: saddlebrown;
                     border-radius: 5px;
-        
+
                     h1 {
                         margin: 0;
+
                     }
 
                     h2,
@@ -175,6 +183,7 @@ body {
                         color: white;
                         margin: 0;
                         font-size: 1.5rem;
+
                     }
                 }
             }
@@ -183,9 +192,9 @@ body {
         .serv {
             padding: 10px;
             text-align: center;
+            color: #ee7d00;
 
         }
-
     }
 }
 
@@ -645,24 +654,6 @@ body {
 
                 img {
                     width: 400px;
-                }
-
-                .show {
-                    font-size: 2.5rem;
-
-                }
-
-                .nav-menu,
-                .show {
-                    bottom: 2%;
-
-                    a {
-                        font-size: 2.5rem;
-                    }
-
-                    .nav-item {
-                        margin: 21px;
-                    }
                 }
             }
         }

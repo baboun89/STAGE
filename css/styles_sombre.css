@@ -52,7 +52,7 @@ header #nav .nav-menu {
   background-color: black;
   position: absolute;
   width: 80%;
-  top: 26px;
+  top: 1px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -404,7 +404,7 @@ input {
 }
 
 #textchamps {
-  background-color: #EFEFEF;
+  background-color: #8b4513;
   border: none;
   outline: none;
   margin-bottom: 20px;
@@ -516,9 +516,17 @@ body main {
   font-size: 1.2rem;
 }
 
+body main #adress {
+  background-color: saddlebrown;
+  border-radius: 5px;
+  margin: 10px;
+}
+
 body main #adress h2,
 body main #adress p {
   margin: 0;
+  text-align: center;
+  color: white;
 }
 
 body main #titrepage {
@@ -637,6 +645,7 @@ body main #contact #flex #adress p {
 body main .serv {
   padding: 10px;
   text-align: center;
+  color: #ee7d00;
 }
 
 @media screen and (min-width: 400px) {
@@ -945,21 +954,6 @@ body main .serv {
   }
   body header #nav img {
     width: 400px;
-  }
-  body header #nav .show {
-    font-size: 2.5rem;
-  }
-  body header #nav .nav-menu,
-  body header #nav .show {
-    bottom: 2%;
-  }
-  body header #nav .nav-menu a,
-  body header #nav .show a {
-    font-size: 2.5rem;
-  }
-  body header #nav .nav-menu .nav-item,
-  body header #nav .show .nav-item {
-    margin: 21px;
   }
   body main #gauche,
   body main #droite {

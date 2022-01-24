@@ -8,11 +8,10 @@
     <title>réalisations</title>
     <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <script src="js/scriptsnav.js" defer></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script src="js/scriptsmap.js" defer></script>
+<script src="js/scripts.js"defer></script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="ajoutrealisation.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="index.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -128,6 +127,7 @@
         <div id="nav">
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
+                <span id="theme">Thème sombre</span>
             </div>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">

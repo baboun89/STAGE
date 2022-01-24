@@ -634,28 +634,19 @@ body {
                         left: 0;
                         bottom: -49px;
                     }
-                }
 
-                img {
-                    width: 400px;
-                }
 
-                .show {
-                    font-size: 2.5rem;
-
-                }
-
-                .nav-menu,
-                .show {
-                    bottom: 2%;
-
-                    a {
-                        font-size: 2.5rem;
+                    img {
+                        width: 400px;
                     }
 
-                    .nav-item {
-                        margin: 21px;
+                    .show {
+                        .nav-item {
+                            margin: 21px;
+                        }
+
                     }
+
                 }
             }
         }

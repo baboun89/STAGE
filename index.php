@@ -113,9 +113,9 @@
             <div class="titre">
                 <h1>Nos Services</h1>
             </div>
-            <div class="diapo2" data-speed="5000" data-transition="500">
-                <div class="elements2">
-                    <div class="element2">
+            <div class="diapo" data-speed="5000" data-transition="500">
+                <div class="elements">
+                    <div class="element">
                         <img src="images/images/diap.jpg" alt="photo1">
                         <legend>
                             <h1>Terrassement</h1>
@@ -123,7 +123,7 @@
                                 aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                         </legend>
                     </div>
-                    <div class="element2">
+                    <div class="element">
                         <img src="images/images/diap.jpg" alt="photo2">
                         <legend>
                             <h1>Terrassement</h1>
@@ -131,7 +131,7 @@
                                 aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                         </legend>
                     </div>
-                    <div class="element2">
+                    <div class="element">
                         <img src="images/images/diap.jpg" alt="photo3">
                         <legend>
                             <h1>Terrassement</h1>
@@ -139,7 +139,7 @@
                                 aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                         </legend>
                     </div>
-                    <div class="element2">
+                    <div class="element">
                         <img src="images/images/diap.jpg" alt="photo4">
                         <legend>
                             <h1>Terrassement</h1>
@@ -147,7 +147,7 @@
                                 aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                         </legend>
                     </div>
-                    <div class="element2">
+                    <div class="element">
                         <img src="images/images/diap.jpg" alt="photo5">
                         <legend>
                             <h1>Terrassement</h1>
@@ -156,8 +156,8 @@
                         </legend>
                     </div>
                 </div>
-                <img src="images/logo/navg.png" alt="avant" id="gauche2" width="20">
-                <img src="images/logo/navd.png" alt="apres" id="droite2" width="20">
+                <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
+                <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
             </div>
         </section>
         <section id="realisations">
