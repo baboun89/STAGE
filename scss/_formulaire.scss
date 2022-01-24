@@ -7,14 +7,14 @@ form {
 
 input {
     height: 30px;
-    background-color: white;
+    background-color: #393c54;
     border: none;
     border-bottom: 1px solid black;
-    // font-size: 0.8rem;
     margin-bottom: 30px;
     outline: none;
     border-radius: 5px;
-    
+    opacity: 50%;
+
 }
 
 .file {
@@ -22,16 +22,17 @@ input {
 }
 
 #textchamps {
-    background-color: #EFEFEF;
+    background-color: #393c54;
     border: none;
     outline: none;
     margin-bottom: 20px;
+    border-radius: 5px;
+    opacity: 50%;
 }
 
 label {
     margin-bottom: 5px;
-    // font-size: 0.9rem;
-    color: #ee7d00;
+    color: #843463;
 }
 
 .section_contact {
@@ -51,14 +52,15 @@ label {
     text-align: center;
 }
 
-.bouton_contact {
-    width: 100%;
+.bouton_contact{
+    width: 80%;
     height: 30px;
     cursor: pointer;
     border: none;
-    background-color: black;
-    color: #ee7d00;
-    border-radius: 2px;
+    background-color: #843463;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
 }
 
 .output {
@@ -67,4 +69,5 @@ label {
 
 input {
     margin: .4rem;
+    color: white;
 }

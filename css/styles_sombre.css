@@ -391,12 +391,13 @@ form {
 
 input {
   height: 30px;
-  background-color: white;
+  background-color: #393c54;
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 30px;
   outline: none;
   border-radius: 5px;
+  opacity: 50%;
 }
 
 .file {
@@ -404,15 +405,17 @@ input {
 }
 
 #textchamps {
-  background-color: #8b4513;
+  background-color: #393c54;
   border: none;
   outline: none;
   margin-bottom: 20px;
+  border-radius: 5px;
+  opacity: 50%;
 }
 
 label {
   margin-bottom: 5px;
-  color: #ee7d00;
+  color: #843463;
 }
 
 .section_contact {
@@ -433,13 +436,14 @@ label {
 }
 
 .bouton_contact {
-  width: 100%;
+  width: 80%;
   height: 30px;
   cursor: pointer;
   border: none;
-  background-color: black;
-  color: #ee7d00;
-  border-radius: 2px;
+  background-color: #843463;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .output {
@@ -448,6 +452,7 @@ label {
 
 input {
   margin: .4rem;
+  color: white;
 }
 
 :root {
@@ -517,7 +522,7 @@ body main {
 }
 
 body main #adress {
-  background-color: saddlebrown;
+  background-color: #1c1e2a;
   border-radius: 5px;
   margin: 10px;
 }
@@ -610,7 +615,7 @@ body main #contact #flex {
 body main #contact #flex #agrement {
   text-align: center;
   margin-top: 2px;
-  background-color: saddlebrown;
+  background-color: #1c1e2a;
   border-radius: 5px;
 }
 
@@ -627,7 +632,7 @@ body main #contact #flex #adress {
   text-align: left;
   margin-left: 10px;
   text-align: center;
-  background-color: saddlebrown;
+  background-color: #1c1e2a;
   border-radius: 5px;
 }
 
