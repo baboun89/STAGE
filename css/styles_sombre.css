@@ -324,6 +324,11 @@ footer #nav #foothaut {
   width: 100%;
 }
 
+footer #nav #foothaut label p {
+  color: white;
+  margin: 4px;
+}
+
 footer #nav #foothaut label input[type="checkbox"] {
   -webkit-appearance: none;
   visibility: hidden;
@@ -722,9 +727,6 @@ body main .serv {
   }
   body .remonte {
     width: 30px;
-  }
-  body header #nav .nav-menu {
-    top: 42px;
   }
   body header #nav a img {
     width: 120px;

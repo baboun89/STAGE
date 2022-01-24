@@ -26,6 +26,10 @@ footer {
             width: 100%;
 
             label {
+                p{
+                    color: white;
+                    margin: 4px;
+                }
 
                 input[type="checkbox"] {
                     -webkit-appearance: none;

@@ -225,10 +225,10 @@
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
                 <label>
+                    <p>Mode clair/sombre</p>
                     <input type="checkbox" id="case" checked="">
                     <span id="theme" class="check"></span>
                 </label>
-
             </div>
         </div>
         <div id="text">

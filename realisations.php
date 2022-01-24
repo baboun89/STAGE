@@ -48,8 +48,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <label for="btn2" class="show">SERVICES </label>
-                        <input type="checkbox" id="btn2">
+                        <label for="btn3" class="show">SERVICES </label>
+                        <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">
                                 <a href="services.html">Terrassement en tout genre</a>
@@ -127,7 +127,11 @@
         <div id="nav">
             <div id="foothaut">
                 <img src="images/logo/logo.png" alt="logo" width="30%">
-                <span id="theme">Thème sombre</span>
+                <label>
+                    <p>Mode clair/sombre</p>
+                    <input type="checkbox" id="case" checked="">
+                    <span id="theme" class="check"></span>
+                </label>
             </div>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
