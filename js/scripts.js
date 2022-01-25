@@ -49,24 +49,24 @@ window.onload = () => {
 
     })
 }
-const diapos = document.querySelectorAll(".diapo");
-diapos.forEach(() => {
+let diapos = document.querySelectorAll(".diapo");
+for (let diapo of diapos) {
 
-    speed = diapos.dataset.speed;
-    transition = diapos.dataset.transition;
+    speed = diapo.dataset.speed;
+    transition = diapo.dataset.transition;
     elements = document.querySelector(".elements");
     let firstImage = elements.firstElementChild.cloneNode(true);
     elements.appendChild(firstImage);
     slides = Array.from(elements.children);
-    slideWidth = diapos.getBoundingClientRect().width;
+    slideWidth = diapo.getBoundingClientRect().width;
     let next = document.querySelector("#droite");
     let prev = document.querySelector("#gauche");
 
     next.addEventListener("click", slideNext);
     prev.addEventListener("click", slideprev);
     timer = setInterval(slideNext, speed);
-    diapos.addEventListener("mouseover", stopTimer);
-    diapos.addEventListener("mouseout", startTimer);
+    diapo.addEventListener("mouseover", stopTimer);
+    diapo.addEventListener("mouseout", startTimer);
 
     function slideNext() {
 
@@ -105,4 +105,4 @@ diapos.forEach(() => {
     function startTimer() {
         timer = setInterval(slideNext, speed);
     }
-});
+};
