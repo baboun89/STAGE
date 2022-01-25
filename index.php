@@ -109,55 +109,50 @@
                 <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
                 <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
             </div>
-            <!-- diapo2 -->
             <div class="titre">
                 <h1>Nos Services</h1>
             </div>
-            <div class="diapo" data-speed="5000" data-transition="500">
-                <div class="elements">
-                    <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo1">
-                        <legend>
-                            <h1>Terrassement</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                        </legend>
-                    </div>
-                    <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo2">
-                        <legend>
-                            <h1>Terrassement</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                        </legend>
-                    </div>
-                    <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo3">
-                        <legend>
-                            <h1>Terrassement</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                        </legend>
-                    </div>
-                    <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo4">
-                        <legend>
-                            <h1>Terrassement</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                        </legend>
-                    </div>
-                    <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo5">
-                        <legend>
-                            <h1>Terrassement</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                                aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                        </legend>
-                    </div>
+            <div class="grid grid-5" data-speed="5000" data-transition="500">
+                <div class="element">
+                    <img src="images/images/diap.jpg" alt="photo1">
+                    <legend>
+                        <h1>Terrassement</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                    </legend>
                 </div>
-                <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
-                <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
+                <div class="element">
+                    <img src="images/images/diap.jpg" alt="photo2">
+                    <legend>
+                        <h1>Terrassement</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                    </legend>
+                </div>
+                <div class="element">
+                    <img src="images/images/diap.jpg" alt="photo3">
+                    <legend>
+                        <h1>Terrassement</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                    </legend>
+                </div>
+                <div class="element">
+                    <img src="images/images/diap.jpg" alt="photo4">
+                    <legend>
+                        <h1>Terrassement</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                    </legend>
+                </div>
+                <div class="element">
+                    <img src="images/images/diap.jpg" alt="photo5">
+                    <legend>
+                        <h1>Terrassement</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
+                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                    </legend>
+                </div>
             </div>
         </section>
         <section id="realisations">
