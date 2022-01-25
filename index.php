@@ -79,7 +79,7 @@
                 <h1>Fosse septique</h1>
             </div>
             <!-- diapo1 -->
-            <div id="diapo1" data-speed="5000" data-transition="500">
+            <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
                     <div class="element">
                         <img src="images/images/diap.jpg" alt="photo1">
@@ -113,7 +113,7 @@
             <div class="titre">
                 <h1>Nos Services</h1>
             </div>
-            <div id="diapo2" data-speed="5000" data-transition="500">
+            <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
                     <div class="element">
                         <img src="images/images/diap.jpg" alt="photo1">
