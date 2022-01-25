@@ -51,7 +51,7 @@ header #nav [id^=btn]:checked + ul {
 
 header #nav .nav-menu {
   background-color: black;
-  position: absolute;
+  position: fixed;
   width: 80%;
   top: 1px;
   left: 50%;
@@ -85,8 +85,11 @@ header #nav .burger {
   width: 33px;
   height: 24px;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
   margin-top: 5px;
+  z-index: 15;
 }
 
 header #nav .burger:hover span::after,

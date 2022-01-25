@@ -42,7 +42,7 @@ header {
 
         .nav-menu {
             background-color: black;
-            position: absolute;
+            position: fixed;
             width: 80%;
             top: 1px;
             left: 50%;
@@ -78,8 +78,11 @@ header {
             width: 33px;
             height: 24px;
             cursor: pointer;
-            position: relative;
+            position: fixed;
+            top: 0;
+            right: 0;
             margin-top: 5px;
+            z-index: 15;
         }
 
         .burger:hover span::after,
