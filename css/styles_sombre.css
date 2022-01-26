@@ -235,23 +235,20 @@ header #nav .burger.active span::after {
   }
 }
 
-.diapo,
-.diapo2 {
+.diapo {
   position: relative;
   overflow: hidden;
   margin-top: 1%;
 }
 
-.elements,
-.elements2 {
+.elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.element,
-.element2 {
+.element {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -259,19 +256,16 @@ header #nav .burger.active span::after {
   position: relative;
 }
 
-.element > img,
-.element2 > img {
+.element > img {
+  border-radius: 5px;
   width: 100%;
 }
 
-#gauche,
-#gauche2 {
+#gauche {
   left: 2%;
 }
 
 #gauche,
-#gauche2,
-#droite2,
 #droite {
   position: absolute;
   top: 50%;
@@ -281,8 +275,7 @@ header #nav .burger.active span::after {
           filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
 }
 
-#droite,
-#droite2 {
+#droite {
   right: 2%;
 }
 

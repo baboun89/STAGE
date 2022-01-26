@@ -1,36 +1,30 @@
-.diapo,
-.diapo2 {
+.diapo {
     position: relative;
     overflow: hidden;
     margin-top: 1%;
 }
 
-.elements,
-.elements2 {
+.elements {
     display: flex;
     text-align: center;
 }
 
-.element,
-.element2 {
+.element {
     width: 100%;
     flex: 1 0 100%;
     position: relative;
 }
 
-.element>img,
-.element2>img {
+.element>img{
+    border-radius: 5px;
     width: 100%;
 }
 
-#gauche,
-#gauche2 {
+#gauche {
     left: 2%;
 }
 
 #gauche,
-#gauche2,
-#droite2,
 #droite {
     position: absolute;
     top: 50%;
@@ -39,8 +33,7 @@
 
 }
 
-#droite,
-#droite2 {
+#droite {
     right: 2%;
 }
 
