@@ -196,7 +196,7 @@
             </div>
             <div id="flex">
                 <article id="agrement">
-                    <img src="images/logo/Logo_de_la_République_française.png" alt="Logo de la République française" width="100">
+                    <img src="images/logo/Logo_de_la_République_française.svg.png" alt="Logo de la République française" width="100">
                     <p>Agrément: 2017/N89/ 0034</p>
                 </article>
                 <article id="adress">

@@ -684,6 +684,7 @@ body main #contact #flex #agrement {
 
 body main #contact #flex #agrement p {
   font-size: 1.5rem;
+  color: white;
 }
 
 body main #contact #flex #adress {
@@ -694,12 +695,14 @@ body main #contact #flex #adress {
 
 body main #contact #flex #adress h1 {
   margin: 0;
+  color: white;
 }
 
 body main #contact #flex #adress h2,
 body main #contact #flex #adress p {
   margin: 0;
   font-size: 1.5rem;
+  color: white;
 }
 
 body main .serv {

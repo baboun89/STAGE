@@ -596,7 +596,6 @@ body main {
 }
 
 body main #adress {
-  background-color: #1c1e2a;
   border-radius: 5px;
   margin: 10px;
 }
@@ -658,14 +657,14 @@ body main .titre h1 {
 }
 
 body main #diaporama {
-  background-image: url(/images/logo/engrenage.png);
+  background-image: url(/images/logo/engrenage2.png);
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: right;
 }
 
 body main #realisations {
-  background-image: url(/images/logo/engrenage.png);
+  background-image: url(/images/logo/engrenage2.png);
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: left;
@@ -689,7 +688,6 @@ body main #contact #flex {
 body main #contact #flex #agrement {
   text-align: center;
   margin-top: 2px;
-  background-color: #1c1e2a;
   border-radius: 5px;
 }
 
@@ -706,7 +704,6 @@ body main #contact #flex #adress {
   text-align: left;
   margin-left: 10px;
   text-align: center;
-  background-color: #1c1e2a;
   border-radius: 5px;
 }
 
