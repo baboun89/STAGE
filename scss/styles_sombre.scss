@@ -23,6 +23,7 @@ body {
     background-image: url(../images/logo/fond6.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     #flex {
         display: flex;
         justify-content: space-around;
@@ -72,12 +73,13 @@ body {
         #adress {
             border-radius: 5px;
             margin: 10px;
+
             h2,
             p {
                 margin: 0;
                 text-align: center;
                 color: white;
-    
+
             }
         }
 
@@ -154,10 +156,6 @@ body {
                     text-align: center;
                     margin-top: 2px;
                     border-radius: 5px;
-
-                    img {
-                        margin-top: 20px;
-                    }
 
                     p {
                         color: white;
@@ -467,6 +465,7 @@ body {
                             }
                         }
                     }
+
                     .dropdown2 {
                         position: absolute;
                         background-color: black;
@@ -663,6 +662,7 @@ body {
                         width: 1200px;
                         bottom: -65px;
                     }
+
                     .dropdown2 {
                         width: 1200px;
                         bottom: 60px;
