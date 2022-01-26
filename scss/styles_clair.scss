@@ -20,6 +20,11 @@ html {
 
 
 body {
+    // background-color: #505474;
+    background-image: url(/images/logo/fond4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     #flex {
         display: flex;
         justify-content: space-around;
@@ -651,6 +656,7 @@ body {
                         width: 1200px;
                         bottom: -65px;
                     }
+
                     .dropdown2 {
                         width: 1200px;
                         bottom: 60px;
