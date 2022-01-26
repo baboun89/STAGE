@@ -542,7 +542,7 @@ html {
 }
 
 body {
-  background-image: url(/images/logo/fond6.png);
+  background-image: url(../images/logo/fond6.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
