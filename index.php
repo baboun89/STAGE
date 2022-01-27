@@ -21,7 +21,7 @@
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="ajoutrealisation.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="ajoutrealisation.php" width="100"><img src="images/logo/logo.png" alt="logo" width="80"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>

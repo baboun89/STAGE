@@ -198,7 +198,7 @@ body {
             #nav {
                 a {
                     img {
-                        width: 120px;
+                        width: 90px;
                     }
                 }
             }
@@ -246,6 +246,12 @@ body {
     body {
         header {
             #nav {
+                a {
+                    img {
+                        width: 120px;
+                    }
+                }
+
                 p {
                     font-size: 1.4rem;
 
@@ -314,7 +320,7 @@ body {
             #nav {
                 a {
                     img {
-                        width: 250px;
+                        width: 200px;
                     }
                 }
 
@@ -423,10 +429,8 @@ body {
 
         header {
             #nav {
-
-                [id^="btn"]:checked+ul {
-                    display: flex;
-                }
+                align-items: center;
+                justify-content: space-around;
 
                 .icon {
                     display: none;
@@ -437,14 +441,14 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 38px;
-                    top: 84px;
+                    top: 0;
 
                     .dropdown {
                         position: absolute;
                         background-color: black;
-                        width: 864px;
-                        left: -332%;
-                        bottom: -37px;
+                        left: 0;
+                        right: -250px;
+                        top: 32px;
                         align-items: center;
                         justify-content: center;
                         border-radius: 10px;
@@ -462,13 +466,12 @@ body {
                     .dropdown2 {
                         position: absolute;
                         background-color: black;
-                        width: 864px;
-                        left: -58%;
-                        bottom: 33px;
+                        left: -120px;
+                        right: 0;
+                        top: 32px;
                         align-items: center;
                         justify-content: center;
                         border-radius: 10px;
-                        display: none;
 
                         li {
                             margin-left: 20px;
@@ -513,9 +516,7 @@ body {
             }
 
             #gauche,
-            #gauche2,
-            #droite,
-            #droite2 {
+            #droite {
                 width: 40px;
             }
 
@@ -587,13 +588,6 @@ body {
     }
 
     body {
-        header {
-            #nav {
-                .nav-menu {
-                    top: 206px;
-                }
-            }
-        }
 
         footer {
             #nav {
@@ -618,7 +612,7 @@ body {
         header {
             #nav {
                 .nav-menu {
-                    top: 258px;
+                    // top: 258px;
 
                     .dropdown {
                         width: 1000px;
@@ -649,19 +643,25 @@ body {
 
         header {
             #nav {
+                a {
+                    img {
+                        width: 400px;
+                    }
+                }
+
                 .nav-menu {
                     height: 80px;
-                    top: 284px;
+                    // top: 284px;
 
-                    .dropdown {
-                        width: 1200px;
-                        bottom: -65px;
-                    }
+                    // .dropdown {
+                    //     width: 1200px;
+                    //     bottom: -65px;
+                    // }
 
-                    .dropdown2 {
-                        width: 1200px;
-                        bottom: 60px;
-                    }
+                    // .dropdown2 {
+                    //     width: 1200px;
+                    //     bottom: 60px;
+                    // }
 
 
                     img {

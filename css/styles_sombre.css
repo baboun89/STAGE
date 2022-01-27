@@ -89,7 +89,7 @@ header #nav .burger {
   top: 0;
   right: 0;
   margin-top: 5px;
-  z-index: 15;
+  z-index: 100;
 }
 
 header #nav .burger:hover span::after,
@@ -721,7 +721,7 @@ body main .serv {
     width: 30px;
   }
   body header #nav a img {
-    width: 120px;
+    width: 90px;
   }
   body main #gauche,
   body main #droite {
@@ -746,6 +746,9 @@ body main .serv {
 }
 
 @media screen and (min-width: 600px) {
+  body header #nav a img {
+    width: 120px;
+  }
   body header #nav p {
     font-size: 1.4rem;
   }
@@ -788,7 +791,7 @@ body main .serv {
     font-size: 1.5rem;
   }
   body header #nav a img {
-    width: 250px;
+    width: 200px;
   }
   body header #nav p {
     font-size: 2rem;
@@ -852,10 +855,12 @@ body main .serv {
   body .remonte {
     width: 40px;
   }
-  body header #nav [id^="btn"]:checked + ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  body header #nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body header #nav .icon {
     display: none;
@@ -871,14 +876,14 @@ body main .serv {
         -ms-flex-align: center;
             align-items: center;
     height: 38px;
-    top: 166px;
+    top: 0;
   }
   body header #nav .nav-menu .dropdown {
     position: absolute;
     background-color: black;
-    width: 864px;
-    left: -332%;
-    bottom: -37px;
+    left: 0;
+    right: -250px;
+    top: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -897,9 +902,9 @@ body main .serv {
   body header #nav .nav-menu .dropdown2 {
     position: absolute;
     background-color: black;
-    width: 864px;
-    left: -58%;
-    bottom: 33px;
+    left: -120px;
+    right: 0;
+    top: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -991,9 +996,6 @@ body main .serv {
 @media screen and (min-width: 1300px) {
   :root {
     font-size: 16px;
-  }
-  body header #nav .nav-menu {
-    top: 206px;
   }
   body footer #nav p {
     margin-top: 150px;
