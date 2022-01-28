@@ -4,6 +4,11 @@ header {
           box-sizing: border-box;
 }
 
+header img {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 header #nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,11 +286,13 @@ header #nav .burger.active span::after {
 
 legend {
   color: white;
+  text-shadow: black 1px 1px 1px;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 footer {
@@ -294,6 +301,8 @@ footer {
 
 footer img {
   vertical-align: bottom;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 footer #nav {

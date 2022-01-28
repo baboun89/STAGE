@@ -83,27 +83,27 @@
             <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
                     <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo1">
+                        <img src="images/images/TRACTEUR-CITERNE.jpg" alt="photo1">
                         <legend>
                             <h1>vidange</h1>
-                            <p>La vidange de fosse septique est une opération qu’il est recommandé d'effectuer tous les 4 ans environ. Elle permet d’éviter l’engorgement des tuyaux, l'engorgement du bac à graisse et le cas échéant de tous les tuyaux de l’installation de votre maison. Vidanger la fosse est donc un acte primordial que nous assurons . Il est ainsi impératif d'effectuer la vidange de fosse septique avant que le volume de fosse n’atteigne un niveau critique qui empêcherait le processus de liquéfaction.
+                            <p>La vidange de fosse septique est une opération qu’il est recommandé d'effectuer tous les 4 ans environ. Elle permet d’éviter l’engorgement des tuyaux, l'engorgement du bac à graisse et le cas échéant de tous les tuyaux de l’installation de votre maison.
 
                             </p>
                         </legend>
                     </div>
                     <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo2">
+                        <img src="images/images/canalisation.jpg" alt="photo2">
                         <legend>
                             <h1>Débouchage canalisation</h1>
                             <p>Le débouchage de canalisation est une intervention qui consiste à dégager le chemin à l’intérieur de vos canalisations, de façon à ce que l’eau et les déchets (papier toilette par exemple) puissent circuler correctement jusqu’à être évacués complètement.</p>
                         </legend>
                     </div>
                     <div class="element">
-                        <img src="images/images/diap.jpg" alt="photo3">
+                        <img src="images/images/travaux-assainissement.jpg" alt="photo3">
                         <legend>
                             <h1>Entretien et nettoyage</h1>
                             <p>En entretenant régulièrement votre fosse septique, vous allongez sa durée de vie, facilitez l’évacuation et évitez les situations d’urgence. Pour cela, l’utilisation régulière d'activateur (activateur biologique ou activateurs chimiques) est recommandée.
-                                Après chaque vidange de fosse septique effectuée par un vidangeur, il convient d’injecter des activateurs pour nettoyer en profondeur les canalisations et stimuler les bactéries utiles. Vous pouvez également verser chaque semaine un sachet d’activateurs biologiques de fosse ou d'activateurs chimiques au fond de vos canalisations pour éviter les mauvaises odeurs et faciliter l’assainissement des boues.</p>
+                            </p>
                         </legend>
                     </div>
                 </div>

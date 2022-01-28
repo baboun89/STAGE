@@ -3,6 +3,9 @@ footer {
 
     img {
         vertical-align: bottom;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
     }
 
     #nav {
@@ -26,7 +29,7 @@ footer {
             width: 100%;
 
             label {
-                p{
+                p {
                     color: white;
                     margin: 4px;
                 }

@@ -2,6 +2,11 @@ header {
     position: relative;
     box-sizing: border-box;
 
+    img {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
     #nav {
         display: flex;
         justify-content: space-between;
