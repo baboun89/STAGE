@@ -117,15 +117,14 @@
                 <div class="element">
                     <img src="images/images/diap.jpg" alt="photo1">
                     <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        <h1>Terrassement en tout genre</h1>
+                        <p>On accomplit tous travaux visant à préparer un terrain, pour un aménagement fonctionnel et paysagé ou une construction, individuelle ou collective.</p>
                     </legend>
                 </div>
                 <div class="element">
                     <img src="images/images/diap.jpg" alt="photo2">
                     <legend>
-                        <h1>Terrassement</h1>
+                        <h1>Remplacement de canalisations</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
                             aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
                     </legend>
@@ -133,25 +132,8 @@
                 <div class="element">
                     <img src="images/images/diap.jpg" alt="photo3">
                     <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo4">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
-                    </legend>
-                </div>
-                <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo5">
-                    <legend>
-                        <h1>Terrassement</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        <h1>Assainissement</h1>
+                        <p>Conformément aux nouvelles législations nous intervenons dans la création et la remise aux normes des assainissements, qu’ils soient individuels ou collectifs.</p>
                     </legend>
                 </div>
             </div>
