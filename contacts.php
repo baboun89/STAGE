@@ -60,7 +60,7 @@ if (!empty($_POST)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacts</title>
-    <link rel="shortcut icon" type="image/png" href="images/logo/logomin.png" />
+    <link rel="shortcut icon" type="image/png" href="images/logo/logomini.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -74,7 +74,7 @@ if (!empty($_POST)) {
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="index.php" width="100"><img src="images/logo/logo.png" alt="logo" width="100"></a>
+            <a href="index.php" width="100"><img src="images/logo/logosombre.png" alt="logo" width="100"></a>
             <div id="tel">
                 <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
             </div>
@@ -89,7 +89,7 @@ if (!empty($_POST)) {
                     <li class="nav-item">
                         <label for="btn2" class="show">FOSSE SEPTIQUE</label>
                         <input type="checkbox" id="btn2">
-                        <ul class="dropdown">
+                        <ul class="dropdown2">
                             <li class="drop-item">
                                 <a href="services.html">Vidange</a>
                             </li>
@@ -140,7 +140,7 @@ if (!empty($_POST)) {
             <input type="email" name="email" placeholder="Votre email">
 
             <label for="message">Message</label>
-            <textarea name="message" id="textchamps" cols="30" rows="10"></textarea>
+            <textarea name="message" id="textchamps" cols="30" rows="10" placeholder="Votre message"></textarea>
 
             <button type="submit" class="bouton_contact">Envoyer</button>
             <div id="red">
@@ -150,7 +150,7 @@ if (!empty($_POST)) {
 
 
         <section id="adress">
-            <img src="images/logo/logo.png" alt="logo" width="200px">
+            <img src="images/logo/logosombre.png" alt="logo" width="200px">
             <h2>tel: 06 83 77 62 92</h2>
             <p>email:</p>
             <p>"Les Marquets"</p>
@@ -169,7 +169,7 @@ if (!empty($_POST)) {
     <footer>
         <div id="nav">
             <div id="foothaut">
-                <img src="images/logo/logo.png" alt="logo" width="30%">
+                <img src="images/logo/logosombre.png" alt="logo" width="30%">
                 <label>
                     <p>Mode clair/sombre</p>
                     <input type="checkbox" id="case" checked="">

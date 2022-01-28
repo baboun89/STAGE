@@ -34,14 +34,14 @@ body {
         height: 250px;
         margin: auto;
         margin-bottom: 20px;
-
+        border-radius: 5px;
     }
 
     #scrollUp {
         position: fixed;
         bottom: 85px;
         right: 20px;
-        z-index: 1000;
+        z-index: 10000;
     }
 
     .remonte {
@@ -69,7 +69,10 @@ body {
         position: relative;
         text-align: center;
         font-size: 1.2rem;
-
+        width: 80%;
+        img{
+            border-radius: 5px;
+        }
         #adress {
             border-radius: 5px;
             margin: 10px;
@@ -154,12 +157,13 @@ body {
 
                 #agrement {
                     text-align: center;
-                    margin-top: 2px;
+                    margin-top: auto;
+                    margin-bottom: auto;
                     border-radius: 5px;
 
                     p {
                         color: white;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                     }
                 }
 
@@ -256,7 +260,7 @@ body {
             #nav {
                 a{
                     img{
-                        width: 120px;
+                        width: 160px;
                     }
                 }
                 p {
@@ -268,7 +272,6 @@ body {
                 }
 
                 .nav-menu {
-                    top: 44px;
                     vertical-align: middle;
                 }
             }
@@ -287,6 +290,18 @@ body {
                     font-size: 2rem;
                 }
             }
+            #contact{
+                #flex{
+                    #agrement{
+                        img{
+                            width: 200px;
+                        }
+                        p{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
 
             #adress {
                 img {
@@ -300,8 +315,12 @@ body {
                 }
             }
         }
-
         footer {
+            #foothaut{
+                img{
+                    width: 160px;
+                }
+            }
             #text {
                 p {
                     font-size: 1.8rem;
@@ -337,10 +356,6 @@ body {
                     img {
                         width: 30px;
                     }
-                }
-
-                .nav-menu {
-                    top: 54px;
                 }
             }
         }
@@ -430,6 +445,14 @@ body {
     }
 
     body {
+        legend {
+            h1 {
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
         .remonte {
             width: 40px;
         }
@@ -504,6 +527,7 @@ body {
                 #tel {
                     p {
                         margin-top: 10px;
+                        margin-left: 100px;
                     }
 
                     img {
