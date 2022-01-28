@@ -295,6 +295,10 @@ legend {
   width: 80%;
 }
 
+legend h1 {
+  font-size: 1.9rem;
+}
+
 footer {
   position: relative;
 }
