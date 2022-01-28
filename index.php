@@ -92,7 +92,7 @@
                         </legend>
                     </div>
                     <div class="element">
-                        <img src="images/images/canalisation.jpg" alt="photo2">
+                        <img src="images/images/debouchage-canalisation.jpg" alt="photo2">
                         <legend>
                             <h1>Débouchage canalisation</h1>
                             <p>Le débouchage de canalisation est une intervention qui consiste à dégager le chemin à l’intérieur de vos canalisations, de façon à ce que l’eau et les déchets (papier toilette par exemple) puissent circuler correctement jusqu’à être évacués complètement.</p>
@@ -118,19 +118,18 @@
                     <img src="images/images/diap.jpg" alt="photo1">
                     <legend>
                         <h1>Terrassement en tout genre</h1>
-                        <p>On accomplit tous travaux visant à préparer un terrain, pour un aménagement fonctionnel et paysagé ou une construction, individuelle ou collective.</p>
+                        <p>Nous réalisons tous travaux visant à préparer un terrain, pour un aménagement fonctionnel et paysagé ou une construction, individuelle ou collective.</p>
                     </legend>
                 </div>
                 <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo2">
+                    <img src="images/images/canalisation.jpg" alt="photo2">
                     <legend>
                         <h1>Remplacement de canalisations</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio incidunt,
-                            aperiam dicta nisi repellat sequi repudiandae eos nihil quia?</p>
+                        <p>Nous réalisons également les branchements aux réseaux collectif d'assainissement et de pluviale ainsi que les tranchées pour le passage des réseaux électrique, télephonique, gaz et eau.</p>
                     </legend>
                 </div>
                 <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo3">
+                    <img src="images/images/assainissement.jpg" alt="photo3">
                     <legend>
                         <h1>Assainissement</h1>
                         <p>Conformément aux nouvelles législations nous intervenons dans la création et la remise aux normes des assainissements, qu’ils soient individuels ou collectifs.</p>
