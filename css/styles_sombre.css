@@ -925,7 +925,6 @@ body main .serv {
         -ms-flex-align: center;
             align-items: center;
     height: 38px;
-    top: 0;
     width: 95%;
     bottom: 20px;
   }
