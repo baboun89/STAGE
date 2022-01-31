@@ -109,7 +109,7 @@
             </div>
         </section>
         <section id="adress">
-            <img src="images/logo/logosombre.png" alt="logo" width="200px">
+            <img src="images/logo/logoclair.png" alt="logo" width="200px">
             <h2>tel: 06 83 77 62 92</h2>
             <p>email:</p>
             <p>"Les Marquets"</p>

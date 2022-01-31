@@ -70,10 +70,14 @@ body {
         position: relative;
         text-align: center;
         font-size: 1.2rem;
-        width: 90%;
+        width: 85%;
 
         img {
             border-radius: 5px;
+        }
+
+        #contact {
+            margin-bottom: 20px;
         }
 
         #adress {
@@ -466,20 +470,22 @@ body {
 
         header {
             #nav {
-                align-items: center;
-                justify-content: space-around;
-
                 .icon {
                     display: none;
                 }
 
                 .nav-menu {
+                    position: absolute;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 38px;
-                    top: 0;
                     width: 95%;
+                    bottom: 20px;
+
+                    [id^=btn]:hover+ul {
+                        display: block;
+                    }
 
                     .dropdown {
                         position: absolute;
@@ -512,6 +518,7 @@ body {
                         border-radius: 10px;
                         left: 50%;
                         transform: translateX(-50%);
+
                         li {
                             margin-left: 20px;
                             margin-right: 20px;
@@ -635,9 +642,7 @@ body {
         header {
             #nav {
                 .nav-menu {
-                    .dropdown {
-                        // width: 50%;
-                    }
+                    .dropdown {}
                 }
             }
         }
