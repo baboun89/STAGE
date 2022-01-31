@@ -577,8 +577,8 @@ body #carte {
 
 body #scrollUp {
   position: fixed;
-  bottom: 85px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 10000;
 }
 
@@ -615,6 +615,10 @@ body main img {
 
 body main #contact {
   margin-bottom: 20px;
+}
+
+body main #adress #sombre {
+  display: none;
 }
 
 body main #adress h2,
@@ -716,6 +720,10 @@ body main #contact #flex #adress {
   text-align: center;
 }
 
+body main #contact #flex #adress #sombre {
+  display: none;
+}
+
 body main #contact #flex #adress h1 {
   margin: 0;
 }
@@ -739,7 +747,7 @@ body main .serv {
     font-size: 1.7rem;
   }
   body .remonte {
-    width: 30px;
+    width: 20px;
   }
   body header #nav a img {
     width: 90px;

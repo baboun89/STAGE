@@ -65,7 +65,7 @@ if (!empty($_POST)) {
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script src="js/scripts.js"defer></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -150,7 +150,8 @@ if (!empty($_POST)) {
 
 
         <section id="adress">
-            <img src="images/logo/logoclair.png" alt="logo" width="200px">
+            <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
+            <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
             <h2>tel: 06 83 77 62 92</h2>
             <p>email:</p>
             <p>"Les Marquets"</p>

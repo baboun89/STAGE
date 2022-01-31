@@ -188,7 +188,8 @@
                         <p>Agrément: 2017/N89/ 0034</p>
                     </article>
                     <article id="adress">
-                        <img src="images/logo/logoclair.png" alt="logo" width="150">
+                        <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
+                        <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
                         <h2>tel: 06 83 77 62 92</h2>
                         <p>email:</p>
                         <p>"Les Marquets"</p>

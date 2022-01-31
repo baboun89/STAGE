@@ -40,8 +40,8 @@ body {
 
     #scrollUp {
         position: fixed;
-        bottom: 85px;
-        right: 20px;
+        bottom: 10px;
+        right: 10px;
         z-index: 10000;
     }
 
@@ -71,13 +71,17 @@ body {
         text-align: center;
         font-size: 1.2rem;
         width: 85%;
-        label{
+
+        label {
             color: white;
         }
-        #textchamps,input{
+
+        #textchamps,
+        input {
             background-color: #843463;
             opacity: 100%;
         }
+
         img {
             border-radius: 5px;
         }
@@ -87,6 +91,9 @@ body {
         }
 
         #adress {
+            #clair{
+                display: none;
+            }
 
             h2,
             p {
@@ -181,6 +188,10 @@ body {
                     text-align: center;
                     border-radius: 5px;
 
+                    #clair {
+                        display: none;
+                    }
+
                     h1 {
                         margin: 0;
 
@@ -213,7 +224,7 @@ body {
 
     body {
         .remonte {
-            width: 30px;
+            width: 20px;
         }
 
         header {
