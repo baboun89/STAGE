@@ -229,8 +229,8 @@ header #nav .burger.active span::after {
 
 @media screen and (min-width: 1400px) {
   .grid.grid-5 {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
