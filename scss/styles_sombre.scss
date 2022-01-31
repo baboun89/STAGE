@@ -90,7 +90,7 @@ body {
         #titrepage {
             width: 200px;
             height: 40px;
-            background-color: saddlebrown;
+            background-color: #545674;
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -101,14 +101,14 @@ body {
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: #ee7d00;
+                color: white;
             }
         }
 
         .titre {
             width: 200px;
             height: 20px;
-            background-color: saddlebrown;
+            background-color: #545674;
             margin: auto;
             border-radius: 5px;
             display: flex;
@@ -120,7 +120,7 @@ body {
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: #ee7d00;
+                color: white;
             }
         }
 
@@ -142,7 +142,7 @@ body {
                 .overlay {
                     h2 {
                         text-transform: uppercase;
-                        color: #ee7d00;
+                        color: #545674;
                     }
                 }
             }

@@ -55,7 +55,8 @@ header #nav [id^=btn]:checked + ul {
 }
 
 header #nav .nav-menu {
-  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#843463), to(#5f6383));
+  background-image: linear-gradient(#843463, #5f6383);
   position: fixed;
   width: 70%;
   left: 50%;
@@ -68,7 +69,7 @@ header #nav .nav-menu {
 header #nav .nav-item a,
 header #nav .drop-item a,
 header #nav .show {
-  color: #ee7d00;
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Myriad Pro Condensed;
@@ -619,7 +620,7 @@ body main #adress p {
 body main #titrepage {
   width: 200px;
   height: 40px;
-  background-color: black;
+  background-color: #843463;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,13 +638,13 @@ body main #titrepage {
 body main #titrepage h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: #ee7d00;
+  color: white;
 }
 
 body main .titre {
   width: 200px;
   height: 20px;
-  background-color: black;
+  background-color: #843463;
   margin: auto;
   border-radius: 5px;
   display: -webkit-box;
@@ -662,7 +663,7 @@ body main .titre {
 body main .titre h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: #ee7d00;
+  color: white;
 }
 
 body main #diaporama {
@@ -909,9 +910,9 @@ body main .serv {
   }
   body header #nav .nav-menu .dropdown {
     position: absolute;
-    background-color: black;
-    left: 0;
-    right: -250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#843463), to(#5f6383));
+    background-image: linear-gradient(#843463, #5f6383);
+    width: 338px;
     top: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -920,19 +921,22 @@ body main .serv {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 10px;
+    left: 120%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   body header #nav .nav-menu .dropdown li {
     margin-left: 40px;
     margin-right: 40px;
   }
   body header #nav .nav-menu .dropdown li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   body header #nav .nav-menu .dropdown2 {
     position: absolute;
-    background-color: black;
-    left: -120px;
-    right: 0;
+    width: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#843463), to(#5f6383));
+    background-image: linear-gradient(#843463, #5f6383);
     top: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -941,18 +945,21 @@ body main .serv {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   body header #nav .nav-menu .dropdown2 li {
     margin-left: 20px;
     margin-right: 20px;
   }
   body header #nav .nav-menu .dropdown2 li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   body header #nav .nav-item {
     display: inline-block;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
     position: relative;
     z-index: 100;
   }
