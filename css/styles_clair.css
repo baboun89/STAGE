@@ -236,8 +236,8 @@ header #nav .burger.active span::after {
 
 @media screen and (min-width: 1500px) {
   .grid.grid-5 {
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -263,7 +263,7 @@ header #nav .burger.active span::after {
 }
 
 .element > img {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -1072,10 +1072,7 @@ body main .serv {
   :root {
     font-size: 18px;
   }
-  body header #nav .nav-menu .dropdown {
-    width: 1000px;
-  }
-  body footer #nav p {
+  footer #nav p {
     margin-top: 200px;
   }
 }
@@ -1095,9 +1092,6 @@ body main .serv {
   }
   body header #nav .nav-menu img {
     width: 400px;
-  }
-  body header #nav .nav-menu .show .nav-item {
-    margin: 21px;
   }
   body main #gauche,
   body main #droite {

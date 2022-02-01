@@ -678,18 +678,6 @@ body {
     }
 
     body {
-        header {
-            #nav {
-                .nav-menu {
-                    top: 258px;
-
-                    .dropdown {
-                        width: 1000px;
-                        bottom: -36px;
-                    }
-                }
-            }
-        }
 
         footer {
             #nav {
@@ -713,23 +701,20 @@ body {
 
         header {
             #nav {
-                .nav-menu {
-                    height: 80px;
-                    top: 284px;
-
-                    .dropdown {
-                        width: 1200px;
-                        bottom: -65px;
-                    }
-
-                    .dropdown2 {
-                        width: 1200px;
-                        bottom: 60px;
+                a {
+                    img {
+                        width: 400px;
                     }
                 }
 
-                img {
-                    width: 400px;
+                .nav-menu {
+                    height: 80px;
+
+
+                    img {
+                        width: 400px;
+                    }
+
                 }
             }
         }

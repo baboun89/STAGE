@@ -654,13 +654,6 @@ body {
     }
 
     body {
-        // header {
-        //     #nav {
-        //         .nav-menu {
-        //             .dropdown {}
-        //         }
-        //     }
-        // }
 
         footer {
             #nav {
@@ -681,16 +674,6 @@ body {
         font-size: 18px;
     }
 
-    body {
-        header {
-            #nav {
-                .nav-menu {
-                    .dropdown {
-                        width: 1000px;
-                    }
-                }
-            }
-        }
 
         footer {
             #nav {
@@ -699,7 +682,7 @@ body {
                 }
             }
         }
-    }
+    
 }
 
 @media screen and (min-width: 1900px) {
@@ -722,28 +705,10 @@ body {
 
                 .nav-menu {
                     height: 80px;
-                    // top: 284px;
-
-                    // .dropdown {
-                    //     width: 1200px;
-                    //     bottom: -65px;
-                    // }
-
-                    // .dropdown2 {
-                    //     width: 1200px;
-                    //     bottom: 60px;
-                    // }
 
 
                     img {
                         width: 400px;
-                    }
-
-                    .show {
-                        .nav-item {
-                            margin: 21px;
-                        }
-
                     }
 
                 }
