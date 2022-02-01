@@ -494,6 +494,12 @@ body {
                         display: block;
                     }
 
+                    #serv:hover+.dropdown {
+                        .dropdown{
+                            display: block;
+                        }
+                    }
+
                     .dropdown {
                         position: absolute;
                         background-image: linear-gradient(#5f6383, #843463);
@@ -512,6 +518,11 @@ body {
                             a {
                                 font-size: 1.2rem;
                             }
+                        }
+                    }
+                    #fs:hover+.dropdown2 {
+                        .dropdown2{
+                            display: block;
                         }
                     }
 

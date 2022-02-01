@@ -33,7 +33,7 @@
                 </label>
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
-                    <li class="nav-item" id="fs">
+                    <li class="nav-item fs" >
                         <label for="btn2" class="show">FOSSE SEPTIQUE</label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown2">
@@ -48,7 +48,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item" id="serv">
+                    <li class="nav-item serv">
                         <label for="btn3"  class="show">SERVICES </label>
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
