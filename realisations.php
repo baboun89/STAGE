@@ -37,22 +37,22 @@
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown2">
                             <li class="drop-item">
-                                <a href="services.html">Vidange</a>
+                                <a href="index.php#vid">Vidange</a>
                             </li>
                             <li class="drop-item">
-                                <a href="services.html#canalisation">Débouchage canalisation</a>
+                                <a href="index.php#deb">Débouchage canalisation</a>
                             </li>
                             <li class="drop-item">
-                                <a href="services.html#assainissement">Entretien et nettoyage</a>
+                                <a href="index.php#net">Entretien et nettoyage</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <label for="btn3" class="show">SERVICES </label>
+                        <label for="btn3"  class="show">SERVICES </label>
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">
-                                <a href="services.html">Terrassement en tout genre</a>
+                                <a href="services.html#terrassement">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
                                 <a href="services.html#canalisation">Remplacement de canalisations</a>

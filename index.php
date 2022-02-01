@@ -38,13 +38,13 @@
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown2">
                             <li class="drop-item">
-                                <a href="services.html">Vidange</a>
+                                <a href="index.php#vid">Vidange</a>
                             </li>
                             <li class="drop-item">
-                                <a href="services.html#canalisation">Débouchage canalisation</a>
+                                <a href="index.php#deb">Débouchage canalisation</a>
                             </li>
                             <li class="drop-item">
-                                <a href="services.html#assainissement">Entretien et nettoyage</a>
+                                <a href="index.php#net">Entretien et nettoyage</a>
                             </li>
                         </ul>
                     </li>
@@ -53,7 +53,7 @@
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">
-                                <a href="services.html">Terrassement en tout genre</a>
+                                <a href="services.html#terrassement">Terrassement en tout genre</a>
                             </li>
                             <li class="drop-item">
                                 <a href="services.html#canalisation">Remplacement de canalisations</a>
@@ -82,7 +82,7 @@
             <!-- diapo1 -->
             <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
-                    <div class="element">
+                    <div class="element" id="vid" >
                         <img src="images/images/TRACTEUR-CITERNE.jpg" alt="photo1">
                         <legend>
                             <h1>vidange</h1>
@@ -91,14 +91,14 @@
                             </p>
                         </legend>
                     </div>
-                    <div class="element">
+                    <div class="element" id="deb">
                         <img src="images/images/debouchage-canalisation.jpg" alt="photo2">
                         <legend>
                             <h1>Débouchage canalisation</h1>
                             <p>Le débouchage de canalisation est une intervention qui consiste à dégager le chemin à l’intérieur de vos canalisations, de façon à ce que l’eau et les déchets (papier toilette par exemple) puissent circuler correctement jusqu’à être évacués complètement.</p>
                         </legend>
                     </div>
-                    <div class="element">
+                    <div class="element" id="net">
                         <img src="images/images/travaux-assainissement.jpg" alt="photo3">
                         <legend>
                             <h1>Entretien et nettoyage</h1>

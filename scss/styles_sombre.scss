@@ -497,8 +497,8 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 38px;
-                    width: 95%;
-                    bottom: 20px;
+                    width: 100%;
+                    bottom: -10px;
 
 
                     .dropdown {
@@ -573,7 +573,7 @@ body {
             }
 
             #titrepage {
-                top: 2%;
+                margin-top: 20px;
             }
 
             #gauche,

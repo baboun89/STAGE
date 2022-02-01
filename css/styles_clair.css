@@ -921,8 +921,8 @@ body main .serv {
         -ms-flex-align: center;
             align-items: center;
     height: 38px;
-    width: 95%;
-    bottom: 20px;
+    width: 100%;
+    bottom: -10px;
   }
   body header #nav .nav-menu .dropdown {
     position: absolute;
@@ -990,7 +990,7 @@ body main .serv {
     margin-top: 20px;
   }
   body main #titrepage {
-    top: 2%;
+    margin-top: 20px;
   }
   body main #gauche,
   body main #droite {
