@@ -471,10 +471,18 @@ form {
           flex-direction: column;
   width: 100%;
   margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input {
+  text-align: center;
   height: 30px;
+  width: 60%;
   background-color: #393c54;
   border: none;
   border-bottom: 2px solid black;
@@ -489,6 +497,7 @@ input {
 }
 
 #textchamps {
+  width: 80%;
   background-color: #393c54;
   border: none;
   outline: none;
@@ -520,7 +529,7 @@ label {
 }
 
 .bouton_contact {
-  width: 80%;
+  width: 60%;
   height: 30px;
   cursor: pointer;
   border: none;

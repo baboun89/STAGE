@@ -3,10 +3,14 @@ form {
     flex-direction: column;
     width: 100%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
+    text-align: center;
     height: 30px;
+    width: 60%;
     background-color: #393c54;
     border: none;
     border-bottom: 2px solid black;
@@ -22,6 +26,7 @@ input {
 }
 
 #textchamps {
+    width: 80%;
     background-color: #393c54;
     border: none;
     outline: none;
@@ -53,7 +58,7 @@ label {
 }
 
 .bouton_contact{
-    width: 80%;
+    width: 60%;
     height: 30px;
     cursor: pointer;
     border: none;
