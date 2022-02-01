@@ -302,7 +302,7 @@ legend h1 {
 }
 
 legend p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 footer {
@@ -618,6 +618,11 @@ body main {
   width: 85%;
 }
 
+body main input, body main #textchamps {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
 body main img {
   border-radius: 5px;
 }
@@ -651,6 +656,7 @@ body main #titrepage {
           justify-content: center;
   margin: auto;
   margin-top: 10px;
+  opacity: 50%;
 }
 
 body main #titrepage h1 {
@@ -676,6 +682,7 @@ body main .titre {
           justify-content: center;
   margin-top: 18px;
   margin-bottom: 15px;
+  opacity: 50%;
 }
 
 body main .titre h1 {
