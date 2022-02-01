@@ -915,12 +915,6 @@ body main .serv {
     width: 95%;
     bottom: 20px;
   }
-  body header #nav .nav-menu [id^=btn]:hover + ul {
-    display: block;
-  }
-  body header #nav .nav-menu #serv:hover + .dropdown .dropdown {
-    display: block;
-  }
   body header #nav .nav-menu .dropdown {
     position: absolute;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#5f6383), to(#843463));
@@ -944,9 +938,6 @@ body main .serv {
   }
   body header #nav .nav-menu .dropdown li a {
     font-size: 1.2rem;
-  }
-  body header #nav .nav-menu #fs:hover + .dropdown2 .dropdown2 {
-    display: block;
   }
   body header #nav .nav-menu .dropdown2 {
     position: absolute;

@@ -490,15 +490,10 @@ body {
                     width: 95%;
                     bottom: 20px;
 
-                    [id^=btn]:hover+ul {
-                        display: block;
-                    }
+                    // [id^=btn]:hover+ul {
+                    //     display:block;
+                    // }
 
-                    #serv:hover+.dropdown {
-                        .dropdown{
-                            display: block;
-                        }
-                    }
 
                     .dropdown {
                         position: absolute;
@@ -518,12 +513,6 @@ body {
                             a {
                                 font-size: 1.2rem;
                             }
-                        }
-                    }
-                    #fs:hover+.dropdown2 {
-                        .dropdown2{
-                            display: block;
-
                         }
                     }
 
