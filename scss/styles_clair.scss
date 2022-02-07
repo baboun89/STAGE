@@ -23,6 +23,7 @@ body {
     background-image: url(../images/logo/fond4.png);
     background-repeat: no-repeat;
     background-size: cover;
+    // overflow: hidden;
 
     #flex {
         display: flex;
@@ -71,7 +72,13 @@ body {
         text-align: center;
         font-size: 1.2rem;
         width: 85%;
-        input, #textchamps{
+
+        .bouton_contact {
+            background-color: #843463;
+        }
+
+        input,
+        #textchamps {
             border-bottom: 2px solid black;
             border-top: 2px solid black;
         }
@@ -100,26 +107,25 @@ body {
         #titrepage {
             width: 200px;
             height: 40px;
-            background-color: #843463;
+            background-color: #84346350;
             border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: auto;
             margin-top: 10px;
-            opacity: 50%;
 
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: white;
+                color: #540337;
             }
         }
 
         .titre {
             width: 200px;
             height: 20px;
-            background-color: #843463;
+            background-color: #84346350;
             margin: auto;
             border-radius: 5px;
             display: flex;
@@ -127,29 +133,16 @@ body {
             justify-content: center;
             margin-top: 18px;
             margin-bottom: 15px;
-            opacity: 50%;
 
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: white;
+                color: #540337;
             }
         }
 
-        #diaporama {
-            background-image: url(/images/logo/engrenage.png);
-            background-repeat: no-repeat;
-            background-size: 300px;
-            background-position: right;
-        }
 
         #realisations {
-            background-image: url(/images/logo/engrenage.png);
-            background-repeat: no-repeat;
-            background-size: 500px;
-            background-position: left;
-            width: 100%;
-
             .card {
                 .overlay {
                     h2 {
@@ -675,14 +668,14 @@ body {
     }
 
 
-        footer {
-            #nav {
-                p {
-                    margin-top: 200px;
-                }
+    footer {
+        #nav {
+            p {
+                margin-top: 200px;
             }
         }
-    
+    }
+
 }
 
 @media screen and (min-width: 1900px) {

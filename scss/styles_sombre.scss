@@ -25,6 +25,8 @@ body {
     background-size: cover;
     color: white;
     opacity: 75%;
+    // overflow: hidden;
+
 
     #flex {
         display: flex;
@@ -72,10 +74,17 @@ body {
         text-align: center;
         font-size: 1.2rem;
         width: 85%;
-        input, #textchamps{
+
+        .bouton_contact {
+            background-color: #545674;
+        }
+
+        input,
+        #textchamps {
             border-bottom: 2px solid white;
             border-top: 2px solid white;
         }
+
 
         label {
             color: white;
@@ -96,7 +105,7 @@ body {
         }
 
         #adress {
-            #clair{
+            #clair {
                 display: none;
             }
 
@@ -110,14 +119,13 @@ body {
         #titrepage {
             width: 200px;
             height: 40px;
-            background-color: #545674;
+            background-color: #54567475;
             border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: auto;
             margin-top: 10px;
-            opacity: 50%;
 
             h1 {
                 text-align: center;
@@ -129,7 +137,7 @@ body {
         .titre {
             width: 200px;
             height: 20px;
-            background-color: #545674;
+            background-color: #54567475;
             margin: auto;
             border-radius: 5px;
             display: flex;
@@ -137,7 +145,6 @@ body {
             justify-content: center;
             margin-top: 18px;
             margin-bottom: 15px;
-            opacity: 50%;
 
             h1 {
                 text-align: center;
@@ -146,20 +153,8 @@ body {
             }
         }
 
-        #diaporama {
-            background-image: url(/images/logo/engrenage2.png);
-            background-repeat: no-repeat;
-            background-size: 300px;
-            background-position: right;
-        }
 
         #realisations {
-            background-image: url(/images/logo/engrenage2.png);
-            background-repeat: no-repeat;
-            background-size: 500px;
-            background-position: left;
-            width: 100%;
-
             .card {
                 .overlay {
                     h2 {

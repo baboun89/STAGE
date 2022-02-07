@@ -532,8 +532,8 @@ label {
   width: 60%;
   height: 30px;
   cursor: pointer;
+  background-color: #393c54;
   border: none;
-  background-color: #843463;
   color: white;
   border-radius: 5px;
   margin: auto;
@@ -618,7 +618,12 @@ body main {
   width: 85%;
 }
 
-body main input, body main #textchamps {
+body main .bouton_contact {
+  background-color: #843463;
+}
+
+body main input,
+body main #textchamps {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
 }
@@ -643,7 +648,7 @@ body main #adress p {
 body main #titrepage {
   width: 200px;
   height: 40px;
-  background-color: #843463;
+  background-color: #84346350;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,19 +661,18 @@ body main #titrepage {
           justify-content: center;
   margin: auto;
   margin-top: 10px;
-  opacity: 50%;
 }
 
 body main #titrepage h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: white;
+  color: #540337;
 }
 
 body main .titre {
   width: 200px;
   height: 20px;
-  background-color: #843463;
+  background-color: #84346350;
   margin: auto;
   border-radius: 5px;
   display: -webkit-box;
@@ -682,13 +686,12 @@ body main .titre {
           justify-content: center;
   margin-top: 18px;
   margin-bottom: 15px;
-  opacity: 50%;
 }
 
 body main .titre h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: white;
+  color: #540337;
 }
 
 body main #diaporama {
@@ -696,14 +699,6 @@ body main #diaporama {
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: right;
-}
-
-body main #realisations {
-  background-image: url(/images/logo/engrenage.png);
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: left;
-  width: 100%;
 }
 
 body main #realisations .card .overlay h2 {
