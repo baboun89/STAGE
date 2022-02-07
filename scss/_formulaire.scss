@@ -56,6 +56,9 @@ label {
 }
 
 .bouton_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     height: 30px;
     cursor: pointer;
@@ -63,7 +66,7 @@ label {
     border: none;
     color: white;
     border-radius: 5px;
-    margin: auto;
+
 }
 
 .output {
