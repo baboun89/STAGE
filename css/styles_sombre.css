@@ -483,13 +483,12 @@ input {
   text-align: center;
   height: 30px;
   width: 60%;
-  background-color: #393c54;
+  background-color: #393c5450;
   border: none;
   border-bottom: 2px solid black;
   margin-bottom: 30px;
   outline: none;
   border-radius: 5px;
-  opacity: 50%;
 }
 
 .file {
@@ -498,12 +497,11 @@ input {
 
 #textchamps {
   width: 80%;
-  background-color: #393c54;
+  background-color: #393c5450;
   border: none;
   outline: none;
   margin-bottom: 20px;
   border-radius: 5px;
-  opacity: 50%;
 }
 
 label {
@@ -567,7 +565,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  opacity: 75%;
 }
 
 body #flex {
@@ -636,8 +633,7 @@ body main label {
 
 body main #textchamps,
 body main input {
-  background-color: #843463;
-  opacity: 100%;
+  background-color: #84346350;
 }
 
 body main img {
@@ -730,7 +726,6 @@ body main #contact #flex #agrement {
 body main #contact #flex #agrement p {
   color: white;
   font-size: 1.3rem;
-  opacity: 75%;
 }
 
 body main #contact #flex #adress {
@@ -753,7 +748,6 @@ body main #contact #flex #adress p {
   color: white;
   margin: 0;
   font-size: 1.5rem;
-  opacity: 75%;
 }
 
 body main .serv {
