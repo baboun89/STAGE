@@ -9,14 +9,14 @@
     text-align: center;
 }
 
-.element {
+.element{
     width: 100%;
     flex: 1 0 100%;
     position: relative;
     height: 50vh;
 }
 
-.element>img{
+.element>img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -52,11 +52,12 @@ legend {
     border-radius: 10px;
     max-height: 70%;
 
-    h1{
+    h1 {
         width: 100%;
         font-size: 1.5rem;
     }
-    p{
+
+    p {
         font-size: 1.3rem;
     }
 }

@@ -25,25 +25,17 @@ header #nav {
 }
 
 header #nav #tel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px;
+  margin-top: 5px;
 }
 
-header #nav #tel img {
-  vertical-align: middle;
-  width: 15px;
-}
-
-header #nav #tel p {
-  font-size: 0.8rem;
+header #nav p {
+  font-size: 1.2rem;
   color: white;
   margin: 0;
-  margin-left: 5px;
+}
+
+header #nav p img {
+  vertical-align: top;
 }
 
 header #nav .icon {
@@ -268,15 +260,11 @@ header #nav .burger.active span::after {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   position: relative;
-  height: 50vh;
 }
 
 .element > img {
   border-radius: 10px;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #gauche {
@@ -286,9 +274,9 @@ header #nav .burger.active span::after {
 #gauche,
 #droite {
   position: absolute;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
           filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
 }
@@ -299,7 +287,6 @@ header #nav .burger.active span::after {
 
 legend {
   color: white;
-  background-color: #393c5499;
   text-shadow: black 1px 1px 1px;
   position: absolute;
   left: 50%;
@@ -307,8 +294,6 @@ legend {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 80%;
-  border-radius: 10px;
-  max-height: 70%;
 }
 
 legend h1 {
@@ -498,12 +483,13 @@ input {
   text-align: center;
   height: 30px;
   width: 60%;
-  background-color: #393c5450;
+  background-color: #393c54;
   border: none;
   border-bottom: 2px solid black;
   margin-bottom: 30px;
   outline: none;
   border-radius: 5px;
+  opacity: 50%;
 }
 
 .file {
@@ -512,11 +498,12 @@ input {
 
 #textchamps {
   width: 80%;
-  background-color: #393c5450;
+  background-color: #393c54;
   border: none;
   outline: none;
   margin-bottom: 20px;
   border-radius: 5px;
+  opacity: 50%;
 }
 
 label {
@@ -542,15 +529,6 @@ label {
 }
 
 .bouton_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 60%;
   height: 30px;
   cursor: pointer;
@@ -558,6 +536,7 @@ label {
   border: none;
   color: white;
   border-radius: 5px;
+  margin: auto;
 }
 
 .output {
@@ -583,6 +562,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(../images/logo/fond6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  opacity: 75%;
+}
+
 body #flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,13 +583,14 @@ body #carte {
   height: 250px;
   margin: auto;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 body #scrollUp {
   position: fixed;
-  bottom: 85px;
-  right: 20px;
-  z-index: 1000;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10000;
 }
 
 body .remonte {
@@ -614,11 +602,11 @@ body ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  vertical-align: middle;
 }
 
 body li {
   list-style: none;
-  margin-left: 5px;
 }
 
 body #red p {
@@ -629,18 +617,51 @@ body main {
   position: relative;
   text-align: center;
   font-size: 1.2rem;
+  width: 85%;
+}
+
+body main .bouton_contact {
+  background-color: #545674;
+}
+
+body main input,
+body main #textchamps {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+body main label {
+  color: white;
+}
+
+body main #textchamps,
+body main input {
+  background-color: #843463;
+  opacity: 100%;
+}
+
+body main img {
+  border-radius: 5px;
+}
+
+body main #contact {
+  margin-bottom: 20px;
+}
+
+body main #adress #clair {
+  display: none;
+}
+
+body main #adress h2,
+body main #adress p {
+  margin: 0;
 }
 
 body main #titrepage {
   width: 200px;
   height: 40px;
-  background-color: black;
+  background-color: #545674;
   border-radius: 5px;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,19 +671,21 @@ body main #titrepage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 9;
+  margin: auto;
+  margin-top: 10px;
+  opacity: 50%;
 }
 
 body main #titrepage h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: #ee7d00;
+  color: white;
 }
 
 body main .titre {
   width: 200px;
   height: 20px;
-  background-color: black;
+  background-color: #545674;
   margin: auto;
   border-radius: 5px;
   display: -webkit-box;
@@ -676,23 +699,24 @@ body main .titre {
           justify-content: center;
   margin-top: 18px;
   margin-bottom: 15px;
+  opacity: 50%;
 }
 
 body main .titre h1 {
   text-align: center;
   font-size: 1.4rem;
-  color: #ee7d00;
+  color: white;
 }
 
 body main #diaporama {
-  background-image: url(/images/logo/engrenage.png);
+  background-image: url(/images/logo/engrenage2.png);
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: right;
 }
 
 body main #realisations {
-  background-image: url(/images/logo/engrenage.png);
+  background-image: url(/images/logo/engrenage2.png);
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: left;
@@ -701,6 +725,7 @@ body main #realisations {
 
 body main #realisations .card .overlay h2 {
   text-transform: uppercase;
+  color: white;
 }
 
 body main #contact #flex {
@@ -714,17 +739,26 @@ body main #contact #flex {
 
 body main #contact #flex #agrement {
   text-align: center;
-  margin-top: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 5px;
 }
 
 body main #contact #flex #agrement p {
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
+  opacity: 75%;
 }
 
 body main #contact #flex #adress {
   text-align: left;
   margin-left: 10px;
   text-align: center;
+  border-radius: 5px;
+}
+
+body main #contact #flex #adress #clair {
+  display: none;
 }
 
 body main #contact #flex #adress h1 {
@@ -733,13 +767,16 @@ body main #contact #flex #adress h1 {
 
 body main #contact #flex #adress h2,
 body main #contact #flex #adress p {
+  color: white;
   margin: 0;
   font-size: 1.5rem;
+  opacity: 75%;
 }
 
 body main .serv {
   padding: 10px;
   text-align: center;
+  color: white;
 }
 
 @media screen and (min-width: 400px) {
@@ -747,10 +784,10 @@ body main .serv {
     font-size: 13px;
   }
   body .remonte {
-    width: 30px;
+    width: 20px;
   }
   body header #nav a img {
-    width: 120px;
+    width: 90px;
   }
   body main #gauche,
   body main #droite {
@@ -770,15 +807,24 @@ body main .serv {
   }
   p {
     font-size: 1.2rem;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 600px) {
+  body header #nav a img {
+    width: 160px;
+  }
   body header #nav p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   body header #nav p img {
     width: 25px;
+  }
+  body header #nav .nav-menu {
+    vertical-align: middle;
+    width: 50%;
+    font-size: 1.5rem;
   }
   body #carte {
     height: 500px;
@@ -790,19 +836,29 @@ body main .serv {
   body main .titre h1 {
     font-size: 2rem;
   }
+  body main #contact #flex #agrement img {
+    width: 200px;
+  }
+  body main #contact #flex #agrement p {
+    font-size: 2rem;
+  }
   body main #adress img {
-    width: 400px;
+    width: 300px;
   }
   body main #adress h2,
   body main #adress p {
     font-size: 2rem;
     margin: 0;
   }
-  body footer #nav p {
-    font-size: 2.4rem;
+  body footer #foothaut img {
+    width: 160px;
   }
-  body footer #nav p a {
-    margin-left: 10px;
+  body footer #text p {
+    font-size: 1.8rem;
+  }
+  body footer #text p a {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -811,7 +867,7 @@ body main .serv {
     font-size: 1.5rem;
   }
   body header #nav a img {
-    width: 250px;
+    width: 200px;
   }
   body header #nav p {
     font-size: 2rem;
@@ -869,20 +925,100 @@ body main .serv {
   :root {
     font-size: 16px;
   }
+  body legend h1 {
+    font-size: 1.2rem;
+  }
+  body legend p {
+    font-size: 1.3rem;
+  }
   body .remonte {
     width: 40px;
   }
+  body header #nav .icon {
+    display: none;
+  }
   body header #nav .nav-menu {
-    bottom: 5%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 38px;
+    width: 100%;
+    bottom: -10px;
+  }
+  body header #nav .nav-menu .dropdown {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5f6383), to(#843463));
+    background-image: linear-gradient(#5f6383, #843463);
+    width: 338px;
+    top: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    left: 120%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body header #nav .nav-menu .dropdown li {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  body header #nav .nav-menu .dropdown li a {
+    font-size: 1.2rem;
+  }
+  body header #nav .nav-menu .dropdown2 {
+    position: absolute;
+    width: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5f6383), to(#843463));
+    background-image: linear-gradient(#5f6383, #843463);
+    top: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body header #nav .nav-menu .dropdown2 li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  body header #nav .nav-menu .dropdown2 li a {
+    font-size: 1.2rem;
+  }
+  body header #nav .nav-item {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 100;
   }
   body header #nav #tel p {
     margin-top: 10px;
+    margin-left: 100px;
   }
   body header #nav #tel img {
     width: 38px;
   }
+  body main .form {
+    margin-top: 20px;
+  }
   body main #titrepage {
-    top: 2%;
+    margin-top: 20px;
   }
   body main #gauche,
   body main #droite {
@@ -914,7 +1050,7 @@ body main .serv {
     overflow: hidden;
   }
   body main .card:hover .overlay {
-    font-size: 3rem;
+    font-size: 1rem;
     width: 100%;
     height: 100%;
   }
@@ -966,23 +1102,14 @@ body main .serv {
   body .remonte {
     width: 60px;
   }
-  body header #nav img {
+  body header #nav a img {
     width: 400px;
   }
-  body header #nav .show {
-    font-size: 2.5rem;
+  body header #nav .nav-menu {
+    height: 80px;
   }
-  body header #nav .nav-menu,
-  body header #nav .show {
-    bottom: 2%;
-  }
-  body header #nav .nav-menu a,
-  body header #nav .show a {
-    font-size: 2.5rem;
-  }
-  body header #nav .nav-menu .nav-item,
-  body header #nav .show .nav-item {
-    margin: 21px;
+  body header #nav .nav-menu img {
+    width: 400px;
   }
   body main #gauche,
   body main #droite {
@@ -1008,4 +1135,4 @@ body main .serv {
     margin-left: 50px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_sombre.css.map */

@@ -779,6 +779,12 @@ body main .serv {
   color: white;
 }
 
+body main .serv img {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 400px) {
   :root {
     font-size: 13px;
@@ -1108,7 +1114,7 @@ body main .serv {
   :root {
     font-size: 16px;
   }
-  body main .element {
+  body main .element, body main .serv {
     height: 80vh;
   }
   body footer #text p {

@@ -195,6 +195,12 @@ body {
             padding: 10px;
             text-align: center;
 
+            img {
+                width: 100%;
+                height: 100%;
+                height: 50vh;
+                object-fit: cover;
+            }
         }
 
     }
@@ -604,13 +610,16 @@ body {
                 width: 90%;
                 height: 90%;
                 border-radius: 10px;
+
                 img {
                     width: 100%;
                 }
-                h1{
+
+                h1 {
                     transform: scale(1.2);
                 }
-                p{
+
+                p {
                     transform: scale(1);
                 }
             }
@@ -660,7 +669,9 @@ body {
 
     body {
         main {
-            .element {
+
+            .element,
+            .serv {
                 height: 80vh;
             }
         }

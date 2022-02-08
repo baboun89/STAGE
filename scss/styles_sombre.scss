@@ -212,6 +212,11 @@ body {
             text-align: center;
             color: white;
 
+            img {
+                height: 50vh;
+                object-fit: cover;
+            }
+
         }
     }
 }
@@ -620,11 +625,12 @@ body {
                 img {
                     width: 100%;
                 }
-                h1{
+
+                h1 {
                     transform: scale(1.5);
                 }
 
-                p{
+                p {
                     transform: scale(1);
                 }
 
@@ -675,7 +681,9 @@ body {
 
     body {
         main {
-            .element {
+
+            .element,
+            .serv {
                 height: 80vh;
             }
         }
