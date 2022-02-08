@@ -1050,7 +1050,7 @@ body main .serv {
   }
   body main .card:hover .overlay, body main .element:hover legend {
     font-size: 1rem;
-    width: 80%;
+    width: 90%;
     height: 90%;
     border-radius: 10px;
   }
