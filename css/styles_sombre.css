@@ -1032,7 +1032,8 @@ body main .serv {
   body main #droite {
     width: 40px;
   }
-  body main .card .overlay, body main legend {
+  body main .card .overlay,
+  body main legend {
     display: none;
     color: white;
     background-color: #5f638390;
@@ -1063,12 +1064,14 @@ body main .serv {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .card:hover .overlay, body main .element:hover legend {
+  body main .card:hover .overlay,
+  body main .element:hover legend {
     font-size: 1rem;
     width: 90%;
     height: 90%;
   }
-  body main .card:hover .overlay img, body main .element:hover legend img {
+  body main .card:hover .overlay img,
+  body main .element:hover legend img {
     width: 100%;
   }
   body main #flex #agrement p {
@@ -1097,6 +1100,9 @@ body main .serv {
   }
   body main .element {
     height: 80vh;
+  }
+  body footer #text p {
+    font-size: 1.5rem;
   }
   body footer #nav p {
     margin-top: 150px;
