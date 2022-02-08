@@ -48,7 +48,7 @@ if (!empty($_POST)) {
         // On exécute la requête
         $requete->execute();
         // On redirige vers la page d"acceuil
-        header('location: index.html');
+        header('location: index.php');
         exit;
     } else {
         // Au moins 1 champ est inexistant ou vide
