@@ -1074,6 +1074,11 @@ body main .serv {
   body main .element:hover legend img {
     width: 100%;
   }
+  body main .card:hover .overlay h1,
+  body main .element:hover legend h1 {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
   body main .card:hover .overlay p,
   body main .element:hover legend p {
     -webkit-transform: scale(1);
