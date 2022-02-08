@@ -282,7 +282,7 @@ header #nav .burger.active span::after {
 #gauche,
 #droite {
   position: absolute;
-  top: 50%;
+  bottom: 2%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-filter: drop-shadow(white 0px 0px 5px) drop-shadow(white -1px -1px 2px);
@@ -295,13 +295,15 @@ header #nav .burger.active span::after {
 
 legend {
   color: white;
+  background-color: #393c5499;
   text-shadow: black 1px 1px 1px;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 legend h1 {
