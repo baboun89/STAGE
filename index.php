@@ -181,7 +181,7 @@
         </section>
         <section id="contact">
             <div class="titre">
-                <h1>Contactez Nous</h1>
+                <h1>Nos coordonnées</h1>
             </div>
             <div id="flex">
                 <article id="agrement">

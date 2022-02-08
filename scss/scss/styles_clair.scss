@@ -23,6 +23,7 @@ body {
     background-image: url(../images/logo/fond4.png);
     background-repeat: no-repeat;
     background-size: cover;
+    // overflow: hidden;
 
     #flex {
         display: flex;
@@ -106,25 +107,26 @@ body {
         #titrepage {
             width: 200px;
             height: 40px;
-            background-color: #84346350;
+            background-color: #843463;
             border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: auto;
             margin-top: 10px;
+            opacity: 50%;
 
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: #540337;
+                color: white;
             }
         }
 
         .titre {
             width: 200px;
             height: 20px;
-            background-color: #84346350;
+            background-color: #843463;
             margin: auto;
             border-radius: 5px;
             display: flex;
@@ -132,16 +134,29 @@ body {
             justify-content: center;
             margin-top: 18px;
             margin-bottom: 15px;
+            opacity: 50%;
 
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: #540337;
+                color: white;
             }
         }
 
+        #diaporama {
+            background-image: url(/images/logo/engrenage.png);
+            background-repeat: no-repeat;
+            background-size: 300px;
+            background-position: right;
+        }
 
         #realisations {
+            background-image: url(/images/logo/engrenage.png);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position: left;
+            width: 100%;
+
             .card {
                 .overlay {
                     h2 {
@@ -272,19 +287,14 @@ body {
                     }
                 }
 
-                #tel {
-                    display: flex;
-                    align-items: center;
-                    margin: 5px;
+                p {
+                    font-size: 1.4rem;
+
                     img {
-                        width: 17px;
-                    }
-                    
-                    p {
-                        font-size: 1.2rem;
+                        width: 25px;
                     }
                 }
-        
+
                 .nav-menu {
                     vertical-align: middle;
                     width: 50%;
@@ -370,12 +380,11 @@ body {
                     }
                 }
 
-                #tel {
-                    p{
-                        font-size: 1.7rem ;
-                    }
+                p {
+                    font-size: 2rem;
+
                     img {
-                        width: 25px;
+                        width: 30px;
                     }
                 }
             }
@@ -495,6 +504,11 @@ body {
                     width: 100%;
                     bottom: -10px;
 
+                    // [id^=btn]:hover+ul {
+                    //     display:block;
+                    // }
+
+
                     .dropdown {
                         position: absolute;
                         background-image: linear-gradient(#5f6383, #843463);
@@ -549,11 +563,13 @@ body {
 
 
                 #tel {
-                    p{
-                        font-size: 1.7rem ;
+                    p {
+                        margin-top: 10px;
+                        margin-left: 100px;
                     }
+
                     img {
-                        width: 30px;
+                        width: 38px;
                     }
                 }
             }
@@ -572,10 +588,11 @@ body {
             #droite {
                 width: 40px;
             }
-            .card .overlay,legend{
+
+            .card .overlay {
                 display: none;
                 color: white;
-                background-color: #5f638390;
+                background-color: rgba(0, 0, 0, .5);
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -589,16 +606,11 @@ body {
                 transition: .3s;
                 overflow: hidden;
             }
-            legend{
-                flex-direction: column;
-            }
 
-
-            .card:hover .overlay,.element:hover legend {
+            .card:hover .overlay {
                 font-size: 1rem;
-                width: 90%;
-                height: 90%;
-                border-radius: 10px;
+                width: 100%;
+                height: 100%;
 
                 img {
                     width: 100%;
@@ -649,11 +661,7 @@ body {
     }
 
     body {
-        main{
-            .element{
-                height: 80vh;
-            }
-        }
+
         footer {
             #nav {
                 p {
