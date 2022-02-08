@@ -22,7 +22,8 @@
         <div id="nav">
             <a href="index.php" width="100"><img src="images/logo/logosombre.png" alt="logo" width="100"></a>
             <div id="tel">
-                <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
+                <img src="images/logo/tel.png" alt="logotel" width="18">
+                <p> 06 83 77 62 92</p>
             </div>
             <nav class="navbar">
                 <label for="btn" class="icon">
@@ -48,7 +49,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <label for="btn3"  class="show">SERVICES </label>
+                        <label for="btn3" class="show">SERVICES </label>
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">

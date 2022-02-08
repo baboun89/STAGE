@@ -82,7 +82,8 @@ if (!empty($_POST)) {
         <div id="nav">
             <a href="index.php" width="100"><img src="images/logo/logosombre.png" alt="logo" width="100"></a>
             <div id="tel">
-                <p><img src="images/logo/tel.png" alt="logotel" width="18"> 06 83 77 62 92</p>
+                <img src="images/logo/tel.png" alt="logotel" width="18">
+                <p> 06 83 77 62 92</p>
             </div>
             <nav class="navbar">
                 <label for="btn" class="icon">
