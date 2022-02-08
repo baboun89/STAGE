@@ -23,7 +23,7 @@
         <div id="nav">
             <a href="#" width="100"><img src="images/logo/logosombre.png" alt="logo" width="80"></a>
             <div id="tel">
-            <img src="images/logo/tel.png" alt="logotel" width="18">
+                <img src="images/logo/tel.png" alt="logotel" width="18">
                 <p> 06 83 77 62 92</p>
             </div>
             <nav class="navbar">
@@ -50,7 +50,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <label for="btn3"  class="show">SERVICES </label>
+                        <label for="btn3" class="show">SERVICES </label>
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
                             <li class="drop-item">
@@ -83,7 +83,7 @@
             <!-- diapo1 -->
             <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
-                    <div class="element" id="vid" >
+                    <div class="element" id="vid">
                         <img src="images/images/TRACTEUR-CITERNE.jpg" alt="photo1">
                         <legend>
                             <h1>vidange</h1>
@@ -177,27 +177,27 @@
                 <h1>Notre zone d'intervention</h1>
             </div>
             <figure id="carte">
-                </figure>
-            </section>
-            <section id="contact">
-                <div class="titre">
-                    <h1>Contactez Nous</h1>
-                </div>
-                <div id="flex">
-                    <article id="agrement">
-                        <img src="images/logo/Logo_de_la_République_française.png" alt="Logo de la République française" width="100">
-                        <p>Agrément: 2017/N89/ 0034</p>
-                    </article>
-                    <article id="adress">
-                        <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
-                        <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
-                        <h2>tel: 06 83 77 62 92</h2>
-                        <p>email:</p>
-                        <p>"Les Marquets"</p>
-                        <p>89116 Cudot</p>
-                    </article>
-                </div>
-            </section>
+            </figure>
+        </section>
+        <section id="contact">
+            <div class="titre">
+                <h1>Contactez Nous</h1>
+            </div>
+            <div id="flex">
+                <article id="agrement">
+                    <img src="images/logo/Logo_de_la_République_française.png" alt="Logo de la République française" width="100">
+                    <p>Agrément: 2017/N89/ 0034</p>
+                </article>
+                <article id="adress">
+                    <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
+                    <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
+                    <h2>tel: 06 83 77 62 92</h2>
+                    <p>email:</p>
+                    <p>"Les Marquets"</p>
+                    <p>89116 Cudot</p>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="nav">
