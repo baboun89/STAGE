@@ -578,7 +578,6 @@ body {
 
             .card .overlay,
             legend {
-                display: none;
                 color: white;
                 background-color: #5f638390;
                 position: absolute;
@@ -602,13 +601,14 @@ body {
 
             .card:hover .overlay,
             .element:hover legend {
-                font-size: 1rem;
                 width: 90%;
                 height: 90%;
                 border-radius: 10px;
-
                 img {
                     width: 100%;
+                }
+                p{
+                    transform: scale(1);
                 }
             }
 
