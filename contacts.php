@@ -141,7 +141,7 @@ if (!empty($_POST)) {
                 <input type="text" name="nom" placeholder="Votre nom ">
 
                 <label for="nom">Prénom</label>
-                <input type="text" name="prenom" placeholder="votre prenom">
+                <input type="text" name="prenom" placeholder="votre prénom">
 
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Votre email">
