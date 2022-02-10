@@ -193,17 +193,15 @@ header #nav .burger.active span::after {
   row-gap: 10px;
 }
 
-@media screen and (min-width: 576px) {
+.grid.grid-3 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1100px) {
   .grid.grid-3 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .grid.grid-3 {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -214,21 +212,14 @@ header #nav .burger.active span::after {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .grid.grid-4 {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .grid.grid-5 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .grid.grid-5 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -236,13 +227,6 @@ header #nav .burger.active span::after {
 }
 
 @media screen and (min-width: 1400px) {
-  .grid.grid-5 {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1500px) {
   .grid.grid-5 {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1114,7 +1098,8 @@ body main .serv img {
   :root {
     font-size: 16px;
   }
-  body main .element, body main .serv {
+  body main .element,
+  body main .serv {
     height: 80vh;
   }
   body footer #text p {
