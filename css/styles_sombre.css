@@ -558,7 +558,7 @@ input, textarea {
 }
 
 * {
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -614,7 +614,7 @@ body li {
 }
 
 body #red p {
-  color: red;
+  color: white;
 }
 
 body main {

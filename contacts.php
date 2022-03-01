@@ -150,11 +150,10 @@ if (!empty($_POST)) {
 
                 <label for="message">Message</label>
                 <textarea name="message" id="textchamps" cols="30" rows="10" placeholder="Votre message"></textarea>
-
-                <button type="submit" class="bouton_contact">Envoyer</button>
                 <div id="red">
-                    <P>TOUS LES CHAMPS SONT OBLIGATOIRE</P>
+                    <P>TOUS LES RENSEIGNEMENTS SONT OBLIGATOIRES</P>
                 </div>
+                <button type="submit" class="bouton_contact">Envoyer</button>
             </form>
         </section>
         <section id="adress">

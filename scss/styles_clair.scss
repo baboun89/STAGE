@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: roboto ;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -60,11 +60,6 @@ body {
         list-style: none;
     }
 
-    #red {
-        p {
-            color: red;
-        }
-    }
 
     main {
         position: relative;
