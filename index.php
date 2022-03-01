@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stage</title>
+    <title>Accueil/SAS VALLEE</title>
     <link rel="shortcut icon" type="image/png" href="images/logo/logomini.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
