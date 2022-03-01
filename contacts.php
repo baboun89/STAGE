@@ -124,7 +124,7 @@ if (!empty($_POST)) {
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="realisations.php">REALISATIONS</a>
+                        <a href="realisations.php">RÉALISATIONS</a>
                     </li>
                     <li class="nav-item">
                         <a href="contacts.php">CONTACT</a>

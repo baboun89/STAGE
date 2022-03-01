@@ -64,7 +64,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="realisations.php">REALISATIONS</a>
+                        <a href="realisations.php">RÉALISATIONS</a>
                     </li>
                     <li class="nav-item">
                         <a href="contacts.php">CONTACT</a>
@@ -77,7 +77,7 @@
     <main>
         <section id="realisations">
             <div id="titrepage">
-                <h1>NOS REALISATIONS</h1>
+                <h1>NOS RÉALISATIONS</h1>
             </div>
             <div class="grid grid-5">
                 <?php

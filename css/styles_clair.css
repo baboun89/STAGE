@@ -558,7 +558,7 @@ input, textarea {
 }
 
 * {
-  font-family: Myriad Pro Condensed;
+  font-family: roboto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
