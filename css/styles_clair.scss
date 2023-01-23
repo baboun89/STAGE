@@ -20,23 +20,30 @@ html {
 
 
 body {
-    #flex{
+    // background-image: url(../images/logo/fond4.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // text-align: center;
+
+    #flex {
         display: flex;
         justify-content: space-around;
     }
+
     #carte {
         width: 100%;
         height: 250px;
         margin: auto;
         margin-bottom: 20px;
+        border-radius: 5px;
 
     }
 
     #scrollUp {
         position: fixed;
-        bottom: 85px;
-        right: 20px;
-        z-index: 1000;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10000;
     }
 
     .remonte {
@@ -47,12 +54,13 @@ body {
         margin: 0;
         padding: 0;
         text-align: center;
+        vertical-align: middle;
     }
 
     li {
         list-style: none;
-        margin-left: 5px;
     }
+
     #red {
         p {
             color: red;
@@ -63,37 +71,49 @@ body {
         position: relative;
         text-align: center;
         font-size: 1.2rem;
+        width: 85%;
+
+        #titre {
+            font-size: 1rem;
+        }
+
+        .bouton_contact {
+            background-color: #843463;
+        }
+
+        input,
+        #textchamps {
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+        }
 
 
-
-        #titrepage {
-            width: 200px;
-            height: 40px;
-            background-color: black;
+        img {
             border-radius: 5px;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9;
+        }
 
-            h1 {
-                text-align: center;
-                font-size: 1.4rem;
-                color: #ee7d00;
+        #contact {
+            margin-bottom: 20px;
+        }
+
+        #adress {
+            #sombre {
+                display: none;
+            }
+
+            h2,
+            p {
+                margin: 0;
             }
         }
 
         .titre {
             width: 200px;
             height: 20px;
-            background-color: black;
+            background-color: #84346350;
             margin: auto;
             border-radius: 5px;
-            display: flex;
+            display: block;
             align-items: center;
             justify-content: center;
             margin-top: 18px;
@@ -102,32 +122,11 @@ body {
             h1 {
                 text-align: center;
                 font-size: 1.4rem;
-                color: #ee7d00;
+                color: #540337;
             }
         }
 
-        #diaporama {
-            background-image: url(/images/logo/engrenage.png);
-            background-repeat: no-repeat;
-            background-size: 300px;
-            background-position: right;
-        }
 
-        #realisations {
-            background-image: url(/images/logo/engrenage.png);
-            background-repeat: no-repeat;
-            background-size: 500px;
-            background-position: left;
-            width: 100%;
-
-            .card {
-                .overlay {
-                    h2 {
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
 
         #contact {
 
@@ -136,28 +135,25 @@ body {
                 justify-content: space-around;
                 margin-top: 20px;
 
-                #agrement {
-                    text-align: center;
-                    margin-top: 2px;
-
-                    p {
-                        font-size: 1.5rem;
-                    }
-                }
 
                 #adress {
                     text-align: left;
                     margin-left: 10px;
                     text-align: center;
 
+                    #sombre {
+                        display: none;
+                    }
+
                     h1 {
                         margin: 0;
+                        font-size: 2.5rem;
                     }
 
                     h2,
                     p {
                         margin: 0;
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                     }
                 }
             }
@@ -167,6 +163,12 @@ body {
             padding: 10px;
             text-align: center;
 
+            img {
+                width: 100%;
+                height: 100%;
+                height: 50vh;
+                object-fit: cover;
+            }
         }
 
     }
@@ -177,16 +179,29 @@ body {
         font-size: 13px;
     }
 
+    legend {
+        h1 {
+            font-size: 1.7rem;
+        }
+    }
+
     body {
         .remonte {
-            width: 30px;
+            width: 20px;
         }
 
         header {
             #nav {
                 a {
                     img {
-                        width: 120px;
+                        width: 50px;
+                    }
+                }
+
+                #tel {
+
+                    p {
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -224,19 +239,41 @@ body {
 
     p {
         font-size: 1.2rem;
+        margin: 0;
     }
 }
 
 @media screen and (min-width: 600px) {
     body {
+        p{
+            font-size: 1.6rem;
+        }
         header {
             #nav {
-                p {
-                    font-size: 1.5rem;
+                a {
+                    img {
+                        width: 90px;
+                    }
+                }
+
+                #tel {
+                    display: flex;
+                    align-items: center;
+                    margin: 5px;
 
                     img {
-                        width: 25px;
+                        width: 17px;
                     }
+
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .nav-menu {
+                    vertical-align: middle;
+                    width: 50%;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -255,9 +292,23 @@ body {
                 }
             }
 
+            #contact {
+                #flex {
+                    #agrement {
+                        img {
+                            width: 200px;
+                        }
+
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+
             #adress {
                 img {
-                    width: 400px;
+                    width: 300px;
                 }
 
                 h2,
@@ -269,12 +320,19 @@ body {
         }
 
         footer {
-            #nav {
+            #foothaut {
+                img {
+                    width: 160px;
+                }
+            }
+
+            #text {
                 p {
-                    font-size: 2.4rem;
+                    font-size: 1.8rem;
 
                     a {
-                        margin-left: 10px;
+                        margin-left: 25px;
+                        margin-right: 25px;
                     }
                 }
             }
@@ -286,22 +344,24 @@ body {
 @media screen and (min-width: 800px) {
     body {
         p {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         header {
             #nav {
                 a {
                     img {
-                        width: 250px;
+                        width: 100px;
                     }
                 }
 
-                p {
-                    font-size: 2rem;
+                #tel {
+                    p {
+                        font-size: 2rem;
+                    }
 
                     img {
-                        width: 30px;
+                        width: 25px;
                     }
                 }
             }
@@ -379,7 +439,7 @@ body {
                 }
 
                 img {
-                    width: 200px;
+                    width: 100px;
                 }
             }
         }
@@ -392,31 +452,107 @@ body {
     }
 
     body {
+        legend {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+
         .remonte {
             width: 40px;
         }
 
         header {
             #nav {
-                .nav-menu {
-                    bottom: 5%;
+                .icon {
+                    display: none;
                 }
+
+                .nav-menu {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 38px;
+                    width: 100%;
+                    bottom: -10px;
+
+                    .dropdown {
+                        position: absolute;
+                        background-image: linear-gradient(#5f6383, #843463);
+                        width: 338px;
+                        top: 32px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        left: 120%;
+                        transform: translateX(-50%);
+
+                        li {
+                            margin-left: 40px;
+                            margin-right: 40px;
+
+                            a {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    .dropdown2 {
+                        position: absolute;
+                        width: 250px;
+                        background-image: linear-gradient(#5f6383, #843463);
+                        top: 32px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        li {
+                            margin-left: 20px;
+                            margin-right: 20px;
+
+                            a {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                }
+
+                .nav-item {
+                    display: inline-block;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    position: relative;
+                    z-index: 100;
+                }
+
 
                 #tel {
                     p {
-                        margin-top: 10px;
+                        font-size: 1.7rem;
                     }
 
                     img {
-                        width: 38px;
+                        width: 30px;
                     }
                 }
             }
         }
 
         main {
+            .form {
+                margin-top: 20px;
+            }
+
             #titrepage {
-                top: 2%;
+                margin-top: 20px;
             }
 
             #gauche,
@@ -424,10 +560,10 @@ body {
                 width: 40px;
             }
 
-            .card .overlay {
-                display: none;
+            .card .overlay,
+            legend {
                 color: white;
-                background-color: rgba(0, 0, 0, .5);
+                background-color: #5f638390;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -442,10 +578,28 @@ body {
                 overflow: hidden;
             }
 
-            .card:hover .overlay {
-                font-size: 3rem;
-                width: 100%;
-                height: 100%;
+            legend {
+                flex-direction: column;
+            }
+
+
+            .card:hover .overlay,
+            .element:hover legend {
+                width: 90%;
+                height: 90%;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    transform: scale(1.2);
+                }
+
+                p {
+                    transform: scale(1);
+                }
             }
 
             #flex {
@@ -492,7 +646,21 @@ body {
     }
 
     body {
+        main {
+
+            .element,
+            .serv {
+                height: 80vh;
+            }
+        }
+
         footer {
+            #text {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
             #nav {
                 p {
                     margin-top: 150px;
@@ -511,15 +679,15 @@ body {
         font-size: 18px;
     }
 
-    body {
-        footer {
-            #nav {
-                p {
-                    margin-top: 200px;
-                }
+
+    footer {
+        #nav {
+            p {
+                margin-top: 200px;
             }
         }
     }
+
 }
 
 @media screen and (min-width: 1900px) {
@@ -534,26 +702,20 @@ body {
 
         header {
             #nav {
-                img {
-                    width: 400px;
+                a {
+                    img {
+                        width: 400px;
+                    }
                 }
 
-                .show {
-                    font-size: 2.5rem;
+                .nav-menu {
+                    height: 80px;
 
-                }
 
-                .nav-menu,
-                .show {
-                    bottom: 2%;
-
-                    a {
-                        font-size: 2.5rem;
+                    img {
+                        width: 400px;
                     }
 
-                    .nav-item {
-                        margin: 21px;
-                    }
                 }
             }
         }

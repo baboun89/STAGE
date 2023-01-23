@@ -1,4 +1,5 @@
 <?php
+
 if (!empty($_POST)) {
     if (
         isset($_POST['telephone'])
@@ -57,6 +58,7 @@ if (!empty($_POST)) {
     }
 }
 
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -80,10 +82,11 @@ if (!empty($_POST)) {
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="index.php" width="100"><img src="images/logo/logosombre.png" alt="logo" width="100"></a>
+            <a href="index.php" width="100"><img src="images/logo/pb.png" alt="logo" width="40"></a>
             <div id="tel">
+            <p>Philippe Babouhot</p>
                 <img src="images/logo/tel.png" alt="logotel" width="18">
-                <p> 06 83 77 62 92</p>
+                <p> 06 13 30 86 56</p>
             </div>
             <nav class="navbar">
                 <label for="btn" class="icon">
@@ -94,37 +97,19 @@ if (!empty($_POST)) {
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <label for="btn2" class="show">FOSSE SEPTIQUE</label>
+                        <label for="btn2" class="show">Aide à la personne</label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown2">
                             <li class="drop-item">
-                                <a href="index.php#vid">Vidange</a>
+                                <a href="index.php#vid">Initiation PC et Internet</a>
                             </li>
                             <li class="drop-item">
-                                <a href="index.php#deb">Débouchage canalisation</a>
+                                <a href="index.php#deb">Entretien et nettoyage</a>
                             </li>
                             <li class="drop-item">
-                                <a href="index.php#net">Entretien et nettoyage</a>
+                                <a href="index.php#net">Réparation informatique</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <label for="btn3" class="show">SERVICES </label>
-                        <input type="checkbox" id="btn3">
-                        <ul class="dropdown">
-                            <li class="drop-item">
-                                <a href="services.html#terrassement">Terrassement en tout genre</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="services.html#canalisation">Remplacement de canalisations</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="services.html#assainissement">Assainissement</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="realisations.php">REALISATIONS</a>
                     </li>
                     <li class="nav-item">
                         <a href="contacts.php">CONTACT</a>
@@ -158,37 +143,32 @@ if (!empty($_POST)) {
             </form>
         </section>
         <section id="adress">
-            <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
-            <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
-            <h2>tel: 06 83 77 62 92</h2>
-            <p>email:</p>
-            <p>"Les Marquets"</p>
-            <p>89116 Cudot</p>
+            <img id="clair" src="images/logo/pb.png" alt="logo" width="150">
+            <img id="sombre" src="images/logo/pb.png" alt="logo" width="150">
+            <h2>tel: 06 13 30 86 56</h2>
+            <p>email: philbab@live.fr</p>
+            <p>11bis rue des fossés st jean</p>
+            <p>89300 Joigny</p>
         </section>
         <section id="zone">
             <div class="titre">
-                <h1>Notre zone d'intervention</h1>
+                <h1>Ma zone d'intervention</h1>
             </div>
             <article id="carte">
             </article>
         </section>
     </main>
-    </main>
 
     <footer>
         <div id="nav">
             <div id="foothaut">
-                <img src="images/logo/logosombre.png" alt="logo" width="30%">
+                <img src="images/logo/pb.png" alt="logo" width="40">
                 <label>
                     <p>Mode clair/sombre</p>
                     <input type="checkbox" id="case" checked="">
                     <span id="theme" class="check"></span>
                 </label>
             </div>
-        </div>
-        <div id="text">
-            <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
-                    cookies</a> </p>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
     </footer>

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stage</title>
-    <link rel="shortcut icon" type="image/png" href="images/logo/logomini.png" />
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Aide à Domicile Informatique</title>
+    <meta name="description" content="Aide à la personne en informatique,tout âge et tout support.Toutes initiations internet, procédure ou résaux sociaux.Maintenance et réparation ordinateur.Et si vous desirez un site internet personnel.">
+    <link rel="shortcut icon" type="image/png" href="images/logo/pb.png" />
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
@@ -21,10 +21,11 @@
             <a href="#top"><img class="remonte" src="images/logo/remonte.png" alt="remonter" width="20"></a>
         </div>
         <div id="nav">
-            <a href="#" width="100"><img src="images/logo/logosombre.png" alt="logo" width="80"></a>
+            <a href="#" width="100"><img src="images/logo/pb.png" alt="logo" width="40"></a>
             <div id="tel">
+                <p>Philippe Babouhot</p>
                 <img src="images/logo/tel.png" alt="logotel" width="18">
-                <p> 06 83 77 62 92</p>
+                <p> 06 13 30 86 56</p>
             </div>
             <nav class="navbar">
                 <label for="btn" class="icon">
@@ -35,37 +36,19 @@
                 <input type="checkbox" id="btn">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <label for="btn2" class="show">FOSSE SEPTIQUE</label>
+                        <label for="btn2" class="show">Aide à la personne</label>
                         <input type="checkbox" id="btn2">
                         <ul class="dropdown2">
                             <li class="drop-item">
-                                <a href="index.php#vid">Vidange</a>
+                                <a href="index.php#vid">Initiation PC et Internet</a>
                             </li>
                             <li class="drop-item">
-                                <a href="index.php#deb">Débouchage canalisation</a>
+                                <a href="index.php#deb">Entretien et nettoyage</a>
                             </li>
                             <li class="drop-item">
-                                <a href="index.php#net">Entretien et nettoyage</a>
+                                <a href="index.php#net">Réparation informatique</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <label for="btn3" class="show">SERVICES </label>
-                        <input type="checkbox" id="btn3">
-                        <ul class="dropdown">
-                            <li class="drop-item">
-                                <a href="services.html#terrassement">Terrassement en tout genre</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="services.html#canalisation">Remplacement de canalisations</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="services.html#assainissement">Assainissement</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="realisations.php">REALISATIONS</a>
                     </li>
                     <li class="nav-item">
                         <a href="contacts.php">CONTACT</a>
@@ -76,125 +59,123 @@
         <img src="images/logo/navbar.png" alt="navbar" width="100%">
     </header>
     <main>
+        <div id="titre">
+            <h1>AIDE à la PERSONNE INFORMATIQUE</h1>
+        </div>
         <section id="diaporama">
             <div class="titre">
-                <h1>Fosse septique</h1>
+                <h1>Aide à domicile internet</h1>
             </div>
+            <div class="titre">
+                <h1>Nettoyage numérique</h1>
+            </div>
+            <div class="titre">
+                <h1>Réparation ordinateur</h1>
+            </div>
+            <div class="titre">
+                <h1>Elaboration site internet</h1>
+            </div>
+
             <!-- diapo1 -->
             <div class="diapo" data-speed="5000" data-transition="500">
                 <div class="elements">
                     <div class="element" id="vid">
-                        <img src="images/images/TRACTEUR-CITERNE.jpg" alt="photo1">
+                        <img src="images/images/hands.jpg" alt="photo1">
                         <legend>
-                            <h1>vidange</h1>
-                            <p>La vidange de fosse septique est une opération qu’il est recommandé d'effectuer tous les 4 ans environ. Elle permet d’éviter l’engorgement des tuyaux, l'engorgement du bac à graisse et le cas échéant de tous les tuyaux de l’installation de votre maison.
-
-                            </p>
+                            <h1>Initiation PC et Internet</h1>
+                            <p>Découverte de l'outil internet dans la vie de tous les jours.Création de comptes divers(réseaux sociaux)</p>
                         </legend>
                     </div>
                     <div class="element" id="deb">
-                        <img src="images/images/debouchage-canalisation.jpg" alt="photo2">
+                        <img src="images/images/dog.jpg" alt="photo2">
                         <legend>
-                            <h1>Débouchage canalisation</h1>
-                            <p>Le débouchage de canalisation est une intervention qui consiste à dégager le chemin à l’intérieur de vos canalisations, de façon à ce que l’eau et les déchets (papier toilette par exemple) puissent circuler correctement jusqu’à être évacués complètement.</p>
+                            <h1>maintenance informatique et mise a jour de l'outil.</h1>
+                            <p>Pour une meilleur sécurité, l'anti virus et l'ordinateur doit avoir une veille permanente pour rester efficace. </p>
                         </legend>
                     </div>
                     <div class="element" id="net">
-                        <img src="images/images/travaux-assainissement.jpg" alt="photo3">
+                        <img src="images/images/workshop.jpg" alt="photo3">
                         <legend>
                             <h1>Entretien et nettoyage</h1>
-                            <p>En entretenant régulièrement votre fosse septique, vous allongez sa durée de vie, facilitez l’évacuation et évitez les situations d’urgence. Pour cela, l’utilisation régulière d'activateur (activateur biologique ou activateurs chimiques) est recommandée.
+                            <p>En entretenant régulièrement votre pc , vous allongez sa durée de vie, évitez les situations d’urgence. Pour cela un ordinateur a jour recommandé.
                             </p>
                         </legend>
                     </div>
+                    <div class="element" id="site">
+                        <img src="images/images/woman.jpg" alt="photo3">
+                        <legend>
+                            <h1>Elaboration de site internet</h1>
+                            <p>Vous désirez avoir votre propre site internet, ou bien logo,flyers</p>
+                        </legend>
+                    </div>
+
                 </div>
                 <img src="images/logo/navg.png" alt="avant" id="gauche" width="20">
                 <img src="images/logo/navd.png" alt="apres" id="droite" width="20">
             </div>
             <div class="titre">
-                <h1>Nos Services</h1>
+                <h1>Mes Services</h1>
             </div>
             <div class="grid grid-5" data-speed="5000" data-transition="500">
                 <div class="element">
-                    <img src="images/images/diap.jpg" alt="photo1">
+                    <img src="images/images/laptop.jpg" alt="photo1">
                     <legend>
-                        <h1>Terrassement en tout genre</h1>
-                        <p>Nous réalisons tous travaux visant à préparer un terrain, pour un aménagement fonctionnel et paysagé ou une construction, individuelle ou collective.</p>
+                        <h1>Initiation Internet</h1>
+                        <p>Pour toute procédure à faire via internet, un accompagne et une aide au quotidien. </p>
+                        <p>Tarif:</p>
+                        <p>20€ le déplacement plus 20€ de l'heure</p>
                     </legend>
                 </div>
                 <div class="element">
-                    <img src="images/images/canalisation.jpg" alt="photo2">
+                    <img src="images/images/computer.jpg" alt="photo2">
                     <legend>
-                        <h1>Remplacement de canalisations</h1>
-                        <p>Nous réalisons également les branchements aux réseaux collectif d'assainissement et de pluviale ainsi que les tranchées pour le passage des réseaux électrique, télephonique, gaz et eau.</p>
+                        <h1>Veille informatique</h1>
+                        <p>La veille du matériel informatique est trés important.  </p>
+                        <p>Tarif:</p>
+                        <p>30€ le déplacement plus 30€ de l'heure</p>
                     </legend>
                 </div>
                 <div class="element">
-                    <img src="images/images/assainissement.jpg" alt="photo3">
+                    <img src="images/images/macbook.jpg" alt="photo3">
                     <legend>
-                        <h1>Assainissement</h1>
-                        <p>Conformément aux nouvelles législations nous intervenons dans la création et la remise aux normes des assainissements, qu’ils soient individuels ou collectifs.</p>
+                        <h1>Réparation informatique</h1>
+                        <p>Réparations en tout genre,remise en état de fonctionnement.</p>
+                        <p>Tarif:</p>
+                        <p>40€ le déplacement plus 40€ de l'heure</p>
                     </legend>
                 </div>
-            </div>
-        </section>
-        <section id="realisations">
-            <div class="titre">
-                <h1>Nos Réalisations</h1>
-            </div>
-            <div class="grid grid-5">
-                <?php
+                <div class="element">
+                    <img src="images/images/google.jpg" alt="photo3">
+                    <legend>
+                        <h1>Designer Web</h1>
+                        <p>Elaboration d'un site internet de A à Z. </p>
+                        <p>Tarif:</p>
+                        <p>suivant devis</p>
+                    </legend>
+                </div>
 
-                // On se connecte à la base
-                require_once 'includes/connect.php';
-
-                // On écrit la requête
-                // On ne met JAMAIS une donnée extérieure ($id) directement dans la requête
-                $sql = "SELECT * FROM `realisations` ";
-
-                // Une requête contenant des paramètres SQL doit être "préparée"
-
-                $requete = $db->query($sql);
-
-
-                $realisations = $requete->fetchAll();
-                foreach ($realisations as $realisation) {
-
-                    echo "
-                    <article class='card'>
-                    <div class='overlay'>
-                    <h2>{$realisation['title']}</h2>
-                    </div>
-                    <img src='uploads/realisations/{$realisation['featureimage']}' alt=''>
-                    </article>";
-                }
-
-                ?>
             </div>
         </section>
         <section id="zone">
             <div class="titre">
-                <h1>Notre zone d'intervention</h1>
+                <h1>Ma zone d'intervention</h1>
             </div>
             <figure id="carte">
             </figure>
         </section>
         <section id="contact">
             <div class="titre">
-                <h1>Nos coordonnées</h1>
+                <h1>Mes coordonnées</h1>
             </div>
             <div id="flex">
-                <article id="agrement">
-                    <img src="images/logo/Logo_de_la_République_française.png" alt="Logo de la République française" width="100">
-                    <p>Agrément: 2017/N89/ 0034</p>
-                </article>
                 <article id="adress">
-                    <img id="clair" src="images/logo/logoclair.png" alt="logo" width="150">
-                    <img id="sombre" src="images/logo/logosombre.png" alt="logo" width="150">
-                    <h2>tel: 06 83 77 62 92</h2>
-                    <p>email:</p>
-                    <p>"Les Marquets"</p>
-                    <p>89116 Cudot</p>
+                    <img id="clair" src="images/logo/pb.png" alt="logo" width="150">
+                    <img id="sombre" src="images/logo/pb.png" alt="logo" width="150">
+                    <h1>Philippe Babouhot</h1>
+                    <h2>tel: 06 13 30 86 56</h2>
+                    <p>email: Philbab@live.fr</p>
+                    <p>11bis rue des fossés st jean</p>
+                    <p>89300 Joigny</p>
                 </article>
             </div>
         </section>
@@ -202,17 +183,13 @@
     <footer>
         <div id="nav">
             <div id="foothaut">
-                <img src="images/logo/logosombre.png" alt="logo" width="80px">
+                <img src="images/logo/pb.png" alt="logo" width="40">
                 <label>
                     <p>Mode clair/sombre</p>
                     <input type="checkbox" id="case" checked="">
                     <span id="theme" class="check"></span>
                 </label>
             </div>
-        </div>
-        <div id="text">
-            <p><a href="#">Mentions légales</a> <a href="#">Protection de la vie privée</a> <a href="#">Infos
-                    cookies</a></p>
         </div>
         <img src="images/logo/navbar.png" alt="navbar footer" width="100%" id="navfoot">
     </footer>

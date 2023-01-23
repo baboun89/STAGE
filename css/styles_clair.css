@@ -5,8 +5,14 @@ header {
 }
 
 header img {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
+}
+
+header #titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
 header #nav {
@@ -32,6 +38,7 @@ header #nav #tel {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px;
+  padding-right: 10px;
 }
 
 header #nav #tel img {
@@ -40,10 +47,11 @@ header #nav #tel img {
 }
 
 header #nav #tel p {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: white;
   margin: 0;
   margin-left: 5px;
+  padding-right: 20px;
 }
 
 header #nav .icon {
@@ -101,8 +109,8 @@ header #nav .burger {
   cursor: pointer;
   position: fixed;
   top: 0;
-  right: 0;
-  margin-top: 5px;
+  right: 5px;
+  margin-top: 8px;
   z-index: 1000;
 }
 
@@ -226,13 +234,6 @@ header #nav .burger.active span::after {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .grid.grid-5 {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .diapo {
   position: relative;
   overflow: hidden;
@@ -310,8 +311,7 @@ footer {
 
 footer img {
   vertical-align: bottom;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 5px;
 }
 
 footer #nav {
@@ -567,12 +567,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(../images/logo/fond4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 body #flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -623,6 +617,10 @@ body main {
   width: 85%;
 }
 
+body main #titre {
+  font-size: 1rem;
+}
+
 body main .bouton_contact {
   background-color: #843463;
 }
@@ -650,39 +648,13 @@ body main #adress p {
   margin: 0;
 }
 
-body main #titrepage {
-  width: 200px;
-  height: 40px;
-  background-color: #84346350;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  margin-top: 10px;
-}
-
-body main #titrepage h1 {
-  text-align: center;
-  font-size: 1.4rem;
-  color: #540337;
-}
-
 body main .titre {
   width: 200px;
   height: 20px;
   background-color: #84346350;
   margin: auto;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -699,10 +671,6 @@ body main .titre h1 {
   color: #540337;
 }
 
-body main #realisations .card .overlay h2 {
-  text-transform: uppercase;
-}
-
 body main #contact #flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,17 +678,6 @@ body main #contact #flex {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 20px;
-}
-
-body main #contact #flex #agrement {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-radius: 5px;
-}
-
-body main #contact #flex #agrement p {
-  font-size: 1.3rem;
 }
 
 body main #contact #flex #adress {
@@ -735,12 +692,13 @@ body main #contact #flex #adress #sombre {
 
 body main #contact #flex #adress h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
 body main #contact #flex #adress h2,
 body main #contact #flex #adress p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 body main .serv {
@@ -767,7 +725,10 @@ body main .serv img {
     width: 20px;
   }
   body header #nav a img {
-    width: 90px;
+    width: 50px;
+  }
+  body header #nav #tel p {
+    font-size: 1.2rem;
   }
   body main #gauche,
   body main #droite {
@@ -792,8 +753,11 @@ body main .serv img {
 }
 
 @media screen and (min-width: 600px) {
+  body p {
+    font-size: 1.6rem;
+  }
   body header #nav a img {
-    width: 160px;
+    width: 90px;
   }
   body header #nav #tel {
     display: -webkit-box;
@@ -808,7 +772,7 @@ body main .serv img {
     width: 17px;
   }
   body header #nav #tel p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   body header #nav .nav-menu {
     vertical-align: middle;
@@ -853,13 +817,13 @@ body main .serv img {
 
 @media screen and (min-width: 800px) {
   body p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   body header #nav a img {
-    width: 200px;
+    width: 100px;
   }
   body header #nav #tel p {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   body header #nav #tel img {
     width: 25px;
@@ -906,7 +870,7 @@ body main .serv img {
     margin-left: 20px;
   }
   body footer #nav img {
-    width: 200px;
+    width: 100px;
   }
 }
 

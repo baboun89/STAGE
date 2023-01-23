@@ -8,7 +8,7 @@ window.onload = () => {
     src = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity = "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin = ""
-    var carte = L.map('carte').setView([47.98622964420287, 3.1468578252925234], 9);
+    var carte = L.map('carte').setView([47.981432, 	3.398961], 9);
     carte.scrollWheelZoom.disable();
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -18,13 +18,13 @@ window.onload = () => {
         zoomOffset: -1,
         accessToken: 'pk.eyJ1IjoiYmFib3VuODkiLCJhIjoiY2t5MzA0aGxlMGZyaTJ2bDV4djc3MWpxdiJ9.kM_F2vUHBVcR9tPUZxIitw'
     }).addTo(carte);
-    var marqueur = L.marker([47.98622964420287, 3.1468578252925234]).addTo(carte);
-    marqueur.bindPopup("<b>Entreprise</b><br>SAS Vallee").openPopup();
-    circle = L.circle([47.98622964420287, 3.1468578252925234], {
+    var marqueur = L.marker([47.981432, 3.398961]).addTo(carte);
+    marqueur.bindPopup("<b>Entreprise</b><br>baboun").openPopup();
+    circle = L.circle([47.981432, 	3.398961], {
         color: 'red',
         fillColor: '#f03',
         fillOpacity: 0.5,
-        radius: 10000
+        radius: 25000
     }).addTo(carte);
     // MODE SOMBRE
     let themeLink = document.getElementById("theme-link")

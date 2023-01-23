@@ -5,10 +5,10 @@
 const  DBHOST = 'localhost';
 
 // DBUSER = Identifiant utilisateur de la base
-const DBUSER = 'root';
+const DBUSER = 'baboonland';
 
 // DBPASS = Mot de passe de la base de données
-const DBPASS = '';
+const DBPASS = 'Philippe4589';
 
 //DBNAME = nom de la base de données
 const DBNAME = 'sas vallee';

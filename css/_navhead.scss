@@ -3,8 +3,11 @@ header {
     box-sizing: border-box;
 
     img {
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-radius: 5px;
+    }
+    #titre{
+        display: flex;
+        text-align: center;
     }
 
     #nav {
@@ -14,21 +17,23 @@ header {
         width: 100%;
         align-items: flex-start;
         min-height: 100%;
-
         #tel {
             display: flex;
             align-items: center;
             margin: 5px;
+            padding-right: 10px;
+
             img {
                 vertical-align: middle;
                 width: 15px;
             }
-            
+
             p {
-                font-size: 0.8rem;
+                font-size: 1.1rem;
                 color: white;
                 margin: 0;
                 margin-left: 5px;
+                padding-right: 20px;
             }
         }
 
@@ -49,7 +54,7 @@ header {
         }
 
         .nav-menu {
-            background-image: linear-gradient( #843463,#5f6383);
+            background-image: linear-gradient(#843463, #5f6383);
             position: fixed;
             width: 224px;
             left: 50%;
@@ -88,8 +93,8 @@ header {
             cursor: pointer;
             position: fixed;
             top: 0;
-            right: 0;
-            margin-top: 5px;
+            right: 5px;
+            margin-top: 8px;
             z-index: 1000;
         }
 
