@@ -78,7 +78,7 @@
     </header>
     <main>
         <div id="titre">
-            <h1>AIDE à la PERSONNE INFORMATIQUE</h1>
+            <h1>AIDE à la PERSONNE EN INFORMATIQUE</h1>
         </div>
         <section id="diaporama">
             <div class="titre">
