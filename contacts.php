@@ -67,7 +67,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacts</title>
+    <title>Contacts/SAS VALLEE</title>
     <link rel="shortcut icon" type="image/png" href="images/logo/logomini.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
@@ -112,6 +112,24 @@ if (!empty($_POST)) {
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <label for="btn3" class="show">SERVICES </label>
+                        <input type="checkbox" id="btn3">
+                        <ul class="dropdown">
+                            <li class="drop-item">
+                                <a href="services.html#terrassement">Terrassement en tout genre</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="services.html#canalisation">Remplacement de canalisations</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="services.html#assainissement">Assainissement</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="realisations.php">RÉALISATIONS</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="contacts.php">CONTACT</a>
                     </li>
                 </ul>
@@ -135,11 +153,10 @@ if (!empty($_POST)) {
 
                 <label for="message">Message</label>
                 <textarea name="message" id="textchamps" cols="30" rows="10" placeholder="Votre message"></textarea>
-
-                <button type="submit" class="bouton_contact">Envoyer</button>
                 <div id="red">
-                    <P>TOUS LES CHAMPS SONT OBLIGATOIRE</P>
+                    <P>TOUS LES RENSEIGNEMENTS SONT OBLIGATOIRES</P>
                 </div>
+                <button type="submit" class="bouton_contact">Envoyer</button>
             </form>
         </section>
         <section id="adress">
