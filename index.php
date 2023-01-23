@@ -5,15 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Aide à Domicile Informatique</title>
-    <meta name="description" content="Aide à la personne en informatique,tout âge et tout support.Toutes initiations internet, procédure ou résaux sociaux.Maintenance et réparation ordinateur.Et si vous desirez un site internet personnel.">
-    <link rel="shortcut icon" type="image/png" href="images/logo/pb.png" />
-=======
     <title>Accueil/SAS VALLEE</title>
     <link rel="shortcut icon" type="image/png" href="images/logo/logomini.png" />
     <link rel="stylesheet" href="css/normalize.css">
->>>>>>> cfa6713d1c2d8d978a3a1e433f94001628d732cd
     <link rel="stylesheet" href="css/styles_clair.css" id="theme-link">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
@@ -57,8 +51,6 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-<<<<<<< HEAD
-=======
                         <label for="btn3" class="show">SERVICES </label>
                         <input type="checkbox" id="btn3">
                         <ul class="dropdown">
@@ -77,7 +69,6 @@
                         <a href="realisations.php">RÉALISATIONS</a>
                     </li>
                     <li class="nav-item">
->>>>>>> cfa6713d1c2d8d978a3a1e433f94001628d732cd
                         <a href="contacts.php">CONTACT</a>
                     </li>
                 </ul>
